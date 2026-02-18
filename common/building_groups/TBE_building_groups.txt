@@ -1,0 +1,399 @@
+﻿REPLACE:bg_light_industry = {
+	parent_group = bg_manufacturing
+
+	lens = light_industry
+
+	urbanization = 20
+	economy_of_scale_ai_factor = 3.0
+	infrastructure_usage_per_level = 0.75
+
+	construction_efficiency_modifier = yes
+}
+
+REPLACE:bg_heavy_industry = {
+	parent_group = bg_manufacturing
+
+	lens = heavy_industry
+
+	urbanization = 20
+	economy_of_scale_ai_factor = 5.0
+	infrastructure_usage_per_level = 1.25
+
+	construction_efficiency_modifier = yes
+}
+
+REPLACE:bg_military_industry = {
+	parent_group = bg_manufacturing
+
+	lens = heavy_industry
+
+	urbanization = 20
+	economy_of_scale_ai_factor = 5.0
+	infrastructure_usage_per_level = 1
+
+	construction_efficiency_modifier = yes
+}
+
+# Agriculture
+
+REPLACE:bg_agriculture = {
+	category = rural
+
+	land_usage = rural
+
+	lens = agriculture
+	cash_reserves_max = 25000
+
+	economy_of_scale = yes
+
+	can_use_slaves = yes
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 2.0
+	foreign_investment_ai_factor = 0.75
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+
+REPLACE:bg_ranching = {
+	category = rural
+
+	land_usage = rural
+
+	lens = agriculture
+	cash_reserves_max = 25000
+
+	economy_of_scale = yes
+
+	can_use_slaves = yes
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 2.0
+	foreign_investment_ai_factor = 0.75
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+
+REPLACE:bg_plantations = {
+	category = rural
+
+	land_usage = rural
+
+	economy_of_scale = yes
+
+	lens = plantation
+
+	can_use_slaves = yes
+	cash_reserves_max = 25000
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 3.0
+	foreign_investment_ai_factor = 1.25
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+
+REPLACE:bg_mining = {
+	parent_group = bg_extraction
+
+	lens = mine
+
+	can_use_slaves = yes
+
+	urbanization = 10
+	infrastructure_usage_per_level = 1
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 3.0
+	foreign_investment_ai_factor = 1.0
+}
+
+REPLACE:bg_logging = {
+	parent_group = bg_extraction
+
+	can_use_slaves = yes
+
+	default_building = building_logging_camp
+
+	lens = forestry
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 2.0
+	foreign_investment_ai_factor = 1.0
+}
+
+REPLACE:bg_rubber = {
+	parent_group = bg_extraction
+
+	can_use_slaves = yes
+
+	discoverable_resource = yes
+
+	depletable_resource = no
+
+	default_building = building_rubber_plantation
+
+	lens = forestry
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 2.0
+	foreign_investment_ai_factor = 1.0
+}
+
+REPLACE:bg_whaling = {
+	parent_group = bg_extraction
+
+	default_building = building_whaling_station
+
+	lens = fishing
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 4.0
+	foreign_investment_ai_factor = 0.75
+}
+
+REPLACE:bg_fishing = {
+	parent_group = bg_extraction
+
+	default_building = building_fishing_wharf
+
+	lens = fishing
+
+	urbanization = 5
+	infrastructure_usage_per_level = 0.5
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 2.5
+	foreign_investment_ai_factor = 0.75
+}
+
+REPLACE:bg_oil_extraction = {
+	parent_group = bg_extraction
+
+	discoverable_resource = yes
+
+	default_building = building_oil_rig
+
+	lens = mine
+
+	urbanization = 10
+	infrastructure_usage_per_level = 1
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 4.0
+	foreign_investment_ai_factor = 1.0
+}
+
+REPLACE:bg_urban_facilities = {
+	category = urban
+
+	lens = development
+
+	always_possible = yes
+
+	economy_of_scale = yes
+
+	cash_reserves_max = 25000
+
+	urbanization = 20
+	infrastructure_usage_per_level = 1
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 4.0
+	foreign_investment_ai_factor = 0.25
+
+}
+
+REPLACE:bg_arts = {
+	parent_group = bg_urban_facilities
+	infrastructure_usage_per_level = 0.25
+}
+
+REPLACE:bg_power = {
+	category = development
+
+	lens = development
+
+	always_possible = yes
+
+	economy_of_scale = yes
+
+	cash_reserves_max = 25000
+
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+
+	economy_of_scale_ai_factor = 1.5
+	foreign_investment_ai_factor = 0.5
+
+	infrastructure_usage_per_level = 1
+
+	urbanization = 10
+
+	self_investment_chance_modifier = yes
+}
+
+REPLACE:bg_government = {
+	category = development
+
+	always_possible = yes
+
+	is_government_funded = yes
+
+	economy_of_scale = yes
+
+	lens = development
+
+	urbanization = 20
+	infrastructure_usage_per_level = 0.5
+
+	economy_of_scale_ai_factor = 3.0
+
+	construction_efficiency_modifier = yes
+}
+
+REPLACE:bg_trade = {
+	parent_group = bg_private_infrastructure
+
+	stateregion_max_level = no
+
+	lens = trade
+
+	subsidized = no
+
+	has_trade_revenue = yes
+
+	economy_of_scale = no
+
+	default_building = building_trade_center
+
+	can_use_slaves = yes
+
+	infrastructure_usage_per_level = 0.25
+}
+
+REPLACE:bg_owner_buildings = {
+	parent_group = bg_urban_facilities
+
+	min_productivity_to_hire = 10.0
+
+	category = urban
+
+	lens = trade
+
+	always_possible = yes
+
+	can_use_slaves = yes
+
+	auto_place_buildings = yes
+
+	owns_other_buildings = yes
+
+	always_self_owning = yes
+
+	ignores_productivity_when_hiring = yes
+
+	proportionality_limit = 1.0
+
+	economy_of_scale = no
+
+	default_building = building_financial_district
+
+	cash_reserves_max = 10000
+
+	urbanization = 0
+
+	infrastructure_usage_per_level = 0.05
+
+	fired_pops_become_radical = no
+
+	should_auto_expand = {
+		always = no
+	}
+}
+
+REPLACE:bg_construction = {
+	parent_group = bg_public_infrastructure
+
+	infrastructure_usage_per_level = 1
+
+	lens = development
+
+	is_government_funded = yes
+
+	can_use_slaves = yes
+
+	urbanization = 5
+
+	economy_of_scale_ai_factor = 5.0
+}
+
+REPLACE:bg_military = {
+	category = development
+
+	always_possible = yes
+
+	is_military = yes
+
+	is_government_funded = yes
+
+	infrastructure_usage_per_level = 0.1
+
+	lens = development
+
+	urbanization = 2
+
+	construction_efficiency_modifier = yes
+}

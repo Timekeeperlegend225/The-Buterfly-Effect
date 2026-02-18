@@ -1,0 +1,46 @@
+﻿REPLACE:je_portugal_regeneration_institutions = {
+	icon = "gfx/interface/icons/invention_icons/bureaucracy.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		bureaucracy >= 0
+		approaching_bureaucracy_shortage = no
+		literacy_rate >= 0.5
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 6
+		}
+		country_has_building_group_levels = {
+			type = bg_technology
+			value >= 12
+		}
+	}
+
+	on_complete = {
+		set_variable = je_portugal_regeneration_institutions
+		trigger_event = { id = portugal_regeneration.6 }
+	}
+
+	event_outcome_completed_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_effects_portugal_regeneration.6_tt
+			}
+		}
+	}
+
+    fail = {
+		OR = {
+			custom_tooltip = {
+				text = no_coups_tt
+				has_variable = recent_coup_or_revolution_var
+			}
+			in_default = yes
+		}
+    }
+
+	weight = 6000
+
+    should_be_pinned_by_default = yes
+}

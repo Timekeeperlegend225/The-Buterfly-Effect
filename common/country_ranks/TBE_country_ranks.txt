@@ -1,0 +1,34 @@
+﻿REPLACE:great_power = {
+	rank_value = 7
+	icon_index = 4
+
+	enforce_subject_rank_check = yes
+
+	diplo_pact_cost = 2.0
+	treaty_article_cost = 2.0
+
+	prestige_average_threshold = 5.0
+	prestige_relative_threshold = 0.75
+
+	infamy_aggressor_scaling = 0.20
+	infamy_target_scaling = 0.20
+
+	valid_country_types = {
+		recognized
+		colonial
+		company
+	}
+
+	modifier = {
+		country_influence_add = 1000
+		country_diplomatic_play_maneuvers_add = 100
+		country_max_declared_interests_add = 6
+		country_loan_interest_rate_mult = -0.5
+		country_agitator_slots_add = 2
+		country_support_independence_weekly_liberty_desire_add = 0.20
+		state_migration_pull_mult = 0.25
+		country_leverage_resistance_add = 1000
+		country_free_charters_add = 1
+		country_institution_colonial_affairs_max_investment_add = 1
+	}
+}

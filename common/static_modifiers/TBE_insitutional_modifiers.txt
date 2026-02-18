@@ -1,0 +1,4 @@
+﻿tbe_institutional_landowner_modifier = {
+	icon = gfx/interface/icons/ig_icons/landowners.dds
+	interest_group_ig_landowners_pol_str_mult = 0.05
+}

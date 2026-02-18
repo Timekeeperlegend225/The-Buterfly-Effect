@@ -1,0 +1,63 @@
+﻿REPLACE:institution_colonial_affairs = { # Max level from tech
+	icon = "gfx/interface/icons/institution_icons/colonization.dds"
+	background_texture = "gfx/interface/illustrations/institutions/colonization.dds"
+	modifier = {
+		state_colony_growth_creation_factor = 0.05
+	}
+}
+
+REPLACE:institution_social_security = {
+	icon = "gfx/interface/icons/institution_icons/social_security.dds"
+	background_texture = "gfx/interface/illustrations/institutions/social_security.dds"
+	modifier = {
+		state_welfare_payments_add = 0.125
+		state_food_security_add = 0.0125
+		country_institution_health_system_max_investment_add = 0.18
+	}
+}
+
+REPLACE:institution_workplace_safety = {
+	icon = "gfx/interface/icons/institution_icons/workplace_safety.dds"
+	background_texture = "gfx/interface/illustrations/institutions/workplace_safety.dds"
+	modifier = {
+		building_throughput_add = 0.005
+	}
+}
+
+REPLACE:institution_schools = {
+	icon = "gfx/interface/icons/institution_icons/schools.dds"
+	background_texture = "gfx/interface/illustrations/institutions/schools.dds"
+}
+
+REPLACE:institution_police = {
+	icon = "gfx/interface/icons/institution_icons/police.dds"
+    background_texture = "gfx/interface/illustrations/institutions/police.dds"
+	modifier = {
+		state_turmoil_effects_mult = -0.02
+		country_institution_home_affairs_max_investment_add = 0.18
+	}
+}
+
+REPLACE:institution_health_system = {
+	icon = "gfx/interface/icons/institution_icons/health_service.dds"
+	background_texture = "gfx/interface/illustrations/institutions/health_service.dds"
+}
+
+REPLACE:institution_home_affairs = {
+	icon = "gfx/interface/icons/institution_icons/home_affairs.dds"
+	background_texture = "gfx/interface/illustrations/institutions/home_affairs.dds"
+	modifier = {
+		country_revolution_progress_mult = -0.0625
+		country_secession_progress_mult = -0.0625
+	}
+}
+
+REPLACE_OR_CREATE:institution_national_bank = {
+	icon = "gfx/interface/icons/law_icons/presidential_republic.dds"
+	background_texture = "gfx/interface/illustrations/institutions/social_security.dds"
+	modifier = {
+		country_loan_interest_rate_mult = -0.02
+		country_government_dividends_efficiency_add = 0.05
+		country_minting_mult = 0.025
+	}
+}

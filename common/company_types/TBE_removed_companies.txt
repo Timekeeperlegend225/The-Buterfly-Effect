@@ -1,0 +1,42 @@
+﻿REPLACE:company_colt_firearms = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_colt_firearms.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_arms_industry
+	}
+
+	extension_building_types = {
+		building_munition_plant
+	}
+
+	possible_prestige_goods = {
+		prestige_good_colt_revolvers
+	}
+
+	potential = {
+		always = no
+	}
+
+	attainable = {
+	}
+
+	possible = {
+		always = no
+	}
+
+	prosperity_modifier = {
+		building_arms_industry_throughput_add = 0.1
+		unit_army_offense_mult = 0.1
+	}
+
+	ai_will_do = {
+		always = no
+	}
+
+	ai_weight = {
+		value = 0
+	}
+}

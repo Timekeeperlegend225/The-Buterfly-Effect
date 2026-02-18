@@ -1,0 +1,23 @@
+﻿REPLACE:je_peru_bolivia = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_global_international_situations
+
+	should_be_involved = {
+		always = no
+	}
+
+	should_show_when_not_involved = {
+		always = no
+	}
+}
+
+REPLACE:je_technocracy = {
+	icon = "gfx/interface/icons/invention_icons/central_planning.dds"
+
+	group = je_group_internal_affairs
+
+    is_shown_when_inactive = {
+		always = np
+	}
+}

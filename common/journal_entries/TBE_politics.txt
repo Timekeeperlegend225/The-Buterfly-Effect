@@ -1,0 +1,10 @@
+﻿REPLACE_OR_CREATE:je_tbe_politics = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	group = je_group_tbe_politics
+
+	on_weekly_pulse = {
+	}
+
+	should_be_pinned_by_default = yes
+}

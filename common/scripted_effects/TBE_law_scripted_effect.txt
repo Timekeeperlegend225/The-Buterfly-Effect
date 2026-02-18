@@ -1,0 +1,41 @@
+﻿TBE_rural_economy_initial_amendment = {
+	if = {
+		limit = {
+			OR = {
+				has_law_or_variant = law_type:law_serfdom
+				has_law_or_variant = law_type:law_tenant_farmers
+			}
+		}
+		scope:rural_economy_scope = { 
+			add_amendment = {
+				type = amendment_rural_tenant
+				sponsor = ROOT.ig:ig_landowners
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+		has_law_or_variant = law_type:law_commercialized_agriculture
+		}
+		scope:rural_economy_scope = {
+			add_amendment = {
+			type = amendment_rural_comercialized
+			sponsor = ROOT.ig:ig_industrialists
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_homesteading
+		}
+		scope:rural_economy_scope = {
+			add_amendment = {
+			type = amendment_rural_homesteadind
+			sponsor = ROOT.ig:ig_rural
+				cooldown = 0
+			}
+		}
+	}
+}

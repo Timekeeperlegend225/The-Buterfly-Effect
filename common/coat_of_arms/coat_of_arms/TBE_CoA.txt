@@ -1,0 +1,123 @@
+@semy = 0.25
+@third = @[1/3]
+@fifth = @[1/5]
+@sixth = @[1/6]
+
+@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+
+@canton_scale_sweden_x = @[ ( 255 / 768 ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / 512 ) + 0.001 ]
+
+@uru_canton_height = 0.556
+@NZL_coa_offset = @[3/16]
+@sm_fra = 0.16
+
+
+BEG = {
+	# Variant based on tricolor with (lesser) coat of arms of the empire
+
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = { 200 0 0 }
+	}
+	textured_emblem = {
+		texture = "BEG.dds"
+		instance = { scale = { 0.4 0.6 } position = { 0.495 0.48 } }
+	}
+}
+
+
+MAR = {
+	# Variant based on tricolor with (lesser) coat of arms of the empire
+
+
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"
+	}
+
+	textured_emblem = {
+		texture = "MAR.dds"
+		instance = { scale = { 0.4 0.6 } position = { 0.495 0.48 } }
+	}
+}
+
+FIC = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+
+	textured_emblem = {
+		texture = "FIC.dds"
+		instance = { scale = { 0.25 0.5 } position = { 0.495 0.48 } }
+	}
+}
+
+
+GUY = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "GUY.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+
+PLA = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue_light"
+		color2 = "blue_light"
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.125 } }
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }
+	}
+}
+
+sub_FED = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	@usa_star_scale_25 = 0.2
+
+	colored_emblem = {
+		texture = "ce_stars_circle_13.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
+
+FED = {
+	@usa_canton_width = 0.5
+	@usa_canton_height = @[ 1 / 13 * 7 ]
+
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_13.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+    sub = {
+        parent = "sub_FED"
+        instance = { scale = { @usa_canton_width @usa_canton_height }  } # top left
+    }
+}

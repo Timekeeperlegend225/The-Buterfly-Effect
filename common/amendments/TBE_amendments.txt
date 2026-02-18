@@ -1,0 +1,129 @@
+﻿REPLACE_OR_CREATE:amendment_rural_tenant = {
+
+	parent = law_tenant_farmers
+
+	allowed_laws = {
+		law_rural_economy
+	}
+
+	modifier = {
+		state_aristocrats_investment_pool_efficiency_mult = 0.1
+		state_clergymen_investment_pool_efficiency_mult = 0.1
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		NOT = { has_law_or_variant = law_type:law_rural_economy }
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:amendment_rural_comercialized = {
+
+	parent = law_commercialized_agriculture
+
+	allowed_laws = {
+		law_rural_economy
+	}
+
+	modifier = {
+		state_aristocrats_investment_pool_efficiency_mult = 0.05
+		state_clergymen_investment_pool_efficiency_mult = 0.05
+		state_capitalists_investment_pool_efficiency_mult = 0.05
+		building_group_bg_manufacturing_allowed_collectivization_add = -0.1
+		building_group_bg_extraction_allowed_collectivization_add = -0.1
+		building_group_bg_power_allowed_collectivization_add = -0.1
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		NOT = { has_law_or_variant = law_type:law_rural_economy }
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:amendment_rural_homesteadind = {
+
+	parent = law_homesteading
+
+	allowed_laws = {
+		law_rural_economy
+	}
+
+	modifier = {
+		state_aristocrats_investment_pool_efficiency_mult = 0.05
+		state_clergymen_investment_pool_efficiency_mult = 0.05
+		state_farmers_investment_pool_efficiency_mult = 0.10
+		state_shopkeepers_investment_pool_efficiency_mult = 0.05
+		building_group_bg_manufacturing_allowed_collectivization_add = 0.2
+		building_group_bg_extraction_allowed_collectivization_add = 0.2
+		building_group_bg_power_allowed_collectivization_add = 0.2
+		building_self_investment_chance_add = 0.1
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		NOT = { has_law_or_variant = law_type:law_rural_economy }
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:amendment_rural_collectvized = {
+
+	parent = law_collectivized_agriculture
+
+	allowed_laws = {
+		law_rural_economy
+	}
+
+	modifier = {
+		state_farmers_investment_pool_efficiency_mult = 0.20
+		state_shopkeepers_investment_pool_efficiency_mult = 0.05
+		state_machinists_investment_pool_efficiency_mult = 0.05
+		state_laborers_investment_pool_efficiency_mult = 0.05
+		state_aristocrats_investment_pool_efficiency_mult = -0.05
+		state_clergymen_investment_pool_efficiency_mult = -0.05
+		state_capitalists_investment_pool_efficiency_mult = -0.10
+		building_group_bg_manufacturing_allowed_collectivization_add = 0.7
+		building_group_bg_extraction_allowed_collectivization_add = 0.7
+		building_group_bg_power_allowed_collectivization_add = 0.7
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		NOT = { has_law_or_variant = law_type:law_rural_economy }
+	}
+
+	amendment_activism_multiplier = 0
+}

@@ -1,0 +1,11 @@
+﻿NPolitics = {
+	MIN_INSTITUTION_INVESTMENT = 1						# Lowest Investment Level for active Institutions (modifier is clamped to this)
+	MAX_INSTITUTION_INVESTMENT = 10						# Highest Investment Level for active Institutions (modifier is clamped to this)
+	DAILY_INSTITUTION_SIZE_CHANGE = 0.00448				# Percent increase / decrease in Institution Size per day (0.0028 ~ 1/365)
+}
+
+
+
+NDiplomacy = {
+	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.08 # Per point of power projection from navy combat power
+}
