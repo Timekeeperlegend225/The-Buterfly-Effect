@@ -1,0 +1,13 @@
+﻿l_english:
+ country_institution_national_bank_max_investment_add:0 "Max $institution_national_bank$ [concept_institution] Investment"
+ country_institution_national_bank_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_national_bank$ [concept_institution]"
+ country_institution_cost_institution_national_bank_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_colonial_affairs').GetName]"
+ country_institution_cost_institution_national_bank_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_colonial_affairs').GetName] to the citizens"
+ 
+ 
+ country_head_of_state_popularity_legitimacy_add:1 "[concept_legitimacy] from the [concept_head_of_state]'s [concept_popularity] if he's [concept_in_government]"
+ country_head_of_state_popularity_legitimacy_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the [concept_head_of_state]'s [concept_popularity] if his [concept_interest_group] is [concept_in_government]. \nThe value is the [concept_legitimacy] gained with a [concept_head_of_state]'s [concept_popularity] of #b 100"
+ 
+ 
+ country_institutional_ig_in_gov_legitimacy_add:1 "[concept_legitimacy] from including [GetPlayer.GetActiveLawFromGroup('lawgroup_institutional_group').GetName] [concept_in_government]"
+ country_institutional_ig_in_gov_legitimacy_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses by including the Institutional Interest Groupe ([GetPlayer.GetActiveLawFromGroup('lawgroup_institutional_group').GetName]) [concept_in_government]."
