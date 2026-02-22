@@ -350,7 +350,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
+				
 			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:VEN"
+						levels=1
+						region="STATE_CYPRUS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 		}
 	}
 	s:STATE_TRANSJORDAN={

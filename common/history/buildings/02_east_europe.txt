@@ -868,6 +868,21 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			
+			}
+			create_building={
+				building="building_vineyard"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:HUN"
+						levels=1
+						region="STATE_BEKES"
+					
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_vineyard" "pm_road_carts"  }
 			}
 		}
 	}
@@ -879,7 +894,7 @@
 					building={
 						type="building_food_industry"
 						country="c:HUN"
-						levels=2
+						levels=4
 						region="STATE_TRANSDANUBIA"
 					}
 				}
@@ -892,13 +907,13 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=1
+						levels=2
 						region="STATE_TRANSDANUBIA"
 					}
 					building={
 						type="building_vineyard"
 						country="c:HUN"
-						levels=2
+						levels=3
 						region="STATE_TRANSDANUBIA"
 					}
 				}
@@ -911,7 +926,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=1
+						levels=8
 						region="STATE_TRANSDANUBIA"
 					}
 				}
@@ -924,12 +939,26 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=3
+						levels=4
 						region="STATE_TRANSDANUBIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			
+			}
+			create_building={
+				building="building_textile_mill"
+				add_ownership={
+					building={
+						type="building_textile_mill"
+						country="c:HUN"
+						levels=4
+						region="STATE_TRANSDANUBIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_no_luxury_clothes" }
 			}
 		}
 	}
@@ -941,7 +970,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=1
+						levels=5
 						region="STATE_DELVIDEK"
 					}
 				}
@@ -971,7 +1000,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=3
+						levels=6
 						region="STATE_DELVIDEK"
 					}
 				}
@@ -1036,7 +1065,7 @@
 					building={
 						type="building_financial_district"
 						country="c:HUN"
-						levels=1
+						levels=2
 						region="STATE_SLOVAKIA"
 					}
 				}
@@ -1049,12 +1078,26 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=2
+						levels=3
 						region="STATE_TRANSDANUBIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
+			
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:HUN"
+						levels=1
+						region="STATE_SLOVAKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_hardwood" "pm_simple_forestry" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
@@ -1085,6 +1128,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_hardwood" "pm_simple_forestry" "pm_no_equipment" "pm_road_carts"  }
+			
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:HUN"
+						levels=1
+						region="STATE_RUTHENIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
 	}
@@ -1096,7 +1153,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HUN"
-						levels=1
+						levels=2
 						region="STATE_SOUTHERN_TRANSYLVANIA"
 					}
 				}
@@ -1160,6 +1217,21 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			
+			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:HUN"
+						levels=1
+						region="STATE_SOUTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled" }
+			
 			}
 		}
 	}
@@ -1194,13 +1266,28 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
-						levels=1
-						region="STATE_AUSTRIA"
+						country="c:HUN"
+						levels=2
+						region="STATE_NORTHERN_TRANSYLVANIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
+				
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:HUN"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+		
 			}
 		}
 	}
