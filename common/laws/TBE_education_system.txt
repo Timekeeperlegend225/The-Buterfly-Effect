@@ -12,7 +12,6 @@
 	disallowing_laws = {
 		law_total_separation
 		law_state_atheism
-		law_serfdom
 	}
 
 	modifier = {
@@ -229,7 +228,6 @@ REPLACE:law_public_schools = {
 
 	disallowing_laws = {
 		law_state_religion
-		law_serfdom
 	}
 
 	institution = institution_schools

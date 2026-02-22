@@ -10,6 +10,7 @@ REPLACE:law_monarchy = {
 	progressiveness = 0
 
 	modifier = {
+		country_head_of_state_popularity_legitimacy_add = 10
 	}
 
 	ai_will_do = {
@@ -70,7 +71,7 @@ REPLACE:law_monarchy = {
 	}
 }
 
-REPLACE:law_theocracy = {
+REPLACE_OR_CREATE:law_institutional_rule = {
 	group = lawgroup_governance_principles
 
 	icon = "gfx/interface/icons/law_icons/theocracy.dds"
@@ -78,8 +79,19 @@ REPLACE:law_theocracy = {
 	progressiveness = -25
 
 	modifier = {
-		country_legitimacy_headofstate_add = 10
-		country_legitimacy_ideological_incoherence_mult = 0.05
+		country_institutional_ig_in_gov_legitimacy_add = 20
+		country_legitimacy_base_add = -10
+	}
+
+	on_activate = {
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_institutional_rule
+			}
+			save_scope_as = institutional_rule_scope
+		}
+		TBE_insitutional_rule_initial_amendment = yes
 	}
 
 	ai_will_do = {
@@ -150,7 +162,7 @@ REPLACE:law_theocracy = {
 	}
 }
 
-REPLACE:law_presidential_republic = {
+REPLACE_OR_CREATE:law_presidential = {
 	group = lawgroup_governance_principles
 
 	icon = "gfx/interface/icons/law_icons/presidential_republic.dds"
@@ -176,7 +188,6 @@ REPLACE:law_presidential_republic = {
 
 	modifier = {
 		country_legitimacy_headofstate_add = 10
-		country_legitimacy_ideological_incoherence_mult = 0.05
 	}
 
 	ai_will_do = {
@@ -251,7 +262,7 @@ REPLACE:law_presidential_republic = {
 	}
 }
 
-REPLACE:law_parliamentary_republic = {
+REPLACE_OR_CREATE:law_head_of_legislature = {
 	group = lawgroup_governance_principles
 
 	icon = "gfx/interface/icons/law_icons/parliamentary_republic.dds"
@@ -259,6 +270,7 @@ REPLACE:law_parliamentary_republic = {
 	progressiveness = 100
 
 	modifier = {
+		country_legitimacy_govt_total_clout_add = 10
 	}
 
 	ai_will_do = {
@@ -338,16 +350,15 @@ REPLACE:law_parliamentary_republic = {
 	}
 }
 
-REPLACE_OR_CREATE:law_leader_of_the_nation = {
+REPLACE_OR_CREATE:law_national_model = {
 	group = lawgroup_governance_principles
 
-	icon = "gfx/interface/icons/law_icons/neo_absolutism.dds"
+	icon = "gfx/interface/icons/law_icons/autocracy.dds"
 
 	progressiveness = 50
 
 	modifier = {
-		country_legitimacy_headofstate_add = 20
-		country_legitimacy_ideological_incoherence_mult = 0.10
+		country_head_of_state_popularity_legitimacy_add = 10
 	}
 
 	ai_will_do = {
@@ -410,14 +421,17 @@ REPLACE_OR_CREATE:law_leader_of_the_nation = {
 	}
 }
 
-REPLACE:law_corporate_state = {
+
+REPLACE_OR_CREATE:law_leader_of_the_nation = {
 	group = lawgroup_governance_principles
 
-	icon = "gfx/interface/icons/law_icons/autocracy.dds"
+	icon = "gfx/interface/icons/law_icons/neo_absolutism.dds"
 
 	progressiveness = 50
 
 	modifier = {
+		country_head_of_state_popularity_legitimacy_add = 20
+		country_legitimacy_base_add = -10
 	}
 
 	ai_will_do = {

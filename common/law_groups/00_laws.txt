@@ -25,7 +25,18 @@ lawgroup_distribution_of_power = {
 	affected_by_regime_change = yes
 }
 
+lawgroup_bureaucracy = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 0.25
+	affected_by_regime_change = yes
+}
 
+lawgroup_institutional_group = {
+	law_group_category = power_structure
+	base_enactment_days = 150
+	ideological_opinion_impact = 2
+	affected_by_regime_change = yes
+}
 
 lawgroup_citizenship = {
 	law_group_category = power_structure
@@ -43,12 +54,6 @@ lawgroup_caste_hegemony = {
 lawgroup_church_and_state = {
 	law_group_category = power_structure
 	ideological_opinion_impact = 1.0
-	affected_by_regime_change = yes
-}
-
-lawgroup_bureaucracy = {
-	law_group_category = power_structure
-	ideological_opinion_impact = 0.25
 	affected_by_regime_change = yes
 }
 
@@ -117,6 +122,11 @@ lawgroup_health_system = {
 }
 
 lawgroup_free_speech = {
+	law_group_category = human_rights
+	ideological_opinion_impact = 0.5
+}
+
+lawgroup_state_propaganda = {
 	law_group_category = human_rights
 	ideological_opinion_impact = 0.5
 }

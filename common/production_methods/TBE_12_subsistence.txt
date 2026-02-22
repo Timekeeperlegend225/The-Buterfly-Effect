@@ -57,7 +57,7 @@ REPLACE:pm_serfdom_no = {
 
 	building_modifiers = {
 		unscaled = {
-			building_subsistence_output_add = 2
+			building_subsistence_output_add = 4
 		}
 	}
 }
@@ -73,7 +73,7 @@ REPLACE:pm_corvee_labor = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 1.5
+			building_subsistence_output_add = 3
 		}
 	}
 
@@ -97,7 +97,7 @@ REPLACE:pm_homesteading_building_subsistence = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 2
+			building_subsistence_output_add = 4
 		}
 
 		level_scaled = {
@@ -118,7 +118,7 @@ REPLACE:pm_serfdom = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 1.5
+			building_subsistence_output_add = 3
 		}
 	}
 }
@@ -182,7 +182,7 @@ REPLACE:pm_serfdom_building_subsistence_orchard = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 1.5
+			building_subsistence_output_add = 3
 		}
 	}
 }
@@ -245,7 +245,7 @@ REPLACE:pm_serfdom_building_subsistence_pasture = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 1.5
+			building_subsistence_output_add = 3
 		}
 	}
 }
@@ -309,7 +309,7 @@ REPLACE:pm_serfdom_building_subsistence_fishing_village = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 1.5
+			building_subsistence_output_add = 3
 		}
 	}
 }
@@ -372,7 +372,7 @@ REPLACE:pm_serfdom_building_subsistence_rice_farm = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 1.5
+			building_subsistence_output_add = 3
 		}
 	}
 }

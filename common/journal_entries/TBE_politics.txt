@@ -2,8 +2,395 @@
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_tbe_politics
+	
+	immediate = {
+			if = {
+				limit = {
+					has_law = law_type:law_ruler_promotion
+				}
+				set_variable = { 
+					name = ruler_promotion_populatirty_var 
+					value = owner.institution:institution_state_propaganda.investment
+				}
+				change_variable = {
+					name = ruler_promotion_populatirty_var
+					multiply = 5
+				}
+				random_scope_character = {
+					limit = {
+						is_ruler = yes
+					}
+					add_modifier = {
+						name = TBE_ruler_popularity_modifier
+						multiplier = var:ruler_promotion_populatirty_var
+					}
+				}
+			}
+			set_variable = { 
+				name = var_hos_pop_leg_mult 
+				value = 0
+			}
+			set_variable = { 
+				name = institutional_leg_var 
+				value = 0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_national_model
+					}
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 10
+				}
+			}
+			else_if = {
+				limit = {
+					has_law = law_type:law_leader_of_the_nation
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_divine_right
+						has_law = law_type:law_loyalism
+						has_law = law_type:law_clientelism
+						has_law = law_type:law_enlightened_despotate
+					}
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 20
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_populism
+						has_law = law_type:law_personality_rule
+					}
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 50
+				}
+			}
+			set_variable = { 
+				name = ruler_popularity_var
+				value = ruler.popularity	
+			}
+			clamp_variable = {
+				name = ruler_popularity_var
+				min = -100
+				max = 100
+			}
+			change_variable = {
+				name = var_hos_pop_leg_mult
+				multiply = var:ruler_popularity_var	
+			}
+			change_variable = {
+				name = var_hos_pop_leg_mult
+				divide = 100
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_institutional_rule
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = YES
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 20
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_loyalism
+						has_law = law_type:law_ideological_elite
+						has_law = law_type:law_noble_council
+						has_law = law_type:law_company_council
+						has_law = law_type:law_supervised_participation
+						has_law = law_type:law_representative_council
+						has_law = law_type:law_managed_democracy
+						has_law = law_type:law_party_assembly
+					}
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = yes
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 20
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_institutional_council
+						has_law = law_type:law_party_council
+					}
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = YES
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 30
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_law = law_type:law_institutional_supremacy
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = YES
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 50
+					}
+				}
+			}
+			scope:journal_entry = { 
+				add_modifier = {
+					name = TBE_head_of_state_popularity_legitimacy
+					multiplier = var:var_hos_pop_leg_mult
+				}
+			}
+			if = {
+				limit = {
+					institutional_ig_in_governement = YES
+				}
+				scope:journal_entry = { 
+					add_modifier = {
+						name = TBE_institutional_ig_in_gov_legitimacy
+						multiplier = var:institutional_leg_var
+					}
+				}
+			}
+			else = {
+				scope:journal_entry = { 
+					add_modifier = {
+						name = TBE_institutional_ig_in_gov_legitimacy
+						multiplier = 0
+					}
+				}
+			}
+	}
 
 	on_weekly_pulse = {
+		effect = {
+			random_scope_character = {
+				limit = {
+					is_ruler = yes
+				}
+				remove_modifier = TBE_ruler_popularity_modifier
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_ruler_promotion
+				}
+				set_variable = { 
+					name = ruler_promotion_populatirty_var 
+					value = owner.institution:institution_state_propaganda.investment
+				}
+				change_variable = {
+					name = ruler_promotion_populatirty_var
+					multiply = 5
+				}
+				random_scope_character = {
+					limit = {
+						is_ruler = yes
+					}
+					add_modifier = {
+						name = TBE_ruler_popularity_modifier
+						multiplier = var:ruler_promotion_populatirty_var
+					}
+				}
+			}
+			set_variable = { 
+				name = var_hos_pop_leg_mult 
+				value = 0
+			}
+			set_variable = { 
+				name = institutional_leg_var 
+				value = 0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_national_model
+					}
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 10
+				}
+			}
+			else_if = {
+				limit = {
+					has_law = law_type:law_leader_of_the_nation
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_divine_right
+						has_law = law_type:law_loyalism
+						has_law = law_type:law_clientelism
+						has_law = law_type:law_enlightened_despotate
+					}
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 20
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_populism
+						has_law = law_type:law_personality_rule
+					}
+				}
+				change_variable = {
+					name = var_hos_pop_leg_mult
+					add = 50
+				}
+			}
+			set_variable = { 
+				name = ruler_popularity_var
+				value = ruler.popularity	
+			}
+			clamp_variable = {
+				name = ruler_popularity_var
+				min = -100
+				max = 100
+			}
+			change_variable = {
+				name = var_hos_pop_leg_mult
+				multiply = var:ruler_popularity_var	
+			}
+			change_variable = {
+				name = var_hos_pop_leg_mult
+				divide = 100
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_institutional_rule
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = YES
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 20
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_loyalism
+						has_law = law_type:law_ideological_elite
+						has_law = law_type:law_noble_council
+						has_law = law_type:law_company_council
+						has_law = law_type:law_supervised_participation
+						has_law = law_type:law_representative_council
+						has_law = law_type:law_managed_democracy
+						has_law = law_type:law_party_assembly
+					}
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = yes
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 20
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_institutional_council
+						has_law = law_type:law_party_council
+					}
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = YES
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 30
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_law = law_type:law_institutional_supremacy
+				}
+				if = {
+					limit = {
+						institutional_ig_in_governement = YES
+					}
+					change_variable = {
+						name = institutional_leg_var
+						add = 50
+					}
+				}
+			}
+			scope:journal_entry = { 
+				remove_modifier = TBE_head_of_state_popularity_legitimacy
+				remove_modifier = TBE_institutional_ig_in_gov_legitimacy
+				add_modifier = {
+					name = TBE_head_of_state_popularity_legitimacy
+					multiplier = var:var_hos_pop_leg_mult
+				}
+			}
+			if = {
+				limit = {
+					institutional_ig_in_governement = YES
+				}
+				scope:journal_entry = { 
+					add_modifier = {
+						name = TBE_institutional_ig_in_gov_legitimacy
+						multiplier = var:institutional_leg_var
+					}
+				}
+			}
+			else = {
+				scope:journal_entry = { 
+					add_modifier = {
+						name = TBE_institutional_ig_in_gov_legitimacy
+						multiplier = 0
+					}
+				}
+			}
+		}
 	}
 
 	should_be_pinned_by_default = yes

@@ -5,6 +5,13 @@
 
 	progressiveness = -50
 
+	disallowing_laws = {
+		law_capital_economy
+		law_supervised_economy
+		law_cooperative_economy
+		law_planned_economy
+	}
+
 	modifier = {
 		country_private_construction_allocation_mult = 0.35
 		country_government_dividends_reinvestment_add = 0.25
@@ -56,6 +63,10 @@ REPLACE_OR_CREATE:law_open_banking = {
 		international_trade
 	}
 
+	disallowing_laws = {
+		law_planned_economy
+	}
+
 	modifier = {
 		country_private_construction_allocation_mult = 0.50
 		country_government_dividends_reinvestment_add = 0.40
@@ -93,6 +104,10 @@ REPLACE_OR_CREATE:law_national_bank_monopoly = {
 
 	unlocking_technologies = {
 		central_banking
+	}
+
+	disallowing_laws = {
+		law_capital_economy
 	}
 
 	modifier = {
@@ -162,6 +177,10 @@ REPLACE_OR_CREATE:law_private_stock_exchange = {
 		stock_exchange
 	}
 
+	unlocking_laws = {
+		law_capital_economy
+	}
+
 	modifier = {
 		country_private_construction_allocation_mult = 0.75
 		country_government_dividends_reinvestment_add = 1
@@ -197,6 +216,10 @@ REPLACE_OR_CREATE:law_agrarian_funds = {
 
 	unlocking_technologies = {
 		romanticism
+	}
+
+	disallowing_laws = {
+		law_planned_economy
 	}
 
 	modifier = {
@@ -243,6 +266,12 @@ REPLACE_OR_CREATE:law_cooperative_investment = {
 
 	unlocking_technologies = {
 		postal_savings
+	}
+
+	disallowing_laws = {
+		law_serfdom
+		law_capital_economy
+		law_planned_economy
 	}
 
 	modifier = {
@@ -307,6 +336,10 @@ REPLACE_OR_CREATE:law_company_banks = {
 
 	unlocking_technologies = {
 		corporate_charters
+	}
+
+	disallowing_laws = {
+		law_cooperative_economy
 	}
 
 	modifier = {

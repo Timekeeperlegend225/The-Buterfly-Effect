@@ -186,8 +186,9 @@ REPLACE_OR_CREATE:law_divine_right = {
 
 	modifier = {
 		country_authority_add = 50
-		country_legitimacy_headofstate_add = 30
-		country_legitimacy_govt_total_clout_add = 70
+		country_head_of_state_popularity_legitimacy_add = 20
+		country_legitimacy_headofstate_add = 40
+		country_legitimacy_govt_total_clout_add = 60
 		country_aristocrats_pol_str_mult = 1
 		country_clergymen_pol_str_mult = 1
 	}
@@ -239,8 +240,21 @@ REPLACE_OR_CREATE:law_loyalism = {
 
 	modifier = {
 		country_authority_add = 100
+		country_head_of_state_popularity_legitimacy_add = 20
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		country_legitimacy_headofstate_add = 30
 		country_legitimacy_govt_total_clout_add = 60
+	}
+
+	on_activate = {
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_loyalism
+			}
+			save_scope_as = institutional_rule_scope
+		}
+		TBE_insitutional_rule_initial_amendment = yes
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -290,7 +304,8 @@ REPLACE_OR_CREATE:law_clientelism = {
 
 	modifier = {
 		country_legitimacy_headofstate_add = 20
-		country_legitimacy_govt_total_clout_add = 100
+		country_head_of_state_popularity_legitimacy_add = 20
+		country_legitimacy_govt_total_clout_add = 80
 		state_political_strength_from_wealth_mult = 1
 	}
 	
@@ -342,7 +357,8 @@ REPLACE_OR_CREATE:law_enlightened_despotate = {
 	modifier = {
 		country_authority_add = 50
 		country_legitimacy_headofstate_add = 20
-		country_legitimacy_govt_total_clout_add = 70
+		country_head_of_state_popularity_legitimacy_add = 20
+		country_legitimacy_govt_total_clout_add = 80
 		country_academics_pol_str_mult = 1
 		country_bureaucrats_pol_str_mult = 0.5
 		country_engineers_pol_str_mult = 0.2
@@ -397,6 +413,7 @@ REPLACE_OR_CREATE:law_populism = {
 	modifier = {
 		country_authority_add = 50
 		country_legitimacy_headofstate_add = 30
+		country_head_of_state_popularity_legitimacy_add = 50
 		country_legitimacy_govt_total_clout_add = 40
 		country_bolster_attraction_factor = 0.20
 		political_movement_pop_attraction_mult = 0.30
@@ -453,7 +470,8 @@ REPLACE_OR_CREATE:law_personality_rule = {
 
 	modifier = {
 		country_authority_add = 150
-		country_legitimacy_headofstate_add = 20
+		country_legitimacy_headofstate_add = 40
+		country_head_of_state_popularity_legitimacy_add = 50
 		country_legitimacy_govt_total_clout_add = 40
 		country_legitimacy_govt_size_add = 1
 		country_legitimacy_ideological_incoherence_mult = 0.5
@@ -502,12 +520,12 @@ REPLACE_OR_CREATE:law_aristocracy = {
 	}
 
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 100
+		country_legitimacy_govt_total_clout_add = 120
 		country_legitimacy_ideological_incoherence_mult = 0.20
 		country_legitimacy_govt_size_add = 1
 		country_aristocrats_pol_str_mult = 2
 		country_clergymen_pol_str_mult = 1
-		interest_group_ig_landowners_pol_str_mult = 0.10
+		country_officers_pol_str_mult = 0.50
 		country_authority_add = 100
 	}
 
@@ -559,7 +577,7 @@ REPLACE_OR_CREATE:law_aristocracy = {
 	}
 }
 
-REPLACE_OR_CREATE:law_institutional_rule = {
+REPLACE_OR_CREATE:law_institutional_supremacy = {
 	group = lawgroup_distribution_of_power
 	parent = law_institutional
 
@@ -572,7 +590,8 @@ REPLACE_OR_CREATE:law_institutional_rule = {
 	}
 
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 100
+		country_legitimacy_govt_total_clout_add = 70
+		country_institutional_ig_in_gov_legitimacy_add = 50
 		country_authority_add = 100
 	}
 
@@ -637,7 +656,7 @@ REPLACE_OR_CREATE:law_plutocracy = {
 	}
 
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 100
+		country_legitimacy_govt_total_clout_add = 120
 		country_legitimacy_ideological_incoherence_mult = -0.2
 		country_legitimacy_govt_size_add = 1
 		country_aristocrats_pol_str_mult = 0.5
@@ -711,13 +730,13 @@ REPLACE:law_technocracy = {
 	}
 
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 100
+		country_legitimacy_govt_total_clout_add = 120
 		country_legitimacy_ideological_incoherence_mult = -0.2
 		country_legitimacy_govt_size_add = 2
 		country_academics_pol_str_mult = 1
 		country_engineers_pol_str_mult = 1
 		country_bureaucrats_pol_str_mult = 0.5
-		country_officers_pol_str_mult = 0.50
+		country_officers_pol_str_mult = 0.5
 		country_authority_add = 100
 	}
 
@@ -870,6 +889,7 @@ REPLACE_OR_CREATE:law_ideological_elite = {
 	modifier = {
 		country_authority_add = 100
 		country_legitimacy_govt_total_clout_add = 100
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		interest_group_in_government_attraction_mult = 0.20
 		country_legitimacy_govt_size_add = 2
 		country_bolster_attraction_factor = 0.25
@@ -945,8 +965,9 @@ REPLACE_OR_CREATE:law_noble_council = {
 
 	modifier = {
 		country_authority_add = 50
-		country_legitimacy_govt_total_votes_add = 40
-		country_legitimacy_govt_total_clout_add = 80
+		country_legitimacy_govt_total_votes_add = 30
+		country_legitimacy_govt_total_clout_add = 70
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		country_aristocrats_voting_power_add = 50
 		country_aristocrats_pol_str_mult = 0.5
 		country_clergymen_voting_power_add = 30
@@ -998,8 +1019,9 @@ REPLACE_OR_CREATE:law_institutional_council = {
 
 	modifier = {
 		country_authority_add = 50
-		country_legitimacy_govt_total_votes_add = 40
-		country_legitimacy_govt_total_clout_add = 80
+		country_legitimacy_govt_total_votes_add = 50
+		country_legitimacy_govt_total_clout_add = 40
+		country_institutional_ig_in_gov_legitimacy_add = 30
 		country_voting_power_wealth_threshold_add = 5
 		country_voting_power_from_literacy_add = 5
 		country_voting_power_base_add = 5
@@ -1048,8 +1070,9 @@ REPLACE_OR_CREATE:law_company_council = {
 
 	modifier = {
 		country_authority_add = 50
-		country_legitimacy_govt_total_votes_add = 60
+		country_legitimacy_govt_total_votes_add = 40
 		country_legitimacy_govt_total_clout_add = 60
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		country_legitimacy_govt_size_add = 1
 		country_aristocrats_voting_power_add = 50
 		country_capitalists_voting_power_add = 50
@@ -1105,8 +1128,9 @@ REPLACE_OR_CREATE:law_supervised_participation = {
 
 	modifier = {
 		country_authority_add = 50
-		country_legitimacy_govt_total_votes_add = 80
+		country_legitimacy_govt_total_votes_add = 60
 		country_legitimacy_govt_total_clout_add = 40
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		country_legitimacy_govt_size_add = 1
 		country_voting_power_wealth_threshold_add = 10
 		country_voting_power_from_literacy_add = 50
@@ -1174,7 +1198,8 @@ REPLACE_OR_CREATE:law_representative_council = {
 
 	modifier = {
 		country_legitimacy_govt_total_votes_add = 80
-		country_legitimacy_govt_total_clout_add = 40
+		country_legitimacy_govt_total_clout_add = 20
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		country_voting_power_wealth_threshold_add = 1
 		country_voting_power_from_literacy_add = 10
 		country_voting_power_base_add = 50
@@ -1266,6 +1291,19 @@ REPLACE_OR_CREATE:law_party_council = {
 		political_agitation
 	}
 
+	modifier = {
+		country_authority_add = 100
+		country_legitimacy_govt_total_clout_add = 60
+		country_legitimacy_govt_total_votes_add = 30
+		country_institutional_ig_in_gov_legitimacy_add = 30
+		interest_group_in_government_attraction_mult = 0.20
+		country_voting_power_wealth_threshold_add = 1
+		country_voting_power_from_literacy_add = 10
+		country_voting_power_base_add = 30
+		country_peasants_voting_power_add = -10
+		country_electoral_confidence_impact_mult = -1.0
+	}
+
 	on_activate = {
 		set_only_legal_party_from_ig = ruler.interest_group
 		custom_tooltip = {
@@ -1287,50 +1325,11 @@ REPLACE_OR_CREATE:law_party_council = {
 				add_ruling_interest_group = yes
 			}
 		}
-
-		if = {
-			limit = {
-				has_law = law_type:law_monarchy
-				has_variable = king_in_parliament_possible
-				NOT = {
-					has_journal_entry = je_king_in_parliament
-				}
-			}
-			custom_tooltip = {
-				text = king_in_parliament_tt
-				add_journal_entry = { type = je_king_in_parliament }
-			}
-		}
-		if = {
-			limit = {
-				game_date > 1836.1.1
-				country_has_voting_franchise = yes
-			}
-			initialize_electoral_confidence = yes
-		}
 	}
 
 	on_deactivate = {
 		unset_only_legal_party = yes
 		update_party_support = yes
-		if = {
-			limit = {
-				has_variable = fatherland_front_var
-			}
-			remove_variable = fatherland_front_var
-		}
-	}
-
-	modifier = {
-		country_authority_add = 100
-		country_legitimacy_govt_total_clout_add = 60
-		country_legitimacy_govt_total_votes_add = 60
-		interest_group_in_government_attraction_mult = 0.20
-		country_voting_power_wealth_threshold_add = 1
-		country_voting_power_from_literacy_add = 10
-		country_voting_power_base_add = 30
-		country_peasants_voting_power_add = -10
-		country_electoral_confidence_impact_mult = -1.0
 	}
 
 	ai_will_do = {
@@ -1456,7 +1455,8 @@ REPLACE_OR_CREATE:law_managed_democracy = {
 	modifier = {
 		country_authority_add = 200
 		country_legitimacy_govt_total_votes_add = 60
-		country_legitimacy_govt_total_clout_add = 60
+		country_legitimacy_govt_total_clout_add = 40
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		country_legitimacy_govt_size_add = 1
 		country_voting_power_wealth_threshold_add = 5
 		country_voting_power_from_literacy_add = 10
@@ -1561,8 +1561,8 @@ REPLACE_OR_CREATE:law_literacy_voting = {
 
 	modifier = {
 		country_authority_add = 50
-		country_legitimacy_govt_total_votes_add = 75
-		country_legitimacy_govt_total_clout_add = 45
+		country_legitimacy_govt_total_votes_add = 80
+		country_legitimacy_govt_total_clout_add = 40
 		country_legitimacy_ideological_incoherence_mult = 0.1
 		country_voting_power_wealth_threshold_add = 5
 		country_voting_power_from_literacy_add = 70
@@ -1628,7 +1628,7 @@ REPLACE_OR_CREATE:law_universal_voting = {
 
 	modifier = {
 		country_legitimacy_govt_total_votes_add = 90
-		country_legitimacy_govt_total_clout_add = 20
+		country_legitimacy_govt_total_clout_add = 30
 		country_voting_power_wealth_threshold_add = 1
 		country_voting_power_from_literacy_add = 10
 		country_voting_power_base_add = 40
@@ -1722,8 +1722,9 @@ REPLACE_OR_CREATE:law_party_assembly = {
 
 	modifier = {
 		country_authority_add = 200
-		country_legitimacy_govt_total_clout_add = 80
-		country_legitimacy_govt_total_votes_add = 30
+		country_legitimacy_govt_total_votes_add = 70
+		country_legitimacy_govt_total_clout_add = 30
+		country_institutional_ig_in_gov_legitimacy_add = 20
 		interest_group_in_government_attraction_mult = 0.20
 		country_voting_power_wealth_threshold_add = 1
 		country_voting_power_from_literacy_add = 10
@@ -1753,24 +1754,11 @@ REPLACE_OR_CREATE:law_party_assembly = {
 				add_ruling_interest_group = yes
 			}
 		}
-		if = {
-			limit = {
-				game_date > 1836.1.1
-				country_has_voting_franchise = yes
-			}
-			initialize_electoral_confidence = yes
-		}
 	}
 
 	on_deactivate = {
 		unset_only_legal_party = yes
 		update_party_support = yes
-		if = {
-			limit = {
-				has_variable = fatherland_front_var
-			}
-			remove_variable = fatherland_front_var
-		}
 	}
 
 	ai_will_do = {

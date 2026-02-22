@@ -22,9 +22,14 @@
 	}
 
 	disallowing_laws = {
-		law_interventionism
-		law_laissez_faire
-		law_command_economy
+		law_capital_economy
+		law_supervised_economy
+		law_cooperative_economy
+		law_planned_economy
+		law_cooperative_investment
+		law_anarchy
+		law_representative_council
+		law_universal_voting
 	}
 
 	on_enact = {
@@ -84,6 +89,8 @@
 		building_minimum_incorporated_subsistence_employment_add = 0.5
 		state_aristocrats_investment_pool_efficiency_mult = 0.1
 		state_clergymen_investment_pool_efficiency_mult = 0.1
+		country_institution_schools_max_investment_add = -5
+		state_peasants_education_access_add = -0.40
 	}
 
 	# AI should never try to bring back serfdom
@@ -213,7 +220,6 @@ REPLACE:law_tenant_farmers = {
 
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.25
-		state_peasants_internal_migration_disallowed_bool = yes
 		state_aristocrats_investment_pool_efficiency_mult = 0.1
 		state_clergymen_investment_pool_efficiency_mult = 0.1
 	}

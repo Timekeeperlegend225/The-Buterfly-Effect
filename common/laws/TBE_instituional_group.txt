@@ -1,0 +1,468 @@
+﻿REPLACE_OR_CREATE:law_institutional_landowners = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/landowners.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_landowners_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_landowners_rule
+					sponsor = ROOT.ig:ig_landowners
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_devout = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/devout.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_devout_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_devout_rule
+					sponsor = ROOT.ig:ig_devout
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_armed_forces = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/armed_forces.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_armed_forces_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_armed_forces_rule
+					sponsor = ROOT.ig:ig_armed_forces
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_petty_bourgeoisie = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_petty_bourgeoisie_rule
+					sponsor = ROOT.ig:ig_petty_bourgeoisie
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_intelligentsia = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/intelligensia.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_intelligentsia_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_intelligentsia_rule
+					sponsor = ROOT.ig:ig_intelligentsia
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_loyalism
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_intelligentsia_rule
+					sponsor = ROOT.ig:ig_intelligentsia
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_industrialists = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/industrialists.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_industrialists_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_industrialists_rule
+					sponsor = ROOT.ig:ig_industrialists
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_trade_unions = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/trade_unions.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_trade_unions_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_trade_unions_rule
+					sponsor = ROOT.ig:ig_trade_unions
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
+
+REPLACE_OR_CREATE:law_institutional_rural_folk = {
+	group = lawgroup_institutional_group
+
+	icon = "gfx/interface/icons/ig_icons/rural_folk.dds"
+
+	progressiveness = -50
+
+	modifier = {
+		interest_group_ig_rural_folk_pol_str_mult = 0.05	
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_institutional_rule
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_governance_principles ?= { 
+				add_amendment = {
+					type = TBE_amendement_rural_folk_rule
+					sponsor = ROOT.ig:ig_rural_folk
+					cooldown = 0
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+	}
+
+	ai_impose_chance = {
+		value = 0
+	}
+}
