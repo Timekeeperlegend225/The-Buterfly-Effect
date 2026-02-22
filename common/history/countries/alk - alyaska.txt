@@ -4,7 +4,7 @@
 		add_technology_researched = napoleonic_warfare
 
 		# Laws 
-		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_institutional_rule
 		activate_law = law_type:law_counciliary 
 		activate_law = law_type:law_company_council 
 		activate_law = law_type:law_tenant_farmers

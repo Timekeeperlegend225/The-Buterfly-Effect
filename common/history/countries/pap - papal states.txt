@@ -6,7 +6,7 @@
         set_ruling_interest_groups = {
         	ig_devout
         }
-		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_institutional_rule
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_subjecthood
