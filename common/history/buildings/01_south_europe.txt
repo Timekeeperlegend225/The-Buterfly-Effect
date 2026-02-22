@@ -128,12 +128,12 @@
 					building={
 						type="building_financial_district"
 						country="c:SAR"
-						levels=1
+						levels=2
 						region="STATE_LOMBARDY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_disabled_canning"  "pm_manual_dough_processing" "pm_pot_stills" }
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning"  "pm_manual_dough_processing" "pm_disabled_distillery" }
 			
 			}
 			create_building={
@@ -142,7 +142,7 @@
 					building={
 						type="building_manor_house"
 						country="c:SAR"
-						levels=2
+						levels=3
 						region="STATE_LOMBARDY"
 					}
 				}
@@ -172,7 +172,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAR"
-						levels=3
+						levels=9
 						region="STATE_PIEDMONT"
 					}
 				}
@@ -267,7 +267,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_craftsman_sewing" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_tooling_workshop"
@@ -374,7 +374,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAR"
-						levels=2
+						levels=4
 						region="STATE_PIEDMONT"
 					}
 				}
@@ -405,7 +405,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAR"
-						levels=3
+						levels=1
 						region="STATE_SARDINIA"
 					}
 				}
@@ -418,7 +418,7 @@
 					building={
 						type="building_manor_house"
 						country="c:SAR"
-						levels=1
+						levels=3
 						region="STATE_SARDINIA"
 					}
 				}
@@ -431,7 +431,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:SAR"
-						levels=3
+						levels=1
 						region="STATE_SARDINIA"
 					}
 					building={
@@ -721,7 +721,7 @@
 					building={
 						type="building_trade_center"
 						country="c:PAP"
-						levels=3
+						levels=2
 						region="STATE_CAMPANIA"
 					}
 				}
@@ -802,7 +802,7 @@
 					building={
 						type="building_textile_mill"
 						country="c:PAP"
-						levels=2
+						levels=3
 						region="STATE_CAMPANIA"
 					}
 					building={
@@ -1058,7 +1058,7 @@
 					building={
 						type="building_food_industry"
 						country="c:PAP"
-						levels=1
+						levels=2
 						region="STATE_APULIA"
 					}
 				}
@@ -1075,7 +1075,7 @@
 					building={
 						type="building_furniture_manufactory"
 						country="c:PAP"
-						levels=1
+						levels=2
 						region="STATE_ABRUZZO"
 					}
 				}
@@ -1655,7 +1655,7 @@
 					building={
 						type="building_trade_center"
 						country="c:PAP"
-						levels=1
+						levels=5
 						region="STATE_LAZIO"
 					}
 				}
@@ -1666,7 +1666,7 @@
 				add_ownership={
 					country={
 						country="c:PAP"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -1725,6 +1725,20 @@
 			create_building={
 				building="building_vatican_city"
 				level=1
+			
+			}
+			create_building={
+				building="building_textile_mill"
+				add_ownership={
+					building={
+						type="building_textile_mill"
+						country="c:PAP"
+						levels=1
+						region="STATE_LAZIO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 		}
 	}
@@ -1763,7 +1777,7 @@
 					building={
 						type="building_financial_district"
 						country="c:VEN"
-						levels=1
+						levels=17
 						region="STATE_VENETIA"
 					}
 				}
@@ -1775,7 +1789,7 @@
 					building={
 						type="building_manor_house"
 						country="c:VEN"
-						levels=4
+						levels=6
 						region="STATE_VENETIA"
 					}
 					building={
@@ -1862,7 +1876,7 @@
 					building={
 						type="building_manor_house"
 						country="c:VEN"
-						levels=4
+						levels=6
 						region="STATE_VENETIA"
 					}
 				}
@@ -2004,6 +2018,48 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			create_building={
+				building="building_shipyard"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PAP"
+						levels=1
+						region="STATE_SICILY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+				
+			}
+			create_building={
+				building="building_sugar_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PAP"
+						levels=2
+						region="STATE_SICILY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
+			
+			}
+			create_building={
+				building="building_silk_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PAP"
+						levels=2
+						region="STATE_SICILY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"  }
 			}
 		}
 	}
@@ -4518,7 +4574,7 @@
 					building={
 						type="building_tooling_workshop"
 						country="c:CRO"
-						levels=2
+						levels=1
 						region="STATE_BOSNIA"
 					}
 				}
@@ -4530,7 +4586,7 @@
 				add_ownership={
 					country={
 						country="c:CRO"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -4553,7 +4609,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:CRO"
-						levels=3
+						levels=1
 						region="STATE_BOSNIA"
 					}
 					building={
@@ -4572,7 +4628,7 @@
 					building={
 						type="building_financial_district"
 						country="c:CRO"
-						levels=2
+						levels=1
 						region="STATE_BOSNIA"
 					}
 				}
@@ -4868,6 +4924,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:VEN"
+						levels=1
+						region="STATE_VENETIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood"  }
 			}
 		}
 	}
