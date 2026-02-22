@@ -1,8 +1,13 @@
 ﻿l_english:
  country_institution_national_bank_max_investment_add:0 "Max $institution_national_bank$ [concept_institution] Investment"
  country_institution_national_bank_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_national_bank$ [concept_institution]"
- country_institution_cost_institution_national_bank_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_colonial_affairs').GetName]"
- country_institution_cost_institution_national_bank_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_colonial_affairs').GetName] to the citizens"
+ country_institution_cost_institution_national_bank_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_national_bank').GetName]"
+ country_institution_cost_institution_national_bank_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_national_bank').GetName] to the citizens"
+ 
+ country_institution_state_propaganda_max_investment_add:0 "Max $institution_state_propaganda$ [concept_institution] Investment"
+ country_institution_state_propaganda_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_state_propaganda$ [concept_institution]"
+ country_institution_cost_institution_state_propaganda_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_state_propaganda').GetName]"
+ country_institution_cost_institution_state_propaganda_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_state_propaganda').GetName] to the citizens"
  
  
  country_head_of_state_popularity_legitimacy_add:1 "[concept_legitimacy] from the [concept_head_of_state]'s [concept_popularity] if he's [concept_in_government]"
@@ -11,3 +16,9 @@
  
  country_institutional_ig_in_gov_legitimacy_add:1 "[concept_legitimacy] from including [GetPlayer.GetActiveLawFromGroup('lawgroup_institutional_group').GetName] [concept_in_government]"
  country_institutional_ig_in_gov_legitimacy_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses by including the Institutional Interest Groupe ([GetPlayer.GetActiveLawFromGroup('lawgroup_institutional_group').GetName]) [concept_in_government]."
+ 
+ TBE_head_of_state_popularity_legitimacy:0 "Legitimacy from Ruler Popularity"
+ TBE_institutional_ig_in_gov_legitimacy:0 "Legitimacy from having [GetPlayer.GetActiveLawFromGroup('lawgroup_institutional_group').GetName] in government"
+ 
+ country_ruler_popularity_add:0 "Ruler Popularity"
+ country_ruler_popularity_add_desc:0 "Increase the popularity of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"

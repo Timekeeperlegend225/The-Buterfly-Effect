@@ -40,7 +40,7 @@
  
  law_aristocratic: "Aristocratic"
  law_aristocratic_desc: "The power is organized around the aristocracy following traditional principles"
- law_institutional: "institutional"
+ law_institutional: "Institutional"
  law_institutional_desc: "The power is organized around the interest controlling the institutions"
  law_plutocratic: "Plutocratic"
  law_plutocratic_desc: "The power is organized around wealth and the ones holding its"
