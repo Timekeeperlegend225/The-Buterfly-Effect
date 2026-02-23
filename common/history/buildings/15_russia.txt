@@ -175,7 +175,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=2
+						levels=6
 						region="STATE_KAUNAS"
 					}
 				}
@@ -203,7 +203,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=2
+						levels=4
 						region="STATE_VILNIUS"
 					}
 				}
@@ -1092,7 +1092,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=2
+						levels=3
 						region="STATE_MOGILEV"
 					}
 				}
@@ -1467,7 +1467,7 @@
 					building={
 						type="building_furniture_manufactory"
 						country="c:PLC"
-						levels=2
+						levels=1
 						region="STATE_MINSK"
 					}
 				}
@@ -1512,7 +1512,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=2
+						levels=4
 						region="STATE_MINSK"
 					}
 				}
@@ -2040,22 +2040,6 @@
 	}
 	s:STATE_VITEBSK={
 		region_state:PLC={
-			create_building={
-				building="building_paper_mill"
-				add_ownership={
-					country={
-						country="c:PLC"
-						levels=1
-					}
-					building={
-						type="building_financial_district"
-						country="c:PLC"
-						levels=2
-						region="STATE_VITEBSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_logging_camp"

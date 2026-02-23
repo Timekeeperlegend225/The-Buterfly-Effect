@@ -5754,11 +5754,9 @@
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
-					building={
-						type="building_arms_industry"
+					country={
 						country="c:SAX"
-						levels=2
-						region="STATE_BOHEMIA"
+						levels=3
 					}
 				}
 				reserves=1
@@ -5790,15 +5788,9 @@
 				building="building_food_industry"
 				add_ownership={
 					building={
-						type="building_food_industry"
-						country="c:SAX"
-						levels=4
-						region="STATE_BOHEMIA"
-					}
-					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=5
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5809,15 +5801,9 @@
 				building="building_glassworks"
 				add_ownership={
 					building={
-						type="building_glassworks"
-						country="c:SAX"
-						levels=2
-						region="STATE_BOHEMIA"
-					}
-					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=3
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5828,9 +5814,9 @@
 				building="building_iron_mine"
 				add_ownership={
 					building={
-						type="building_iron_mine"
+						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=3
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5841,15 +5827,9 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_logging_camp"
-						country="c:SAX"
-						levels=2
-						region="STATE_BOHEMIA"
-					}
-					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=3
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5860,9 +5840,9 @@
 				building="building_rye_farm"
 				add_ownership={
 					building={
-						type="building_rye_farm"
+						type="building_manor_house"
 						country="c:SAX"
-						levels=6
+						levels=4
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5873,7 +5853,7 @@
 				building="building_coal_mine"
 				add_ownership={
 					building={
-						type="building_coal_mine"
+						type="building_financial_district"
 						country="c:SAX"
 						levels=2
 						region="STATE_BOHEMIA"
@@ -5886,7 +5866,7 @@
 				building="building_tooling_workshop"
 				add_ownership={
 					building={
-						type="building_tooling_workshop"
+						type="building_financial_district"
 						country="c:SAX"
 						levels=5
 						region="STATE_BOHEMIA"
@@ -5899,7 +5879,7 @@
 				building="building_lead_mine"
 				add_ownership={
 					building={
-						type="building_lead_mine"
+						type="building_financial_district"
 						country="c:SAX"
 						levels=1
 						region="STATE_BOHEMIA"
@@ -5924,9 +5904,9 @@
 				building="building_furniture_manufactory"
 				add_ownership={
 					building={
-						type="building_furniture_manufactory"
+						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=6
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5946,6 +5926,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard" "pm_road_carts"  }
+				
+			}
+			create_building={
+				building="building_paper_mill"
+				add_ownership={
+					building={
+						type="building_paper_mill"
+						country="c:SAX"
+						levels=5
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -5955,15 +5949,9 @@
 				building="building_textile_mill"
 				add_ownership={
 					building={
-						type="building_textile_mill"
-						country="c:SAX"
-						levels=4
-						region="STATE_MORAVIA"
-					}
-					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=5
 						region="STATE_MORAVIA"
 					}
 				}
@@ -5985,7 +5973,7 @@
 				building="building_food_industry"
 				add_ownership={
 					building={
-						type="building_food_industry"
+						type="building_financial_district"
 						country="c:SAX"
 						levels=3
 						region="STATE_MORAVIA"
@@ -5998,15 +5986,9 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_logging_camp"
-						country="c:SAX"
-						levels=2
-						region="STATE_MORAVIA"
-					}
-					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=3
 						region="STATE_MORAVIA"
 					}
 				}
@@ -6036,7 +6018,7 @@
 				building="building_coal_mine"
 				add_ownership={
 					building={
-						type="building_coal_mine"
+						type="building_financial_district"
 						country="c:SAX"
 						levels=2
 						region="STATE_MORAVIA"
@@ -7964,15 +7946,9 @@
 				building="building_glassworks"
 				add_ownership={
 					building={
-						type="building_glassworks"
-						country="c:SAX"
-						levels=3
-						region="STATE_SAXONY"
-					}
-					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=6
 						region="STATE_SAXONY"
 					}
 				}
@@ -8030,6 +8006,34 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+				
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			
+			}
+			create_building={
+				building="building_tooling_workshop"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 		}
 		region_state:MEI={
