@@ -175,7 +175,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=6
+						levels=10
 						region="STATE_KAUNAS"
 					}
 				}
@@ -203,7 +203,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=4
+						levels=6
 						region="STATE_VILNIUS"
 					}
 				}
@@ -576,7 +576,7 @@
 					building={
 						type="building_textile_mill"
 						country="c:RUS"
-						levels=2
+						levels=5
 						region="STATE_INGRIA"
 					}
 				}
@@ -713,7 +713,7 @@
 					building={
 						type="building_textile_mill"
 						country="c:RUS"
-						levels=3
+						levels=5
 						region="STATE_MOSCOW"
 					}
 				}
@@ -773,7 +773,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=5
+						levels=10
 						region="STATE_BREST"
 					}
 				}
@@ -883,14 +883,8 @@
 					building={
 						type="building_manor_house"
 						country="c:UKR"
-						levels=22
+						levels=30
 						region="STATE_KIEV"
-					}
-					building={
-						type="building_manor_house"
-						country="c:UKR"
-						levels=8
-						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -1092,7 +1086,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=3
+						levels=5
 						region="STATE_MOGILEV"
 					}
 				}
@@ -1512,7 +1506,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=4
+						levels=9
 						region="STATE_MINSK"
 					}
 				}
@@ -2060,7 +2054,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLC"
-						levels=5
+						levels=8
 						region="STATE_VITEBSK"
 					}
 				}

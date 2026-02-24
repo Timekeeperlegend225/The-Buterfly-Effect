@@ -949,6 +949,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
+				
+			create_building={
+				building="building_banana_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:DEI"
+						levels=5
+						region="STATE_CENTRAL_JAVA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts"  }
 			}
 		}
 	}
@@ -1107,6 +1120,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+			create_building={
+				building="building_banana_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NET"
+						levels=5
+						region="STATE_HOLLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts"  }
 			}
 		}
 	}
