@@ -37,6 +37,7 @@ REPLACE:urban_planning = {
 	}
 }
 
+
 REPLACE:rationalism = {
 	# Unlocks Freedom of Conscience - Church and State Law
 	era = era_1
@@ -71,6 +72,26 @@ REPLACE:corporate_charters = {
 	}
 }
 
+REPLACE:mass_communication = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/mass_communication.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_voting_power_mult = 0.1
+		country_institution_state_propaganda_max_investment_add = 3
+	}
+
+	unlocking_technologies = {
+		democracy
+	}
+
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+
 REPLACE:banking = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/banking.dds"
@@ -89,6 +110,25 @@ REPLACE:banking = {
 
 	ai_weight = {
 		value = 1.5 # Important in general
+	}
+}
+
+REPLACE:organized_sports = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/organized_sports.dds"
+	category = society
+
+	modifier = {
+		country_prestige_mult = 0.1
+		country_institution_state_propaganda_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		nationalism
+	}
+
+	ai_weight = {
+		value = 1
 	}
 }
 
@@ -220,6 +260,66 @@ REPLACE:central_banking = {
 
 	ai_weight = {
 		value = 1
+	}
+}
+
+REPLACE:nationalism = {
+	# Unlocks the Immigration Controls Law in Migration
+	# New leaders may spawn with the Ethno-Nationalist Ideology
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_voting_power_mult = 0.1
+		country_institution_state_propaganda_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		mass_communication
+		international_relations
+	}
+
+	ai_weight = {
+		value = 2 # Important in general
+
+		# Extra-important for major unifications
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+			}
+			add = 4
+		}
+
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+				any_country = {
+					has_journal_entry = je_risorgimento
+				}
+			}
+			multiply = 4
+		}
+
+		if = { # Important for Hungary and the Balkan states
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:croat
+					country_has_primary_culture = cu:serb
+					country_has_primary_culture = cu:slovene
+					country_has_primary_culture = cu:bosniak
+					country_has_primary_culture = cu:hungarian
+				}
+			}
+			multiply = 4
+		}
 	}
 }
 
@@ -568,6 +668,49 @@ REPLACE:central_planning = {
 	}
 }
 
+REPLACE:political_agitation = {
+	# Unlocks Women's Suffrage - Rights of Women Law
+	# Increases political participation from poor pop types
+	# New leaders may spawn with the Feminist, Vanguardist Ideology
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/political_agitation.dds"
+	category = society
+
+	modifier = {
+		state_expected_sol_from_literacy = 1
+		country_authority_mult = 0.1
+		country_voting_power_mult = 0.1
+		country_agitator_slots_add = 1
+		country_institution_state_propaganda_max_investment_add = 2
+	}
+
+	unlocking_technologies = {
+		anarchism
+		socialism
+		corporatism
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+				}
+			}
+			add = -0.5
+		}
+	}
+}
+
 REPLACE:international_exchange_standards = {
 	# Should increase trade power maybe
 	era = era_4
@@ -611,6 +754,26 @@ REPLACE:psychoanalysis = {
 	}
 }
 
+REPLACE:film = {
+	# Unlocks Film Propaganda Center PM in Arts Academies
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/film.dds"
+	category = society
+
+	modifier = {
+		country_prestige_mult = 0.05
+		country_institution_state_propaganda_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		camera
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
 REPLACE:mass_surveillance = {
 	# Unlocks Personal Files PM in Government Administrations
 	# Unlocks Militarized Police - Policing Law
@@ -628,6 +791,32 @@ REPLACE:mass_surveillance = {
 
 	unlocking_technologies = {
 		central_planning
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE:mass_propaganda = {
+	# Unlocks Better Radios PM in Electrics Industries
+	# New leaders may spawn with the Fascist Ideology
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/mass_propaganda.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_voting_power_mult = 0.1
+		state_expected_sol_from_literacy = 1
+		country_agitator_slots_add = 1
+		country_support_separatism_strength_mult = 0.25
+		country_institution_state_propaganda_max_investment_add = 2
+	}
+
+	unlocking_technologies = {
+		political_agitation
+		film
 	}
 
 	ai_weight = {

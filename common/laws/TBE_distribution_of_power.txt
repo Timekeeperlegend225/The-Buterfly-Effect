@@ -595,6 +595,17 @@ REPLACE_OR_CREATE:law_institutional_supremacy = {
 		country_authority_add = 100
 	}
 
+	on_activate = {
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_institutional_supremacy
+			}
+			save_scope_as = institutional_supremacy_scope
+		}
+		TBE_insitutional_supremacy_initial_amendment = yes
+	}
+
 	can_impose = {
 		OR = {
 			AND = {
@@ -893,6 +904,17 @@ REPLACE_OR_CREATE:law_ideological_elite = {
 		interest_group_in_government_attraction_mult = 0.20
 		country_legitimacy_govt_size_add = 2
 		country_bolster_attraction_factor = 0.25
+	}
+
+	on_activate = {
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_ideological_elite
+			}
+			save_scope_as = institutional_rule_scope
+		}
+		TBE_insitutional_rule_initial_amendment = yes
 	}
 
 	ai_will_do = {
@@ -1301,7 +1323,7 @@ REPLACE_OR_CREATE:law_party_council = {
 		country_voting_power_from_literacy_add = 10
 		country_voting_power_base_add = 30
 		country_peasants_voting_power_add = -10
-		country_electoral_confidence_impact_mult = -1.0
+		country_electoral_confidence_impact_mult = -0.9
 	}
 
 	on_activate = {
@@ -1730,7 +1752,7 @@ REPLACE_OR_CREATE:law_party_assembly = {
 		country_voting_power_from_literacy_add = 10
 		country_voting_power_base_add = 40
 		country_peasants_voting_power_add = -10
-		country_electoral_confidence_impact_mult = -1.0
+		country_electoral_confidence_impact_mult = -0.9
 	}
 
 	on_activate = {

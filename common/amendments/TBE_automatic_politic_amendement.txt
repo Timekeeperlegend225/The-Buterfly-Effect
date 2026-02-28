@@ -1,9 +1,5 @@
 ﻿REPLACE_OR_CREATE:TBE_amendement_landowners_rule = {
 
-	allowed_laws = {
-		law_institutional_rule
-	}
-
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.20
 	}
@@ -17,17 +13,13 @@
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_devout_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_devout_pol_str_mult = 0.20
@@ -42,17 +34,13 @@ REPLACE_OR_CREATE:TBE_amendement_devout_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_armed_forces_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_armed_forces_pol_str_mult = 0.20
@@ -67,17 +55,13 @@ REPLACE_OR_CREATE:TBE_amendement_armed_forces_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_petty_bourgeoisie_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.20
@@ -92,17 +76,13 @@ REPLACE_OR_CREATE:TBE_amendement_petty_bourgeoisie_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_intelligentsia_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_intelligentsia_pol_str_mult = 0.20
@@ -117,17 +97,13 @@ REPLACE_OR_CREATE:TBE_amendement_intelligentsia_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_industrialists_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_industrialists_pol_str_mult = 0.20
@@ -142,17 +118,13 @@ REPLACE_OR_CREATE:TBE_amendement_industrialists_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_trade_unions_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_trade_unions_pol_str_mult = 0.20
@@ -167,17 +139,13 @@ REPLACE_OR_CREATE:TBE_amendement_trade_unions_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
 	}
 
 	amendment_activism_multiplier = 0
 }
 
 REPLACE_OR_CREATE:TBE_amendement_rural_folk_rule = {
-
-	allowed_laws = {
-		law_institutional_rule
-	}
 
 	modifier = {
 		interest_group_ig_rural_folk_pol_str_mult = 0.20
@@ -192,7 +160,175 @@ REPLACE_OR_CREATE:TBE_amendement_rural_folk_rule = {
 	}
 
 	can_repeal = {
-		NOT = { has_law_or_variant = law_type:law_institutional_rule }
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_landowners_supremacy = {
+
+	modifier = {
+		interest_group_ig_landowners_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_devout_supremacy = {
+
+	modifier = {
+		interest_group_ig_devout_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_armed_forces_supremacy = {
+
+	modifier = {
+		interest_group_ig_armed_forces_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_petty_bourgeoisie_supremacy = {
+
+	modifier = {
+		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_intelligentsia_supremacy = {
+
+	modifier = {
+		interest_group_ig_intelligentsia_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_industrialists_supremacy = {
+
+	modifier = {
+		interest_group_ig_industrialists_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_trade_unions_supremacy = {
+
+	modifier = {
+		interest_group_ig_trade_unions_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_rural_folk_supremacy = {
+
+	modifier = {
+		interest_group_ig_rural_folk_pol_str_mult = 0.40
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
 	}
 
 	amendment_activism_multiplier = 0

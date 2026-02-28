@@ -46,9 +46,9 @@
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_personality_rule
+				has_law_or_variant = law_type:law_partisan
 			}
-			activate_law = law_type:law_partisan
+			activate_law = law_type:law_personality_rule
 		}
 	}
 	
@@ -147,7 +147,7 @@ REPLACE:law_oligarchy = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_personality_rule
+				has_law_or_variant = law_type:law_partisan
 			}
 			activate_law = law_type:law_ideological_elite
 		}
@@ -260,10 +260,18 @@ REPLACE_OR_CREATE:law_counciliary = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_personality_rule
+				has_law_or_variant = law_type:law_partisan
 			}
 			activate_law = law_type:law_party_council
 		}
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_counciliary
+			}
+			save_scope_as = institutional_rule_scope
+		}
+		TBE_insitutional_rule_initial_amendment = yes
 	}
 
 	ai_will_do = {
@@ -343,7 +351,7 @@ REPLACE_OR_CREATE:law_parliamentary = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_personality_rule
+				has_law_or_variant = law_type:law_partisan
 			}
 			activate_law = law_type:law_party_assembly
 		}

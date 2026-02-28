@@ -1,0 +1,854 @@
+﻿ideology_orleanist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_orleanist.dds"
+
+	character_ideology = yes
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_institutional_rule = neutral
+		law_presidential = disapprove
+		law_head_of_legislature = disapprove
+		law_national_model = neutral
+		law_leader_of_the_nation = neutral
+	}
+	
+	lawgroup_legislative_principle = {
+		law_autocracy = disapprove
+		law_oligarchy = disapprove
+		law_counciliary = neutral
+		law_parliamentary = approve
+	}
+
+	lawgroup_distribution_of_power = {
+		law_aristocratic = approve
+		law_institutional = neutral
+		law_plutocratic = strongly_approve
+		law_meritocratic = neutral
+		law_egalitarian = disapprove
+		law_partisan = neutral
+	}
+
+	lawgroup_banking = {
+		law_aristocrat_moneylending = strongly_disapprove
+		law_open_banking = approve
+		law_national_bank_monopoly = strongly_disapprove
+		law_private_stock_exchange = strongly_approve
+		law_agrarian_funds = disapprove
+		law_cooperative_investment = strongly_disapprove
+		law_company_banks = approve	
+	}
+
+	lawgroup_economic_system = {
+		law_rural_economy = disapprove
+		law_guild_economy = disapprove
+		law_capital_economy = strongly_approve
+		law_supervised_economy = neutral
+		law_cooperative_economy = strongly_disapprove
+		law_planned_economy = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = {
+		law_free_trade = strongly_approve
+		law_mercantilism = disapprove
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+	}
+
+	lawgroup_labour_associations = {
+		law_combination_acts = approve
+		law_guild_system = disapprove
+		law_anti_strike_laws = neutral
+		law_corporatized_unions = neutral
+		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
+	}
+
+	country_trigger = {
+		exists = c:FRA
+		OR = {
+			c:FRA = this
+			civil_war_origin_country ?= c:FRA
+		}
+		NOR = {
+			any_interest_group = {
+				has_ideology = ideology:ideology_republican_paternalistic
+			}
+			has_variable = monarchy_stamped_out_var
+			AND = {
+				OR = {
+					has_variable = legitimist_restoration_var
+					has_variable = bonapartist_restoration_var
+				}
+				has_variable = one_true_french_dynasty
+			}
+		}
+	}
+
+	interest_group_leader_trigger = {
+		ideology_orleanist_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		NOT = { has_role = agitator }
+		ideology_orleanist_valid_trigger = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				ig_approval > 0
+			}
+			add = -100
+		}
+
+		# more likely for intelligentsia, industrialists, and PB with traditional economic laws
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
+				}
+				owner = {
+					OR = {
+						has_law_or_variant = law_type:law_agrarianism
+						has_law_or_variant = law_type:law_traditionalism
+						has_law_or_variant = law_type:law_isolationism
+						has_law_or_variant = law_type:law_mercantilism
+					}
+				}
+			}
+			add = 75
+		}
+		# more likely if the IG is unhappy with the monarchy, and that monarchy is not Orleanist
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_monarchy
+					NOT = { has_variable = orleanist_restoration_var }
+				}
+				ig_approval < 0
+			}
+			add = 75
+		}
+
+		# reduced unhappy modifier if it's not a monarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_variable = orleanist_restoration_var }
+				}
+				ig_approval < 0
+			}
+			add = 25
+		}
+		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
+		if = {
+			limit = {
+				has_variable = anti_dreyfusard_victory
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_conservatism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+
+	non_interest_group_leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				interest_group.ig_approval > 0
+			}
+			add = -100
+		}
+
+		# more likely for intelligentsia, industrialists, and PB with traditional economic laws
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
+				}
+				owner = {
+					OR = {
+						has_law_or_variant = law_type:law_agrarianism
+						has_law_or_variant = law_type:law_traditionalism
+						has_law_or_variant = law_type:law_isolationism
+						has_law_or_variant = law_type:law_mercantilism
+					}
+				}
+			}
+			add = 75
+		}
+
+		# more likely if the IG is unhappy with the monarchy, and that monarchy is not Orleanist
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_monarchy
+					NOT = { has_variable = orleanist_restoration_var }
+				}
+				interest_group.ig_approval < 0
+			}
+			add = 75
+		}
+
+		# reduced unhappy modifier if it's not a monarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_variable = orleanist_restoration_var }
+				}
+				interest_group.ig_approval < 0
+			}
+			add = 25
+		}
+
+		if = { # Orleanist agitators rare in Orleanist kingdoms
+			limit = {
+				has_role = agitator
+				owner = {
+					has_variable = orleanist_restoration_var
+				}
+			}
+			multiply = 0.1
+		}
+
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
+
+ideology_legitimist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_legitimist.dds"
+
+	character_ideology = yes
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_institutional_rule = disapprove
+		law_presidential = disapprove
+		law_head_of_legislature = strongly_disapprove
+		law_national_model = disapprove
+		law_leader_of_the_nation = neutral
+	}
+	
+	lawgroup_legislative_principle = {
+		law_autocracy = strongly_approve
+		law_oligarchy = neutral
+		law_counciliary = disapprove
+		law_parliamentary = strongly_disapprove
+	}
+
+	lawgroup_distribution_of_power = {
+		law_aristocratic = approve
+		law_institutional = strongly_approve
+		law_plutocratic = neutral
+		law_meritocratic = disapprove
+		law_egalitarian = strongly_disapprove
+		law_partisan = neutral
+	}
+
+	lawgroup_institutional_group = {
+		law_institutional_landowners = strongly_approve
+		law_institutional_devout = approve
+		law_institutional_armed_forces = neutral
+		law_institutional_petty_bourgeoisie = neutral
+		law_institutional_intelligentsia = strongly_disapprove
+		law_institutional_industrialists = strongly_disapprove
+		law_institutional_trade_unions = strongly_disapprove
+		law_institutional_rural_folk = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = disapprove
+		law_total_separation = strongly_disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_banking = {
+		law_aristocrat_moneylending = disapprove
+		law_open_banking = disapprove
+		law_national_bank_monopoly = approve
+		law_private_stock_exchange = strongly_disapprove
+		law_agrarian_funds = disapprove
+		law_cooperative_investment = strongly_disapprove
+		law_company_banks = neutral	
+	}
+
+	lawgroup_economic_system = {
+		law_rural_economy = neutral
+		law_guild_economy = approve
+		law_capital_economy = disapprove
+		law_supervised_economy = neutral
+		law_cooperative_economy = strongly_disapprove
+		law_planned_economy = neutral
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_disapprove
+		law_right_of_assembly = disapprove
+		law_censorship = approve
+		law_outlawed_dissent = strongly_approve
+	}
+
+	lawgroup_state_propaganda = {
+		law_no_state_propaganda = disapprove
+		law_ruler_promotion = strongly_approve
+		law_defend_social_hierarchy = neutral
+		law_support_war_effort = approve
+		law_promote_family_values = neutral
+		law_bolster_new_ideas = strongly_disapprove
+		law_advance_national_unity = neutral
+		law_boast_work_merit = disapprove
+		law_party_propaganda = neutral
+	}
+
+	lawgroup_labour_associations = {
+		law_combination_acts = neutral
+		law_guild_system = approve
+		law_anti_strike_laws = disapprove
+		law_corporatized_unions = neutral
+		law_right_to_associate = strongly_disapprove
+		law_factory_councils = strongly_disapprove
+	}
+
+	country_trigger = {
+		exists = c:FRA
+		OR = {
+			c:FRA = this
+			civil_war_origin_country ?= c:FRA
+		}
+		NOR = {
+			any_interest_group = {
+				has_ideology = ideology:ideology_republican_paternalistic
+			}
+			has_variable = monarchy_stamped_out_var
+			AND = {
+				OR = {
+					has_variable = legitimist_restoration_var
+					has_variable = bonapartist_restoration_var
+				}
+				has_variable = one_true_french_dynasty
+			}
+		}
+	}
+
+	interest_group_leader_trigger = {
+		ideology_legitimist_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		NOT = { has_role = agitator }
+		ideology_legitimist_valid_trigger = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				ig_approval > 0
+			}
+			add = -100
+		}
+
+		# more likely for LO and Devout
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+				}
+			}
+			add = 50
+		}
+
+		# more likely if the IG is unhappy with the monarchy, and that monarchy is not Legitimist
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_monarchy
+					NOT = { has_variable = legitimist_restoration_var }
+				}
+				ig_approval < 0
+			}
+			add = 75
+		}
+
+		# reduced unhappy modifier if it's not a monarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_variable = legitimist_restoration_var }
+				}
+				ig_approval < 0
+			}
+			add = 25
+		}
+
+		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
+		if = {
+			limit = {
+				has_variable = anti_dreyfusard_victory
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_conservatism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+
+	non_interest_group_leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				interest_group.ig_approval > 0
+			}
+			add = -100
+		}
+
+		# more likely for LO and Devout
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+				}
+			}
+			add = 50
+		}
+
+		# more likely if the IG is unhappy with the monarchy, and that monarchy is not Legitimist
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_monarchy
+					NOT = { has_variable = legitimist_restoration_var }
+				}
+				interest_group.ig_approval < 0
+			}
+			add = 75
+		}
+
+		# reduced unhappy modifier if it's not a monarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_variable = legitimist_restoration_var }
+				}
+				interest_group.ig_approval < 0
+			}
+			add = 25
+		}
+
+		if = { # Legitimist agitators rare in Orleanist kingdoms
+			limit = {
+				has_role = agitator
+				owner = {
+					has_variable = legitimist_restoration_var
+				}
+			}
+			multiply = 0.1
+		}
+
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
+
+ideology_bonapartist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_bonapartist.dds"
+
+	# J'AIME L'OIGNON FRIT À L'HUILE,
+	# J'AIME L'OIGNON QUAND IL EST BON.
+	# J'AIME L'OIGNON FRIT À L'HUILE,
+	# J'AIME L'OIGNON, J'AIME L'OIGNON
+
+	character_ideology = yes
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_institutional_rule = disapprove
+		law_presidential = neutral
+		law_head_of_legislature = strongly_disapprove
+		law_national_model = neutral
+		law_leader_of_the_nation = approve
+	}
+	
+	lawgroup_legislative_principle = {
+		law_autocracy = strongly_approve
+		law_oligarchy = disapprove
+		law_counciliary = approve
+		law_parliamentary = disapprove
+	}
+
+	lawgroup_distribution_of_power = {
+		law_aristocratic = disapprove
+		law_institutional = neutral
+		law_plutocratic = neutral
+		law_meritocratic = neutral
+		law_egalitarian = strongly_approve
+		law_partisan = approve
+	}
+
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = disapprove
+		law_peasant_levies = disapprove
+	}
+
+	lawgroup_banking = {
+		law_aristocrat_moneylending = strongly_disapprove
+		law_open_banking = neutral
+		law_national_bank_monopoly = approve
+		law_private_stock_exchange = disapprove
+		law_agrarian_funds = disapprove
+		law_cooperative_investment = disapprove
+		law_company_banks = neutral	
+	}
+
+	lawgroup_economic_system = {
+		law_rural_economy = neutral
+		law_guild_economy = neutral
+		law_capital_economy = neutral
+		law_supervised_economy = approve
+		law_cooperative_economy = strongly_disapprove
+		law_planned_economy = neutral
+	}
+
+	lawgroup_state_propaganda = {
+		law_no_state_propaganda = disapprove
+		law_ruler_promotion = strongly_approve
+		law_defend_social_hierarchy = disapprove
+		law_support_war_effort = strongly_approve
+		law_promote_family_values = approve
+		law_bolster_new_ideas = disapprove
+		law_advance_national_unity = approve
+		law_boast_work_merit = neutral
+		law_party_propaganda = approve
+	}
+
+	lawgroup_labour_associations = { # Napoleon III was a corporatist.
+		law_combination_acts = disapprove
+		law_guild_system = disapprove
+		law_anti_strike_laws = approve
+		law_corporatized_unions = approve
+		law_right_to_associate = neutral
+		law_factory_councils = strongly_disapprove
+	}
+
+	country_trigger = {
+		exists = c:FRA
+		OR = {
+			c:FRA = this
+			civil_war_origin_country ?= c:FRA
+		}
+		NOR = {
+			any_interest_group = {
+				has_ideology = ideology:ideology_republican_paternalistic
+			}
+			has_variable = monarchy_stamped_out_var
+			AND = {
+				OR = {
+					has_variable = legitimist_restoration_var
+					has_variable = bonapartist_restoration_var
+				}
+				has_variable = one_true_french_dynasty
+			}
+		}
+	}
+
+	interest_group_leader_trigger = {
+		ideology_bonapartist_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		NOT = { has_role = agitator }
+		ideology_bonapartist_valid_trigger = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				ig_approval > 0
+			}
+			add = -100
+		}
+
+		# more likely for PB and AF
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = 50
+		}
+
+		# more likely if the IG is unhappy with the monarchy, and that monarchy is not Bonapartist
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_monarchy
+					NOT = { has_variable = bonapartist_restoration_var }
+				}
+				ig_approval < 0
+			}
+			add = 75
+		}
+
+		# reduced unhappy modifier if it's not a monarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_variable = bonapartist_restoration_var }
+				}
+				ig_approval < 0
+			}
+			add = 25
+		}
+
+		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
+		if = {
+			limit = {
+				has_variable = anti_dreyfusard_victory
+			}
+			add = 50
+		}
+
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_conservatism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+
+	non_interest_group_leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				interest_group.ig_approval > 0
+			}
+			add = -100
+		}
+
+		# more likely for PB and AF
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = 50
+		}
+		# More likely if in the military
+		if = {
+			limit = {
+				OR = {
+					has_role = general
+					has_role = admiral
+				}
+			}
+			add = 50
+		}
+		# more likely if the IG is unhappy with the monarchy, and that monarchy is not Bonapartist
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_monarchy
+					NOT = { has_variable = bonapartist_restoration_var }
+				}
+				interest_group.ig_approval < 0
+			}
+			add = 75
+		}
+
+		# reduced unhappy modifier if it's not a monarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_variable = bonapartist_restoration_var }
+				}
+				interest_group.ig_approval < 0
+			}
+			add = 25
+		}
+
+		if = { # Legitimist agitators rare in Orleanist kingdoms
+			limit = {
+				has_role = agitator
+				owner = {
+					has_variable = bonapartist_restoration_var
+				}
+			}
+			multiply = 0.1
+		}
+
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}

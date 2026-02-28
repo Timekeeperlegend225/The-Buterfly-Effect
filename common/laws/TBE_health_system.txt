@@ -10,7 +10,7 @@
 
 	modifier = {
 		state_mortality_mult = -0.07
-		interest_group_ig_devout_pol_str_mult = 0.40
+		interest_group_ig_devout_pol_str_mult = 0.20
 		state_pollution_reduction_health_mult = -0.4
 		state_food_security_add = 0.1
 		state_lower_strata_standard_of_living_add = 1

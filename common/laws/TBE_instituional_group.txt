@@ -12,7 +12,7 @@
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -34,6 +34,96 @@
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_landowners_rule
+					sponsor = ROOT.ig:ig_landowners
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_landowners_rule
+					sponsor = ROOT.ig:ig_landowners
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_landowners_rule
+					sponsor = ROOT.ig:ig_landowners
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_landowners_supremacy
 					sponsor = ROOT.ig:ig_landowners
 					cooldown = 0
 				}
@@ -67,7 +157,7 @@ REPLACE_OR_CREATE:law_institutional_devout = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -89,6 +179,96 @@ REPLACE_OR_CREATE:law_institutional_devout = {
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_devout_rule
+					sponsor = ROOT.ig:ig_devout
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_devout_rule
+					sponsor = ROOT.ig:ig_devout
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_devout_rule
+					sponsor = ROOT.ig:ig_devout
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_devout_supremacy
 					sponsor = ROOT.ig:ig_devout
 					cooldown = 0
 				}
@@ -122,7 +302,7 @@ REPLACE_OR_CREATE:law_institutional_armed_forces = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -144,6 +324,96 @@ REPLACE_OR_CREATE:law_institutional_armed_forces = {
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_armed_forces_rule
+					sponsor = ROOT.ig:ig_armed_forces
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_armed_forces_rule
+					sponsor = ROOT.ig:ig_armed_forces
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_armed_forces_rule
+					sponsor = ROOT.ig:ig_armed_forces
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_armed_forces_supremacy
 					sponsor = ROOT.ig:ig_armed_forces
 					cooldown = 0
 				}
@@ -177,7 +447,7 @@ REPLACE_OR_CREATE:law_institutional_petty_bourgeoisie = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -199,6 +469,96 @@ REPLACE_OR_CREATE:law_institutional_petty_bourgeoisie = {
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_petty_bourgeoisie_rule
+					sponsor = ROOT.ig:ig_petty_bourgeoisie
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_petty_bourgeoisie_rule
+					sponsor = ROOT.ig:ig_petty_bourgeoisie
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_petty_bourgeoisie_rule
+					sponsor = ROOT.ig:ig_petty_bourgeoisie
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_petty_bourgeoisie_supremacy
 					sponsor = ROOT.ig:ig_petty_bourgeoisie
 					cooldown = 0
 				}
@@ -232,7 +592,7 @@ REPLACE_OR_CREATE:law_institutional_intelligentsia = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -261,7 +621,39 @@ REPLACE_OR_CREATE:law_institutional_intelligentsia = {
 		}
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_loyalism
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_intelligentsia_rule
+					sponsor = ROOT.ig:ig_intelligentsia
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
 			}
 			active_law:lawgroup_distribution_of_power ?= { 
 				every_scope_amendment = {
@@ -283,6 +675,35 @@ REPLACE_OR_CREATE:law_institutional_intelligentsia = {
 			active_law:lawgroup_distribution_of_power ?= { 
 				add_amendment = {
 					type = TBE_amendement_intelligentsia_rule
+					sponsor = ROOT.ig:ig_intelligentsia
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_intelligentsia_supremacy
 					sponsor = ROOT.ig:ig_intelligentsia
 					cooldown = 0
 				}
@@ -316,7 +737,7 @@ REPLACE_OR_CREATE:law_institutional_industrialists = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -338,6 +759,96 @@ REPLACE_OR_CREATE:law_institutional_industrialists = {
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_industrialists_rule
+					sponsor = ROOT.ig:ig_industrialists
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_industrialists_rule
+					sponsor = ROOT.ig:ig_industrialists
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_industrialists_rule
+					sponsor = ROOT.ig:ig_industrialists
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_industrialists_supremacy
 					sponsor = ROOT.ig:ig_industrialists
 					cooldown = 0
 				}
@@ -371,7 +882,7 @@ REPLACE_OR_CREATE:law_institutional_trade_unions = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -393,6 +904,96 @@ REPLACE_OR_CREATE:law_institutional_trade_unions = {
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_trade_unions_rule
+					sponsor = ROOT.ig:ig_trade_unions
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_trade_unions_rule
+					sponsor = ROOT.ig:ig_trade_unions
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_trade_unions_rule
+					sponsor = ROOT.ig:ig_trade_unions
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_trade_unions_supremacy
 					sponsor = ROOT.ig:ig_trade_unions
 					cooldown = 0
 				}
@@ -426,7 +1027,7 @@ REPLACE_OR_CREATE:law_institutional_rural_folk = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional_rule
+				has_law = law_type:law_institutional_rule
 			}
 			active_law:lawgroup_governance_principles ?= { 
 				every_scope_amendment = {
@@ -448,6 +1049,96 @@ REPLACE_OR_CREATE:law_institutional_rural_folk = {
 			active_law:lawgroup_governance_principles ?= { 
 				add_amendment = {
 					type = TBE_amendement_rural_folk_rule
+					sponsor = ROOT.ig:ig_rural_folk
+					cooldown = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_counciliary
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_legislative_principle ?= { 
+				add_amendment = {
+					type = TBE_amendement_rural_folk_rule
+					sponsor = ROOT.ig:ig_rural_folk
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_loyalism
+					has_law = law_type:law_ideological_elite
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_rule
+							type = amendment_type:TBE_amendement_devout_rule
+							type = amendment_type:TBE_amendement_armed_forces_rule
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_rule
+							type = amendment_type:TBE_amendement_intelligentsia_rule
+							type = amendment_type:TBE_amendement_industrialists_rule
+							type = amendment_type:TBE_amendement_trade_unions_rule
+							type = amendment_type:TBE_amendement_rural_folk_rule
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_rural_folk_rule
+					sponsor = ROOT.ig:ig_rural_folk
+					cooldown = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_institutional_supremacy
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				every_scope_amendment = {
+					limit = {
+						OR = {
+							type = amendment_type:TBE_amendement_landowners_supremacy
+							type = amendment_type:TBE_amendement_devout_supremacy
+							type = amendment_type:TBE_amendement_armed_forces_supremacy
+							type = amendment_type:TBE_amendement_petty_bourgeoisie_supremacy
+							type = amendment_type:TBE_amendement_intelligentsia_supremacy
+							type = amendment_type:TBE_amendement_industrialists_supremacy
+							type = amendment_type:TBE_amendement_trade_unions_supremacy
+							type = amendment_type:TBE_amendement_rural_folk_supremacy
+						}
+					}
+					remove_amendment = yes
+				}
+			}
+			active_law:lawgroup_distribution_of_power ?= { 
+				add_amendment = {
+					type = TBE_amendement_rural_folk_supremacy
 					sponsor = ROOT.ig:ig_rural_folk
 					cooldown = 0
 				}

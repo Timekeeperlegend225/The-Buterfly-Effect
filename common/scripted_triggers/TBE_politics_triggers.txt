@@ -1,0 +1,36 @@
+﻿institutional_ig_in_governement = {
+	OR = {
+		AND = {
+			has_law = law_type:law_institutional_landowners
+			has_ruling_interest_group = ig_landowners
+		}
+		AND = {
+			has_law = law_type:law_institutional_devout
+			has_ruling_interest_group = ig_devout
+		}
+		AND = {
+			has_law = law_type:law_institutional_armed_forces
+			has_ruling_interest_group = ig_armed_forces
+		}
+		AND = {
+			has_law = law_type:law_institutional_petty_bourgeoisie
+			has_ruling_interest_group = ig_petty_bourgeoisie
+		}
+		AND = {
+			has_law = law_type:law_institutional_intelligentsia
+			has_ruling_interest_group = ig_intelligentsia
+		}
+		AND = {
+			has_law = law_type:law_institutional_industrialists
+			has_ruling_interest_group = ig_industrialists
+		}
+		AND = {
+			has_law = law_type:law_institutional_trade_unions
+			has_ruling_interest_group = ig_trade_unions
+		}
+		AND = {
+			has_law = law_type:law_institutional_rural_folk
+			has_ruling_interest_group = ig_rural_folk
+		}
+	}
+}
