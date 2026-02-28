@@ -1,0 +1,21 @@
+﻿COUNTRIES = {
+	c:PEU ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		add_technology_researched = empiricism
+		
+		activate_law = law_type:law_national_model
+		activate_law = law_type:law_counciliary
+		activate_law = law_type:law_institutional_council
+		activate_law = law_type:law_agrarian_funds
+		activate_law = law_type:law_rural_economy
+		activate_law = law_type:law_institutional_armed_forces
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_per_capita_based_taxation
+	}
+}
