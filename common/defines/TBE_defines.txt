@@ -2,6 +2,9 @@
 	MIN_INSTITUTION_INVESTMENT = 1						# Lowest Investment Level for active Institutions (modifier is clamped to this)
 	MAX_INSTITUTION_INVESTMENT = 10						# Highest Investment Level for active Institutions (modifier is clamped to this)
 	DAILY_INSTITUTION_SIZE_CHANGE = 0.00448				# Percent increase / decrease in Institution Size per day (0.0028 ~ 1/365)
+	
+	
+	MAX_POP_FRACTION_JOIN_OR_LEAVE_IG = 0.05	# Maximum amount of a pop that can change IGs in a single update (for each IG)
 }
 
 

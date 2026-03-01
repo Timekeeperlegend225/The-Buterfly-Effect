@@ -333,3 +333,368 @@ REPLACE_OR_CREATE:TBE_amendement_rural_folk_supremacy = {
 
 	amendment_activism_multiplier = 0
 }
+
+REPLACE_OR_CREATE:TBE_amendement_landowners_council = {
+
+	modifier = {
+		interest_group_ig_landowners_pop_attraction_mult = 0.10
+		country_aristocrats_voting_power_add = 100
+		country_farmers_voting_power_add = 20
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_devout_council = {
+
+	modifier = {
+		interest_group_ig_devout_pop_attraction_mult = 0.10
+		country_clergymen_voting_power_add = 100
+		country_voting_power_full_acceptance_mult = 0.1
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_armed_forces_council = {
+
+	modifier = {
+		interest_group_ig_armed_forces_pop_attraction_mult = 0.10
+		country_officers_voting_power_add = 70
+		country_soldiers_voting_power_add = 30
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_petty_bourgeoisie_council = {
+
+	modifier = {
+		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.10
+		country_shopkeepers_voting_power_add = 70
+		country_clerks_voting_power_add = 30
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_intelligentsia_council = {
+
+	modifier = {
+		interest_group_ig_intelligentsia_pop_attraction_mult = 0.10
+		country_academics_voting_power_add = 70
+		country_bureaucrats_voting_power_add = 50
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_industrialists_council = {
+
+	modifier = {
+		interest_group_ig_industrialists_pop_attraction_mult = 0.10
+		country_capitalists_voting_power_add = 100
+		country_engineers_voting_power_add = 30
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_trade_unions_council = {
+
+	modifier = {
+		interest_group_ig_trade_unions_pop_attraction_mult = 0.10
+		country_laborers_voting_power_add = 30
+		country_machinists_voting_power_add = 30
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_rural_folk_council = {
+
+	modifier = {
+		interest_group_ig_rural_folk_pop_attraction_mult = 0.10
+		country_farmers_voting_power_add = 70
+		country_peasants_voting_power_add = 10
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_landowners_parliament = {
+
+	modifier = {
+		interest_group_ig_landowners_pop_attraction_mult = 0.25
+		country_aristocrats_voting_power_add = 10
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_devout_parliament = {
+
+	modifier = {
+		interest_group_ig_devout_pop_attraction_mult = 0.25
+		country_clergymen_voting_power_add = 10
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_armed_forces_parliament = {
+
+	modifier = {
+		interest_group_ig_armed_forces_pop_attraction_mult = 0.25
+		country_officers_voting_power_add = 7
+		country_soldiers_voting_power_add = 3
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_petty_bourgeoisie_parliament = {
+
+	modifier = {
+		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.25
+		country_shopkeepers_voting_power_add = 7
+		country_clerks_voting_power_add = 3
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_intelligentsia_parliament = {
+
+	modifier = {
+		interest_group_ig_intelligentsia_pop_attraction_mult = 0.25
+		country_academics_voting_power_add = 7
+		country_bureaucrats_voting_power_add = 3
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_industrialists_parliament = {
+
+	modifier = {
+		interest_group_ig_industrialists_pop_attraction_mult = 0.25
+		country_capitalists_voting_power_add = 10
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_trade_unions_parliament = {
+
+	modifier = {
+		interest_group_ig_trade_unions_pop_attraction_mult = 0.25
+		country_laborers_voting_power_add = 3
+		country_machinists_voting_power_add = 3
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
+
+REPLACE_OR_CREATE:TBE_amendement_rural_folk_parliament = {
+
+	modifier = {
+		interest_group_ig_rural_folk_pop_attraction_mult = 0.25
+		country_farmers_voting_power_add = 7
+		country_peasants_voting_power_add = 1
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_will_revoke = {
+		always = no
+	}
+
+	can_repeal = {
+		always = no
+	}
+
+	amendment_activism_multiplier = 0
+}
