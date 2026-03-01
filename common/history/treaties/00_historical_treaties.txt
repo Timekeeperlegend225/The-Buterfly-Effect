@@ -1,4 +1,55 @@
 ﻿TREATIES = {
+	# Treaty of Hünkâr İskelesi / Unkiar Skelessi
+	create_treaty = {
+		name = treaty_name_hunkar_iskelesi
+		first_country = c:RUS
+		second_country = c:TUR
+
+		is_draft = no
+		entered_into_force_on = 1833.7.8
+		binding_period = { years = 8 } # Initially to last for 8 years, generally held to have ended in 1840
+
+		articles_to_create = {
+			{ # To sort of model Turkish Straits Access (secret clause)
+				article = military_access
+				source_country = c:TUR
+				target_country = c:RUS
+			}
+		}
+	}
+	### Holy Alliance - Russia, Austria, Prussia
+	# Holy Alliance - RUS/AUS
+	create_treaty = {
+		name = treaty_name_holy_alliance
+		first_country = c:RUS
+		second_country = c:AUS
+
+		is_draft = no
+		entered_into_force_on = 1815.10.26
+		binding_period = { years = 35 } # 14 years to cover the Revolutions of 1848
+
+		articles_to_create = {
+			{ # Defensive Pact
+				article = defensive_pact
+			}
+		}
+	}
+	# Holy Alliance - PRU/AUS
+	create_treaty = {
+		name = treaty_name_holy_alliance
+		first_country = c:PRU
+		second_country = c:AUS
+
+		is_draft = no
+		entered_into_force_on = 1815.10.26
+		binding_period = { years = 35 } # 14 years to cover the Revolutions of 1848
+
+		articles_to_create = {
+			{ # Defensive Pact
+				article = defensive_pact
+			}
+		}
+	}
 	# Holy Alliance - PRU/RUS
 	create_treaty = {
 		name = treaty_name_holy_alliance
@@ -25,13 +76,13 @@
 			}
 		}
 		create_treaty = {
-			name = treaty_name_quadruple_alliance
+			name = "Anglo-Portuguese Alliance"
 			first_country = c:GBR
 			second_country = c:POR
 
 			is_draft = no
-			entered_into_force_on = 1834.4.22
-			binding_period = { years = 10 } # 8 years
+			entered_into_force_on = 1386.4.22
+			binding_period = { years = 500 } 
 
 			articles_to_create = {
 				{ # Anglo-Portuguese Alliance
@@ -52,11 +103,6 @@
 					source_country = c:GBR
 					target_country = c:POR
 				}
-				{ # British Portuguese Trade Agreement
-					article = trade_privilege
-					source_country = c:POR
-					target_country = c:GBR
-				}
 				{ # Port wine trade
 					article = goods_transfer
 					source_country = c:POR
@@ -76,8 +122,8 @@
 			second_country = c:POR
 
 			is_draft = no
-			entered_into_force_on = 1834.4.22
-			binding_period = { years = 10 } # 8 years
+			entered_into_force_on = 1386.4.22
+			binding_period = { years = 500 } 
 
 			articles_to_create = {
 				{ # Anglo-Portuguese Alliance
@@ -105,77 +151,21 @@
 			}
 		}
 	}
-	# Quadruple Alliance - GBR/SPA
-	create_treaty = {
-		name = treaty_name_quadruple_alliance
-		first_country = c:GBR
-		second_country = c:SPA
 
-		is_draft = no
-		entered_into_force_on = 1834.4.22
-		binding_period = { years = 10 } # 8 years
-
-		articles_to_create = {
-			{ # Defensive Pact
-				article = defensive_pact
-			}
-			{ # British Military Assistance to Spain
-				article = military_assistance
-				source_country = c:GBR
-				target_country = c:SPA
-			}
-		}
-	}
-	# Quadruple Alliance - FRA/SPA
+	# French Guarantee of Belgian Independence / Not official treaty
 	create_treaty = {
-		name = treaty_name_quadruple_alliance
 		first_country = c:FRA
-		second_country = c:SPA
+		second_country = c:BEL
 
 		is_draft = no
-		entered_into_force_on = 1834.4.22
-		binding_period = { years = 10 } # 8 years
+		entered_into_force_on = 1831.8.8 # Date of French intervention during the Ten Days' Campaign
+		binding_period = { years = 15 } # 10 years Treaty of London
 
 		articles_to_create = {
-			{ # Defensive Pact
-				article = defensive_pact
-			}
-			{ # French Military Support to Spanish government
-				article = military_assistance
+			{ # French Guarantee of Belgian Independence
+				article = guarantee_independence
 				source_country = c:FRA
-				target_country = c:SPA
-			}
-		}
-	}
-	# Quadruple Alliance - FRA/POR
-	create_treaty = {
-		name = treaty_name_quadruple_alliance
-		first_country = c:FRA
-		second_country = c:POR
-
-		is_draft = no
-		entered_into_force_on = 1834.4.22
-		binding_period = { years = 10 } # 8 years
-
-		articles_to_create = {
-			{ # Defensive Pact
-				article = defensive_pact
-			}
-		}
-	}
-	# Quadruple Alliance - POR/SPA
-	create_treaty = {
-		name = treaty_name_quadruple_alliance
-		first_country = c:SPA
-		second_country = c:POR
-
-		is_draft = no
-		entered_into_force_on = 1834.4.22
-		binding_period = { years = 10 } # 8 years
-
-		articles_to_create = {
-			{ # Defensive Pact
-				article = defensive_pact
+				target_country = c:BEL
 			}
 		}
 	}
@@ -339,6 +329,158 @@
 			}
 		}
 	}
+
+	# Austrian Guarantee of Sicilian Independence / Not official treaty
+	create_treaty = {
+		first_country = c:AUS
+		second_country = c:SIC
+
+		is_draft = no
+		entered_into_force_on = 1815.6.9 # Final Act of the Congress of Vienna
+		binding_period = { years = 35 } # 14 years to cover the Revolutions of 1848
+
+		articles_to_create = {
+			{ # Austrian Guarantee of Sicilian Independence
+				article = guarantee_independence
+				source_country = c:AUS
+				target_country = c:SIC
+			}
+			{ # Austrian-Sicilian Trade Agreement
+				article = trade_privilege
+				source_country = c:AUS
+				target_country = c:SIC
+			}
+			{ # Austrian-Sicilian Trade Agreement
+				article = trade_privilege
+				source_country = c:SIC
+				target_country = c:AUS
+			}
+		}
+	}
+
+	# Austrian Guarantee of Tuscan Independence / Not official treaty
+	create_treaty = {
+		first_country = c:AUS
+		second_country = c:TUS
+
+		is_draft = no
+		entered_into_force_on = 1815.6.9 # Final Act of the Congress of Vienna
+		binding_period = { years = 35 } # 14 years to cover the Revolutions of 1848
+
+		articles_to_create = {
+			{ # Austrian Guarantee of Tuscan Independence
+				article = guarantee_independence
+				source_country = c:AUS
+				target_country = c:TUS
+			}
+			{ # Austrian-Tuscan Trade Agreement
+				article = trade_privilege
+				source_country = c:AUS
+				target_country = c:TUS
+			}
+			{ # Austrian-Tuscan Trade Agreement
+				article = trade_privilege
+				source_country = c:TUS
+				target_country = c:AUS
+			}
+		}
+	}
+
+	# Austrian Guarantee of Parmese Independence / Not official treaty
+	create_treaty = {
+		first_country = c:AUS
+		second_country = c:PAR
+
+		is_draft = no
+		entered_into_force_on = 1815.6.9 # Final Act of the Congress of Vienna
+		binding_period = { years = 35 } # 14 years to cover the Revolutions of 1848
+
+		articles_to_create = {
+			{ # Austrian Guarantee of Parmese Independence
+				article = guarantee_independence
+				source_country = c:AUS
+				target_country = c:PAR
+			}
+		}
+	}
+
+	# Austrian Guarantee of Modenan Independence / Not official treaty
+	create_treaty = {
+		first_country = c:AUS
+		second_country = c:MOD
+
+		is_draft = no
+		entered_into_force_on = 1815.6.9 # Final Act of the Congress of Vienna
+		binding_period = { years = 35 } # 14 years to cover the Revolutions of 1848
+
+		articles_to_create = {
+			{ # Austrian Guarantee of Modenan Independence
+				article = guarantee_independence
+				source_country = c:AUS
+				target_country = c:MOD
+			}
+		}
+	}
+
+	# Anglo-Belgian Trade relationship / Not official treaty
+	if = {
+		limit = {
+			OR = {
+				has_dlc_feature = foreign_investment
+				has_dlc_feature = mp1_treaties
+			}
+		}
+		create_treaty = {
+			first_country = c:GBR
+			second_country = c:BEL
+
+			is_draft = no
+			entered_into_force_on = 1831.8.12 # End of the Ten Days' Campaign
+			binding_period = { years = 15 } # 10 years
+
+			articles_to_create = {
+				{ # Anglo-Belgian Trade Agreement
+					article = trade_privilege
+					source_country = c:GBR
+					target_country = c:BEL
+				}
+				{ # Anglo-Belgian Trade Agreement
+					article = trade_privilege
+					source_country = c:BEL
+					target_country = c:GBR
+				}
+				{ # British economic interests in Belgium
+					article = foreign_investment_rights
+					source_country = c:BEL
+					target_country = c:GBR
+				}
+			}
+		}
+	}
+	else = {
+		create_treaty = {
+			first_country = c:GBR
+			second_country = c:BEL
+
+			is_draft = no
+			entered_into_force_on = 1831.8.12 # End of the Ten Days' Campaign
+			binding_period = { years = 15 } # 10 years
+
+			articles_to_create = {
+				{ # Anglo-Belgian Trade Agreement
+					article = trade_privilege
+					source_country = c:GBR
+					target_country = c:BEL
+				}
+				{ # Anglo-Belgian Trade Agreement
+					article = trade_privilege
+					source_country = c:BEL
+					target_country = c:GBR
+				}
+			}
+		}
+	}
+
 	# Hamburg-Prussian Trade relationship / Not official treaty
 	create_treaty = {
 		name = treaty_name_ham_pru_trade
@@ -423,6 +565,26 @@
 			}
 		}
 	}
+
+	# Transit Rights Agreement for Luxemburg
+	create_treaty = {
+		name = treaty_name_lux_transit_rights
+		first_country = c:PRU # Luxemburg was a part of the German Confederation and Zollverein but we cant represent it in-game (for now)
+		second_country = c:LUX
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 } # 10 years
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:PRU
+				target_country = c:LUX
+			}
+		}
+	}
+
 	# Macau Treaty Port
 	create_treaty = {
 		name = treaty_name_luso_chinese_agreement
@@ -638,140 +800,22 @@
 			}
 		}
 	}
-
-	# Siam supporting Cambodian independence - TODO fix this PRCAL-39401
-	create_treaty = {
-		first_country = c:SIA
-		second_country = c:CAM
-
-		is_draft = no
-		entered_into_force_on = 1834.1.1 # End of the last war
-		binding_period = { years = 10 } # However long you want, really
-
-		articles_to_create = {
-			{
-				article = support_independence
-				source_country = c:SIA
-				target_country = c:CAM
-			}
-		}
-	}
-
-	#Russia is protecting Montenegro from being outright invaded by the Ottomans
-	create_treaty = {
-		name = treaty_name_rus_mon
-		first_country = c:RUS
-		second_country = c:MON
-
-		is_draft = no
-		entered_into_force_on = 1828.6.15
-		binding_period = { years = 35 }
-
-		articles_to_create = {
-			{
-				article = guarantee_independence
-				source_country = c:RUS
-				target_country = c:MON
-			}
-		}
-	}
-
-	# Treaty of Adrianople - Wallachia
-	create_treaty = {
-		name = treaty_name_treaty_of_adrianople
-		first_country = c:RUS
-		second_country = c:WAL
-
-		is_draft = no
-		entered_into_force_on = 1829.9.14
-		binding_period = { years = 30 } # The Organic Regulation ended in 1856
-
-		articles_to_create = {
-			{ # Organic Regulation
-				article = law_commitment
-				source_country = c:WAL
-				target_country = c:RUS
-				inputs = {
-					{ law_type = law_type:law_organic_regulation }
-				}
-			}
-			{ # Russian occupation
-				article = military_access
-				source_country = c:WAL
-				target_country = c:RUS
-			}
-			{ # Russian occupation
-				article = host_power_bloc_embassy
-				source_country = c:WAL
-				target_country = c:RUS
-			}
-			{ # To increase liberty desire
-				article = support_independence
-				source_country = c:RUS
-				target_country = c:WAL
-			}
-		}
-	}
-
-	# Treaty of Adrianople - Moldavia
-	create_treaty = {
-		name = treaty_name_treaty_of_adrianople
-		first_country = c:RUS
-		second_country = c:MOL
-
-		is_draft = no
-		entered_into_force_on = 1829.9.14
-		binding_period = { years = 30 } # The Organic Regulation ended in 1856
-
-		articles_to_create = {
-			{ # Organic Regulation
-				article = law_commitment
-				source_country = c:MOL
-				target_country = c:RUS
-				inputs = {
-					{ law_type = law_type:law_organic_regulation }
-				}
-			}
-			{ # Russian occupation
-				article = military_access
-				source_country = c:MOL
-				target_country = c:RUS
-			}
-			{ # Russian occupation
-				article = host_power_bloc_embassy
-				source_country = c:MOL
-				target_country = c:RUS
-			}
-			{ # To increase liberty desire
-				article = support_independence
-				source_country = c:RUS
-				target_country = c:MOL
-			}
-		}
-	}
-
+	
 	#######################################################
 	# 			Anti-Cheese Treaties of 1836			  #
 	# not precisely historical, but good for game balance #
 	#######################################################
-
-	### South African treaties for initial trading and such
-
+	
 	create_treaty = {
 		first_country = c:GBR
 		second_country = c:ORA
 
 		is_draft = no
 		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
+		binding_period = { years = 25 } 
 
 		articles_to_create = {
 			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:ORA
-			}
-			{ # Guarantee of Independence
 				article = guarantee_independence
 				source_country = c:GBR
 				target_country = c:ORA
@@ -785,135 +829,13 @@
 
 		is_draft = no
 		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
+		binding_period = { years = 25 } 
 
 		articles_to_create = {
 			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:TRN
-			}
-			{ # Guarantee of Independence
 				article = guarantee_independence
 				source_country = c:GBR
 				target_country = c:TRN
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:ORA
-		second_country = c:TRN
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:ORA
-				target_country = c:TRN
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:PHL
-		second_country = c:ORA
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:PHL
-				target_country = c:ORA
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:WBL
-		second_country = c:TRN
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:WBL
-				target_country = c:TRN
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:GBR
-		second_country = c:PHL
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:PHL
-			}
-			{ # Guarantee of Independence
-				article = guarantee_independence
-				source_country = c:GBR
-				target_country = c:PHL
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:GBR
-		second_country = c:WBL
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:WBL
-			}
-			{ # Guarantee of Independence
-				article = guarantee_independence
-				source_country = c:GBR
-				target_country = c:WBL
-			}
-		}
-	}
-
-	# Yemen coffee trade
-	create_treaty = {
-		first_country = c:LAH
-		second_country = c:ZAI
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = goods_transfer
-				source_country = c:ZAI
-				target_country = c:LAH
-				inputs = {
-					{ goods = g:coffee }
-					{ quantity = 20 }
-				}
 			}
 		}
 	}
