@@ -192,6 +192,9 @@
 				}
 			}
 	}
+	
+	scripted_button = Test_Split_Army
+	scripted_button = Test_Unsplit_Army
 
 	on_weekly_pulse = {
 		effect = {

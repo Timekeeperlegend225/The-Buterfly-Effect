@@ -139,7 +139,6 @@ TBE_insitutional_rule_initial_amendment = {
 	}
 }
 
-
 TBE_insitutional_supremacy_initial_amendment = {
 	if = {
 		limit = {
@@ -232,6 +231,204 @@ TBE_insitutional_supremacy_initial_amendment = {
 		scope:institutional_supremacy_scope = {
 			add_amendment = {
 			type = TBE_amendement_rural_folk_supremacy
+			sponsor = ROOT.ig:ig_rural
+				cooldown = 0
+			}
+		}
+	}
+}
+
+TBE_insitutional_council_initial_amendment = {
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_landowners
+		}
+		scope:institutional_council_scope = { 
+			add_amendment = {
+				type = TBE_amendement_landowners_council
+				sponsor = ROOT.ig:ig_landowners
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+		has_law_or_variant = law_type:law_institutional_devout
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_devout_council
+			sponsor = ROOT.ig:ig_devout
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_armed_forces
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_armed_forces_council
+			sponsor = ROOT.ig:ig_armed_forces
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_petty_bourgeoisie
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_petty_bourgeoisie_council
+			sponsor = ROOT.ig:ig_petty_bourgeoisie
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_intelligentsia
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_intelligentsia_council
+			sponsor = ROOT.ig:ig_intelligentsia
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_industrialists
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_industrialists_council
+			sponsor = ROOT.ig:ig_industrialists
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_trade_unions
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_trade_unions_council
+			sponsor = ROOT.ig:ig_trade_unions
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_rural_folk
+		}
+		scope:institutional_council_scope = {
+			add_amendment = {
+			type = TBE_amendement_rural_folk_council
+			sponsor = ROOT.ig:ig_rural
+				cooldown = 0
+			}
+		}
+	}
+}
+
+TBE_insitutional_parliament_initial_amendment = {
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_landowners
+		}
+		scope:institutional_parliament_scope = { 
+			add_amendment = {
+				type = TBE_amendement_landowners_parliament
+				sponsor = ROOT.ig:ig_landowners
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+		has_law_or_variant = law_type:law_institutional_devout
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_devout_parliament
+			sponsor = ROOT.ig:ig_devout
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_armed_forces
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_armed_forces_parliament
+			sponsor = ROOT.ig:ig_armed_forces
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_petty_bourgeoisie
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_petty_bourgeoisie_parliament
+			sponsor = ROOT.ig:ig_petty_bourgeoisie
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_intelligentsia
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_intelligentsia_parliament
+			sponsor = ROOT.ig:ig_intelligentsia
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_industrialists
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_industrialists_parliament
+			sponsor = ROOT.ig:ig_industrialists
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_trade_unions
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_trade_unions_parliament
+			sponsor = ROOT.ig:ig_trade_unions
+				cooldown = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_institutional_rural_folk
+		}
+		scope:institutional_parliament_scope = {
+			add_amendment = {
+			type = TBE_amendement_rural_folk_parliament
 			sponsor = ROOT.ig:ig_rural
 				cooldown = 0
 			}

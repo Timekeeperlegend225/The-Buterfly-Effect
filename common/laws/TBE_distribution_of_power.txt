@@ -16,8 +16,6 @@ REPLACE_OR_CREATE:law_aristocratic = { #Traditional
 	}
 
 	modifier = {
-		country_aristocrats_pol_str_mult = 0.5
-		country_legitimacy_base_add = 100
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -45,7 +43,6 @@ REPLACE_OR_CREATE:law_institutional = { #Institutional
 	}
 
 	modifier = {
-		country_legitimacy_base_add = 100
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -73,8 +70,6 @@ REPLACE_OR_CREATE:law_plutocratic = { #Wealth
 	}
 
 	modifier = {
-		state_political_strength_from_wealth_mult = 1
-		country_legitimacy_base_add = 100
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -102,7 +97,6 @@ REPLACE_OR_CREATE:law_meritocratic = { #Qualification
 	}
 
 	modifier = {
-		country_legitimacy_base_add = 100
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -130,7 +124,6 @@ REPLACE_OR_CREATE:law_egalitarian = { #Universal
 	}
 
 	modifier = {
-		country_legitimacy_base_add = 100
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -158,7 +151,6 @@ REPLACE_OR_CREATE:law_partisan = { #Controlled
 	}
 
 	modifier = {
-		country_legitimacy_base_add = 100
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -724,7 +716,7 @@ REPLACE_OR_CREATE:law_plutocracy = {
 	}
 }
 
-REPLACE:law_technocracy = {
+REPLACE_OR_CREATE:law_technocracyTBE = {
 	group = lawgroup_distribution_of_power
 	parent = law_meritocratic
 
@@ -790,7 +782,7 @@ REPLACE:law_technocracy = {
 	}
 }
 
-REPLACE:law_anarchy = {
+REPLACE_OR_CREATE:law_anarchyTBE = {
 	group = lawgroup_distribution_of_power
 	parent = law_egalitarian
 
@@ -1049,6 +1041,17 @@ REPLACE_OR_CREATE:law_institutional_council = {
 		country_voting_power_base_add = 5
 		country_peasants_voting_power_add = -5
 		country_electoral_confidence_impact_mult = -0.1
+	}
+
+	on_activate = {
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_institutional_council
+			}
+			save_scope_as = institutional_council_scope
+		}
+		TBE_insitutional_council_initial_amendment = yes
 	}
 
 	can_impose = {
@@ -1487,6 +1490,17 @@ REPLACE_OR_CREATE:law_managed_democracy = {
 		country_electoral_confidence_impact_mult = -0.9
 	}
 
+	on_activate = {
+		custom_tooltip = "The law will get an amendment dependent of your instituional IG"
+		random_law = {
+			limit = {
+				type = law_type:law_managed_democracy
+			}
+			save_scope_as = institutional_parliament_scope
+		}
+		TBE_insitutional_parliament_initial_amendment = yes
+	}
+
 	can_impose = {
 		OR = {
 			AND = {
@@ -1514,7 +1528,7 @@ REPLACE_OR_CREATE:law_managed_democracy = {
 	}
 }
 
-REPLACE:law_wealth_voting = {
+REPLACE_OR_CREATE:law_wealth_votingTBE = {
 	group = lawgroup_distribution_of_power
 	parent = law_plutocratic
 

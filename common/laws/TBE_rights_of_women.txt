@@ -89,12 +89,9 @@ REPLACE:law_womens_suffrage = {
 	}
 
 	unlocking_laws = {
-		law_meritocratic
-		law_aristocratic
-		law_plutocratic
-		law_egalitarian
-		law_partisan
-		law_anarchy
+		law_presidential
+		law_counciliary
+		law_parliamentary
 	}
 
 	on_enact = {

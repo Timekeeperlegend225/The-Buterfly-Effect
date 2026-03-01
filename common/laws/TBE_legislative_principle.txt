@@ -11,6 +11,10 @@
 		country_officers_pol_str_mult = 0.5
 	}
 
+	disallowing_laws = {
+		law_head_of_legislature
+	}
+
 	on_activate = {
 		scripted_effect_parties_disappearence = yes
 		cleanup_voting_strength_modifiers = yes
@@ -406,16 +410,6 @@ REPLACE_OR_CREATE:law_parliamentary = {
 			}
 
 			add = base_impose_law_weight
-			if = {
-				limit = {
-					scope:target_country = { has_law_or_variant = law_type:law_council_republic }
-					NOT = { has_strategy = ai_strategy_egalitarian_agenda }
-				}
-				multiply = 5
-			}
-			else = {
-				multiply = 0.5 # AI is less likely to mess with governance principles unless dealing with council republics
-			}
 		}
 	}
 }

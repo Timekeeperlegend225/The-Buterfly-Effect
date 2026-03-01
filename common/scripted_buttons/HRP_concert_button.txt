@@ -1,0 +1,42 @@
+﻿Test_Split_Army = {
+	name = "Split the Amed_forces"
+	desc = "For test purpose"
+	
+	visible = { 
+		always = yes
+	}
+
+	possible = {
+		NOT = {
+			has_variable = TBE_amry_split
+		}
+	}
+
+	effect = {
+		set_variable = { 
+			name = TBE_amry_split 
+		}
+		recalculate_pop_ig_support = yes
+	}
+}
+
+
+Test_Unsplit_Army = {
+	name = "Unsplit the Amed_forces"
+	desc = "For test purpose"
+	
+	visible = { 
+		always = yes
+	}
+
+	possible = {
+		has_variable = TBE_amry_split
+	}
+
+	effect = {
+		remove_variable = {
+			name = TBE_amry_split 
+		}
+		recalculate_pop_ig_support = yes
+	}
+}

@@ -43,16 +43,6 @@ REPLACE:law_monarchy = {
 			}
 
 			add = base_impose_law_weight
-			if = {
-				limit = {
-					scope:target_country = { has_law_or_variant = law_type:law_council_republic }
-					NOT = { has_strategy = ai_strategy_egalitarian_agenda }
-				}
-				multiply = 5
-			}
-			else = {
-				multiply = 0.5 # AI is less likely to mess with governance principles unless dealing with council republics
-			}
 		}
 
 		if = {
@@ -273,6 +263,10 @@ REPLACE_OR_CREATE:law_head_of_legislature = {
 		country_legitimacy_govt_total_clout_add = 10
 	}
 
+	disallowing_laws = {
+		law_autocracy
+	}
+
 	ai_will_do = {
 		exists = ruler
 		OR = {
@@ -309,44 +303,6 @@ REPLACE_OR_CREATE:law_head_of_legislature = {
 	}
 
 	ai_impose_chance = {
-		value = 0
-
-		if = {
-			limit = {
-				has_law = law_type:law_parliamentary_republic
-				has_strategy = ai_strategy_progressive_agenda
-				power_bloc ?= { has_identity = identity:identity_ideological_union }
-				scope:target_country = { # Is their law different enough from what we want to impose?
-					NOT = { has_law_or_variant = law_type:law_presidential_republic }
-				}
-			}
-
-			add = base_impose_law_weight
-			if = {
-				limit = {
-					scope:target_country = { has_law_or_variant = law_type:law_council_republic }
-					NOT = { has_strategy = ai_strategy_egalitarian_agenda }
-				}
-				multiply = 5
-			}
-			else = {
-				multiply = 0.5 # AI is less likely to mess with governance principles unless dealing with council republics
-			}
-		}
-
-		if = {
-			limit = {
-				scope:target_country = {
-					c:BIC ?= this
-					OR = {
-						has_journal_entry = je_british_dictate_plantations
-						has_journal_entry = je_british_dictate_military
-						has_journal_entry = je_british_dictate_universities
-					}
-				}
-			}
-			multiply = 0
-		}
 	}
 }
 
