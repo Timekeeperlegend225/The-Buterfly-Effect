@@ -94,7 +94,6 @@
 		create_political_movement = { type = movement_orleanist }
 		create_political_movement = { type = movement_legitimist }
 		create_political_movement = { type = movement_bonapartist }
-		create_political_movement = { type = movement_radical }
 	}
 	c:AUS ?= {
 		create_political_movement = { type = movement_cultural_minority culture = cu:polish }

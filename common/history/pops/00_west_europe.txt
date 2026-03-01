@@ -536,16 +536,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1852741
+				size = 2000000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 20393
+				size = 30000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 9220
+				size = 10000
 			}
 		}
 	}
@@ -563,20 +563,20 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1038678
+				size = 1200000
 			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
-				size = 12115
+				size = 14000
 			}
 			create_pop = {
 				culture = french
-				size = 37612
+				size = 25000
 			}
 			create_pop = {
 				culture = sephardic # Avignonese Jews, closer to Sephardi than Ashkenazi
-				size = 2440
+				size = 2500
 			}
 		}
 	}
@@ -584,16 +584,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 2670494
+				size = 2800000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 14169
+				size = 2000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 469
+				size = 500
 			}
 		}
 	}
@@ -601,20 +601,20 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1994848
+				size = 2000000
 			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
-				size = 167963
+				size = 200000
 			}
 			create_pop = {
 				culture = catalan
-				size = 145206
+				size = 160000
 			}
 			create_pop = {
 				culture = french
-				size = 64216
+				size = 100000
 			}
 			create_pop = {
 				culture = sephardic
@@ -626,29 +626,34 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = francoprovencal
-				size = 1709209
+				size = 1600000
 			}
 			create_pop = {
 				culture = francoprovencal
 				religion = protestant
-				size = 7736
+				size = 500000
 			}
 			create_pop = {
 				culture = occitan
-				size = 711985
+				size = 820000
 			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
-				size = 78428
+				size = 100000
 			}
 			create_pop = {
 				culture = french
-				size = 96520
+				size = 20000
+			}
+			create_pop = {
+				culture = french
+				religion = protestant
+				size = 2000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 889
+				size = 1000
 			}
 		}
 	}
@@ -656,25 +661,25 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1608005
+				size = 2000000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 10279
+				size = 25000
 			}
 			create_pop = {
 				culture = flemish
-				size = 70121
+				size = 70000
 			}
 			create_pop = {
 				culture = flemish
 				religion = protestant
-				size = 2021
+				size = 4000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 645
+				size = 700
 			}
 		}
 	}
@@ -682,16 +687,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1470989
+				size = 1600000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 7307
+				size = 1000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 146
+				size = 200
 			}
 		}
 	}
@@ -699,29 +704,34 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = alemannic
-				size = 719210
+				size = 300000
 			}
 			create_pop = {
 				culture = alemannic
 				religion = protestant
-				size = 220778
+				size = 400000
 			}
 			create_pop = {
 				culture = south_german
-				size = 236987
+				size = 100000
 			}
 			create_pop = {
 				culture = south_german
 				religion = protestant
-				size = 4571
+				size = 2000
 			}
 			create_pop = {
 				culture = french
-				size = 215063
+				size = 700000
+			}
+			create_pop = {
+				culture = french
+				religion = protestant
+				size = 70000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 39519
+				size = 45000
 			}
 		}
 	}
@@ -729,20 +739,20 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1680062
+				size = 1800000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 65087
+				size = 300000
 			}
 			create_pop = {
 				culture = occitan
-				size = 3001
+				size = 2000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 44
+				size = 100
 			}
 		}
 	}
@@ -750,16 +760,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1693584
+				size = 1800000
 			}
 			create_pop = {
 				culture = french
-				size = 10362
+				size = 20000
 			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
-				size = 30094
+				size = 40000
 			}
 		}
 	}
@@ -767,20 +777,20 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1949056
+				size = 2000000
 			}
 			create_pop = {
 				culture = french
-				size = 369270
+				size = 500000
 			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
-				size = 9298
+				size = 20000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 263
+				size = 300
 			}
 		}
 	}
@@ -788,20 +798,25 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = breton
-				size = 1599083
+				size = 1800000
 			}
 			create_pop = {
 				culture = french
-				size = 1018017
+				size = 1200000
 			}
 			create_pop = {
 				culture = breton
 				religion = protestant
-				size = 3030
+				size = 4000
+			}
+			create_pop = {
+				culture = french
+				religion = protestant
+				size = 7000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 148
+				size = 200
 			}
 		}
 	}
@@ -809,20 +824,25 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1561366
+				size = 1800000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 2607
+				size = 7000
 			}
 			create_pop = {
 				culture = francoprovencal
-				size = 12350
+				size = 10000
+			}
+			create_pop = {
+				culture = francoprovencal
+				religion = protestant
+				size = 7000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 595
+				size = 700
 			}
 		}
 	}
@@ -830,16 +850,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1608973
+				size = 2000000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 1161
+				size = 700000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 60
+				size = 200
 			}
 		}
 	}
@@ -847,20 +867,25 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1153438
+				size = 1400000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 3472
+				size = 70000
 			}
-			create_pop = { # Givet area Walloon
+			create_pop = { 
 				culture = wallonian
-				size = 4167
+				size = 5000
+			}
+			create_pop = { 
+				culture = wallonian
+				religion = protestant
+				size = 2000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 868
+				size = 900
 			}
 		}
 	}
@@ -868,16 +893,21 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 770731
+				size = 800000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 40722
+				size = 70000
 			}
 			create_pop = {
 				culture = francoprovencal
-				size = 121924
+				size = 140000
+			}
+			create_pop = {
+				culture = francoprovencal
+				religion = protestant
+				size = 70000
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -889,16 +919,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1133731
+				size = 1400000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 12130
+				size = 200000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 7240
+				size = 8000
 			}
 		}
 	}
@@ -906,24 +936,29 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1703916
+				size = 1800000
 			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
-				size = 18784
+				size = 250000
 			}
 			create_pop = {
 				culture = french
-				size = 58129
+				size = 70000
+			}
+			create_pop = {
+				culture = french
+				religion = protestant
+				size = 10000
 			}
 			create_pop = {
 				culture = basque
-				size = 60145
+				size = 70000
 			}
 			create_pop = {
 				culture = sephardic
-				size = 3203
+				size = 4000
 			}
 		}
 	}
@@ -931,16 +966,16 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1375047
+				size = 1600000
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 4355
+				size = 20000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 91
+				size = 150
 			}
 		}
 	}

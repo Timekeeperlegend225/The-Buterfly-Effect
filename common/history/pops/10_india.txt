@@ -1543,7 +1543,7 @@ POPS = {
 		}
 	}
 	s:STATE_CIRCARS = {
-		region_state:BIC = {
+		region_state:FIC = {
 			create_pop = {
 				culture = telegu
 				size = 2295020

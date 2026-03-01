@@ -2650,7 +2650,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=30
+						levels=70
 					}
 				}
 				reserves=1

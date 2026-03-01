@@ -1766,13 +1766,13 @@
 		}
 	}
 	s:STATE_FORMOSA={
-		region_state:FRS={
+		region_state:PHI={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:FRS"
+						country="c:PHI"
 						levels=5
 						region="STATE_FORMOSA"
 					}
@@ -1785,7 +1785,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:FRS"
+						country="c:PHI"
 						levels=3
 						region="STATE_FORMOSA"
 					}
@@ -1798,7 +1798,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:FRS"
+						country="c:PHI"
 						levels=5
 						region="STATE_FORMOSA"
 					}
@@ -1810,7 +1810,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:FRS"
+						country="c:PHI"
 						levels=1
 					}
 				}

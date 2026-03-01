@@ -363,6 +363,24 @@
 			}
 
 			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_FLANDERS
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_LORRAINE
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_WALLONIA
+				count = 10
+			}
+
+			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_CHAMPAGNE
 				count = 5
@@ -371,6 +389,18 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_FRANCHE_COMTE
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ILE_DE_FRANCE
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_BRITTANY
 				count = 10
 			}
 			save_scope_as = thirdcorpfra
@@ -401,7 +431,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_LORRAINE
-				count = 15
+				count = 8
 			}
 
 			combat_unit = {
@@ -413,6 +443,18 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_CHAMPAGNE
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_BRITTANY
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_RHONE
 				count = 5
 			}
 
@@ -442,30 +484,6 @@
 			name = Escadre_du_Nord # Somewhat anachronistic formation
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 7
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_BRITTANY
-				count = 8
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_NORMANDY
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_POITOU
-				count = 3
-			}
-
-			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
 				count = 11
@@ -486,7 +504,37 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_POITOU
-				count = 5
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				count = 7
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_BRITTANY
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_NORMANDY
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_FLANDERS
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_POITOU
+				count = 10
 			}
 		}
 
@@ -564,7 +612,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_HOME_COUNTIES
-				count = 1
+				count = 10
 			}
 
 			combat_unit = {
@@ -598,15 +646,32 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MIDLANDS
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_HIGHLANDS
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_WEST_COUNTRY
 				count = 2
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
+				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_LOWLANDS
 				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_HOME_COUNTIES
+				count = 7
 			}
 
 			combat_unit = {
@@ -616,64 +681,29 @@
 			}
 
 			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MIDLANDS
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_HOME_COUNTIES
+				count = 5
+			}
+
+			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_LANCASHIRE
 				count = 3
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_MIDLANDS
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MIDLANDS
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_HOME_COUNTIES
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_MIDLANDS
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ULSTER
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LEINSTER
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HIGHLANDS
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MUNSTER
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CONNAUGHT
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_CONNAUGHT
-				count = 1
-			}
 			save_scope_as = home_army_army
 		}
 
@@ -685,86 +715,6 @@
 
 		scope:colborne_gen = {
 			transfer_to_formation = scope:home_army_army
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_italy
-			name = Army_of_the_Mediterranean
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_EAST_ANGLIA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_YORKSHIRE
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_YORKSHIRE
-				count = 1
-			}
-			save_scope_as = army_med_army
-		}
-
-		create_character = {
-			template = GBR_matthew_whitworth_aylmer
-			save_scope_as = aylmer_gen
-		}
-
-		scope:aylmer_gen = {
-			transfer_to_formation = scope:army_med_army
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_caribbean
-			name = Army_of_the_West_Indies
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WALES
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
-				count = 9
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_YORKSHIRE
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ULSTER
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ULSTER
-				count = 1
-			}
-			save_scope_as = west_indies_army
-		}
-
-		create_character = {
-			template = GBR_henry_hardinge
-			save_scope_as = hardinge_gen
-		}
-
-		scope:hardinge_gen = {
-			transfer_to_formation = scope:west_indies_army
 		}
 
 		create_military_formation = {
@@ -786,20 +736,8 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LEINSTER
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_HIGHLANDS
 				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_LEINSTER
-				count = 3
 			}
 
 			combat_unit = {
@@ -811,13 +749,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
+				count = 2
 			}
 
 			combat_unit = {
@@ -849,9 +781,9 @@
 			name = Portsmouth_Station
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_WEST_COUNTRY
-				count = 30
+				count = 10
 			}
 
 			combat_unit = {
@@ -862,13 +794,20 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ULSTER
-				count = 9
+				state_region = s:STATE_YORKSHIRE
+				count = 5
 			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_WEST_COUNTRY
+				count = 30
+			}
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_HOME_COUNTIES
-				count = 18
+				count = 20
 			}
 		}
 
@@ -880,7 +819,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_EAST_ANGLIA
-				count = 19
+				count = 20
 			}
 
 			combat_unit = {
@@ -888,94 +827,6 @@
 				state_region = s:STATE_YORKSHIRE
 				count = 25
 			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_italy
-			name = Mediterranean_Station
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HOME_COUNTIES
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_YORKSHIRE
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_MIDLANDS
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LOWLANDS
-				count = 2
-			}
-
-			save_scope_as = med_fleet_gbr
-		}
-
-		create_character = { # Sea
-			template = GBR_thomas_cochrane
-			save_scope_as = thomas_adm
-		}
-
-		scope:thomas_adm = {
-			transfer_to_formation = scope:med_fleet_gbr
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_new_england
-			name = North_America_and_West_Indies_Station
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BERMUDA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_HOME_COUNTIES
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_JAMAICA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LEINSTER
-				count = 6
-			}
-			save_scope_as = north_amer_fleet
-		}
-
-		create_character = { # Sea
-			template = GBR_george_cockburn
-			save_scope_as = cockburn_adm
-			# Burnt down washington
-		}
-
-		scope:cockburn_adm = {
-			transfer_to_formation = scope:north_amer_fleet
 		}
 
 		create_military_formation = {
@@ -996,15 +847,15 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_MUNSTER
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_WALES
 				count = 1
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MUNSTER
-				count = 1
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_WALES
+				count = 2
 			}
 			save_scope_as = india_china_fleet
 		}
