@@ -6,7 +6,7 @@
 				add_ownership={
 					country={
 						country="c:SWE"
-						levels=4
+						levels=5
 					}
 				}
 				reserves=1
@@ -132,7 +132,7 @@
 				add_ownership={
 					country={
 						country="c:SWE"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -491,6 +491,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:DEN"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 		}
 	}
@@ -512,7 +524,7 @@
 				add_ownership={
 					country={
 						country="c:DEN"
-						levels=3
+						levels=4
 					}
 				}
 				reserves=1
@@ -978,7 +990,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=10
+						levels=20
 					}
 				}
 				reserves=1
@@ -1165,7 +1177,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=8
 					}
 				}
 				reserves=1
@@ -1431,7 +1443,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=7
 					}
 				}
 				reserves=1
@@ -1677,7 +1689,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=12
 					}
 				}
 				reserves=1
@@ -1905,7 +1917,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=2
+						levels=5
 					}
 				}
 				reserves=1
@@ -2108,7 +2120,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=8
 					}
 				}
 				reserves=1
@@ -2493,6 +2505,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools" "pm_potatoes" }
+				
+			}
+			region_state:IRE={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:IRE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -2545,6 +2570,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			region_state:IRE={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:IRE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 		}
 	}
@@ -2623,6 +2661,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			region_state:IRE={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:IRE"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 		}
 	}
@@ -2650,7 +2701,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=70
+						levels=60
 					}
 				}
 				reserves=1
@@ -2937,6 +2988,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -2947,7 +3010,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=5
+						levels=25
 					}
 				}
 				reserves=1
@@ -3188,6 +3251,8 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
+			
+			}
 			create_building={
 				building="building_textile_mill"
 				add_ownership={
@@ -3200,6 +3265,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=20
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			
 			}
 		}
 	}
@@ -3253,7 +3331,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=6
+						levels=30
 					}
 				}
 				reserves=1
@@ -3500,6 +3578,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_leblanc_process"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -3555,6 +3645,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -3688,6 +3790,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=4
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 		}
 	}
 	s:STATE_POITOU={
@@ -3752,6 +3866,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=6
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -3826,6 +3952,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=6
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -3836,7 +3974,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=10
 					}
 				}
 				reserves=1
@@ -3932,7 +4070,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=5
+						levels=25
 					}
 				}
 				reserves=1
@@ -4074,6 +4212,7 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
 			}
 		}
 	}
@@ -4155,6 +4294,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -4223,6 +4374,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -4298,6 +4461,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -4395,6 +4570,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -4506,6 +4693,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=15
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -4568,6 +4767,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:FRA"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -4946,7 +5157,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -5146,7 +5357,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=8
 					}
 				}
 				reserves=1
@@ -5480,7 +5691,7 @@
 				add_ownership={
 					country={
 						country="c:SAX"
-						levels=9
+						levels=18
 					}
 				}
 				reserves=1
@@ -5774,6 +5985,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAX"
+						levels=4
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 		}
 	}
