@@ -164,9 +164,9 @@ ideology_traditionalist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_no_womens_rights
-				has_law_or_variant = law_type:law_state_religion
-				has_law_or_variant = law_type:law_hindu_caste_enforced
+				has_law = law_type:law_no_womens_rights
+				has_law = law_type:law_state_religion
+				has_law = law_type:law_hindu_caste_enforced
 			}
 		}
 		interest_group = {
@@ -368,8 +368,8 @@ ideology_traditionalist_minoritarian = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_no_womens_rights
-				has_law_or_variant = law_type:law_total_separation
+				has_law = law_type:law_no_womens_rights
+				has_law = law_type:law_total_separation
 			}
 		}
 		interest_group = {
@@ -556,11 +556,11 @@ ideology_nihilist = { #
 			has_role = agitator
 			owner = {
 				OR = {
-					has_law_or_variant = law_type:law_presidential_republic
-					has_law_or_variant = law_type:law_parliamentary_republic
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_council_republic
 				}
-				has_law_or_variant = law_type:law_state_atheism
+				has_law = law_type:law_state_atheism
 			}
 		}
 
@@ -634,7 +634,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -643,7 +643,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -653,8 +653,8 @@ ideology_nihilist = { #
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -664,7 +664,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -673,7 +673,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -738,7 +738,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -747,7 +747,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -757,8 +757,8 @@ ideology_nihilist = { #
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -768,7 +768,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -777,7 +777,7 @@ ideology_nihilist = { #
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -839,10 +839,10 @@ ideology_republican_leader = {
 			has_role = agitator
 			owner = {
 				OR = {
-					has_law_or_variant = law_type:law_presidential_republic
-					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
 				}
-				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law = law_type:law_elected_bureaucrats
 			}
 		}
 
@@ -1209,12 +1209,12 @@ ideology_radical = {
 			has_role = agitator
 			owner = {
 				OR = {
-					has_law_or_variant = law_type:law_presidential_republic
-					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
 				}
-				has_law_or_variant = law_type:law_universal_suffrage
-				has_law_or_variant = law_type:law_protected_speech
-				has_law_or_variant = law_type:law_guaranteed_liberties
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_guaranteed_liberties
 			}
 		}
 
@@ -1273,7 +1273,7 @@ ideology_radical = {
 				limit = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
-						has_law_or_variant = law_type:law_combination_acts
+						has_law = law_type:law_combination_acts
 					}
 				}
 				add = 50
@@ -1283,8 +1283,8 @@ ideology_radical = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
 						OR = {
-							has_law_or_variant = law_type:law_guild_system
-							has_law_or_variant = law_type:law_anti_strike_laws
+							has_law = law_type:law_guild_system
+							has_law = law_type:law_anti_strike_laws
 						}
 					}
 				}
@@ -1294,7 +1294,7 @@ ideology_radical = {
 				limit = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
-						has_law_or_variant = law_type:law_right_to_associate
+						has_law = law_type:law_right_to_associate
 					}
 				}
 				add = -25
@@ -1303,7 +1303,7 @@ ideology_radical = {
 				limit = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
-						has_law_or_variant = law_type:law_corporatized_unions
+						has_law = law_type:law_corporatized_unions
 					}
 				}
 				add = -50
@@ -1467,7 +1467,7 @@ ideology_radical = {
 				limit = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
-						has_law_or_variant = law_type:law_combination_acts
+						has_law = law_type:law_combination_acts
 					}
 				}
 				add = 50
@@ -1477,8 +1477,8 @@ ideology_radical = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
 						OR = {
-							has_law_or_variant = law_type:law_guild_system
-							has_law_or_variant = law_type:law_anti_strike_laws
+							has_law = law_type:law_guild_system
+							has_law = law_type:law_anti_strike_laws
 						}
 					}
 				}
@@ -1488,7 +1488,7 @@ ideology_radical = {
 				limit = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
-						has_law_or_variant = law_type:law_right_to_associate
+						has_law = law_type:law_right_to_associate
 					}
 				}
 				add = -25
@@ -1497,7 +1497,7 @@ ideology_radical = {
 				limit = {
 					is_interest_group_type = ig_trade_unions
 					owner = {
-						has_law_or_variant = law_type:law_corporatized_unions
+						has_law = law_type:law_corporatized_unions
 					}
 				}
 				add = -50
@@ -1625,8 +1625,8 @@ ideology_reformer = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_cultural_exclusion
-				has_law_or_variant = law_type:law_compulsory_primary_school
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_compulsory_primary_school
 			}
 		}
 	}
@@ -1838,7 +1838,7 @@ ideology_feminist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_womens_suffrage
+				has_law = law_type:law_womens_suffrage
 			}
 		}
 		interest_group = {
@@ -1853,10 +1853,10 @@ ideology_feminist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_womens_suffrage
+						has_law = law_type:law_womens_suffrage
 						AND = {
 							country_has_voting_franchise = no
-							has_law_or_variant = law_type:law_women_in_the_workplace
+							has_law = law_type:law_women_in_the_workplace
 						}
 					}
 				}
@@ -1868,8 +1868,8 @@ ideology_feminist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_no_womens_rights
-						has_law_or_variant = law_type:law_women_own_property
+						has_law = law_type:law_no_womens_rights
+						has_law = law_type:law_women_own_property
 					}
 				}
 			}
@@ -1961,10 +1961,10 @@ ideology_feminist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_womens_suffrage
+						has_law = law_type:law_womens_suffrage
 						AND = {
 							country_has_voting_franchise = no
-							has_law_or_variant = law_type:law_women_in_the_workplace
+							has_law = law_type:law_women_in_the_workplace
 						}
 					}
 				}
@@ -1976,8 +1976,8 @@ ideology_feminist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_no_womens_rights
-						has_law_or_variant = law_type:law_women_own_property
+						has_law = law_type:law_no_womens_rights
+						has_law = law_type:law_women_own_property
 					}
 				}
 			}
@@ -2060,8 +2060,8 @@ ideology_abolitionist = {
 
 	country_trigger = {
 		OR = {
-			NOT = { has_law_or_variant = law_type:law_slavery_banned }
-			has_law_or_variant = law_type:law_serfdom
+			NOT = { has_law = law_type:law_slavery_banned }
+			has_law = law_type:law_serfdom
 		}
 	}
 
@@ -2199,8 +2199,8 @@ ideology_slaver = {
 
 	country_trigger = {
 		NOR = {
-			has_law_or_variant = law_type:law_slavery_banned
-			has_law_or_variant = law_type:law_colonial_slavery
+			has_law = law_type:law_slavery_banned
+			has_law = law_type:law_colonial_slavery
 		}
 	}
 
@@ -2378,10 +2378,10 @@ ideology_pacifist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_colonial_resettlement
-						has_law_or_variant = law_type:law_colonial_exploitation
-						has_law_or_variant = law_type:law_peasant_levies
-						has_law_or_variant = law_type:law_mass_conscription
+						has_law = law_type:law_colonial_resettlement
+						has_law = law_type:law_colonial_exploitation
+						has_law = law_type:law_peasant_levies
+						has_law = law_type:law_mass_conscription
 					}
 				}
 			}
@@ -2478,10 +2478,10 @@ ideology_pacifist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_colonial_resettlement
-						has_law_or_variant = law_type:law_colonial_exploitation
-						has_law_or_variant = law_type:law_peasant_levies
-						has_law_or_variant = law_type:law_mass_conscription
+						has_law = law_type:law_colonial_resettlement
+						has_law = law_type:law_colonial_exploitation
+						has_law = law_type:law_peasant_levies
+						has_law = law_type:law_mass_conscription
 					}
 				}
 			}
@@ -2605,8 +2605,8 @@ ideology_jingoist_leader = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_mass_conscription
-				has_law_or_variant = law_type:law_colonial_exploitation
+				has_law = law_type:law_mass_conscription
+				has_law = law_type:law_colonial_exploitation
 			}
 		}
 		interest_group = {
@@ -2620,8 +2620,8 @@ ideology_jingoist_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_colonial_exploitation
-					has_law_or_variant = law_type:law_mass_conscription
+					has_law = law_type:law_colonial_exploitation
+					has_law = law_type:law_mass_conscription
 				}
 			}
 			add = -50
@@ -2724,8 +2724,8 @@ ideology_jingoist_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_colonial_exploitation
-					has_law_or_variant = law_type:law_mass_conscription
+					has_law = law_type:law_colonial_exploitation
+					has_law = law_type:law_mass_conscription
 				}
 			}
 			add = -50
@@ -2867,7 +2867,7 @@ ideology_royalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_theocracy
+					has_law = law_type:law_theocracy
 				}
 			}
 			add = -75
@@ -2936,7 +2936,7 @@ ideology_royalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_theocracy
+					has_law = law_type:law_theocracy
 				}
 			}
 			add = -75
@@ -3061,10 +3061,10 @@ ideology_social_democrat = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_universal_suffrage
-				has_law_or_variant = law_type:law_graduated_taxation
-				has_law_or_variant = law_type:law_old_age_pension
-				has_law_or_variant = law_type:law_worker_protections
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_graduated_taxation
+				has_law = law_type:law_old_age_pension
+				has_law = law_type:law_worker_protections
 			}
 		}
 		interest_group = {
@@ -3100,7 +3100,7 @@ ideology_social_democrat = {
 				is_interest_group_type = ig_devout
 				ig_approval >= 0
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = 75
@@ -3111,7 +3111,7 @@ ideology_social_democrat = {
 				is_interest_group_type = ig_trade_unions
 				ig_approval >= 0
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 			}
 			add = 75
@@ -3158,7 +3158,7 @@ ideology_social_democrat = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			multiply = 0.01
@@ -3217,7 +3217,7 @@ ideology_social_democrat = {
 				is_interest_group_type = ig_devout
 				interest_group.ig_approval >= 0
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = 75
@@ -3228,7 +3228,7 @@ ideology_social_democrat = {
 				is_interest_group_type = ig_trade_unions
 				interest_group.ig_approval >= 0
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 			}
 			add = 75
@@ -3249,7 +3249,7 @@ ideology_social_democrat = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			multiply = 0.01
@@ -3381,10 +3381,10 @@ ideology_communist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_collectivized_agriculture
-				has_law_or_variant = law_type:law_state_atheism
-				has_law_or_variant = law_type:law_council_republic
-				has_law_or_variant = law_type:law_worker_protections
+				has_law = law_type:law_collectivized_agriculture
+				has_law = law_type:law_state_atheism
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_worker_protections
 			}
 		}
 		# Monarchs cannot be republicans
@@ -3436,7 +3436,7 @@ ideology_communist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 				NOT = { is_interest_group_type = ig_armed_forces }
 				ig_approval <= -5
@@ -3450,7 +3450,7 @@ ideology_communist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 					average_sol < average_expected_sol
 				}
 			}
@@ -3461,7 +3461,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -3470,7 +3470,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -3480,8 +3480,8 @@ ideology_communist = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -3491,7 +3491,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -3500,7 +3500,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -3521,7 +3521,7 @@ ideology_communist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_armed_forces
@@ -3587,7 +3587,7 @@ ideology_communist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 				NOT = { is_interest_group_type = ig_armed_forces }
 				interest_group.ig_approval <= -5
@@ -3602,7 +3602,7 @@ ideology_communist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 					average_sol < average_expected_sol
 				}
 			}
@@ -3614,7 +3614,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -3623,7 +3623,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -3633,8 +3633,8 @@ ideology_communist = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -3644,7 +3644,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -3653,7 +3653,7 @@ ideology_communist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -3663,7 +3663,7 @@ ideology_communist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_armed_forces
@@ -3787,11 +3787,11 @@ ideology_vanguardist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_collectivized_agriculture
-				has_law_or_variant = law_type:law_council_republic
-				has_law_or_variant = law_type:law_command_economy
-				has_law_or_variant = law_type:law_protectionism
-				has_law_or_variant = law_type:law_single_party_state
+				has_law = law_type:law_collectivized_agriculture
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_command_economy
+				has_law = law_type:law_protectionism
+				has_law = law_type:law_single_party_state
 			}
 		}
 		# Monarchs cannot be republicans
@@ -3844,7 +3844,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 				ig_approval <= -5
 				NOT = { is_interest_group_type = ig_armed_forces }
@@ -3859,7 +3859,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 					average_sol <= 10
 				}
 			}
@@ -3871,8 +3871,8 @@ ideology_vanguardist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
 					}
 				}
 			}
@@ -3883,7 +3883,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_anarchy
+					has_law = law_type:law_anarchy
 				}
 				ig_approval >= 5
 			}
@@ -3897,7 +3897,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 				is_interest_group_type = ig_armed_forces
 				ig_approval >= 0
@@ -3912,12 +3912,12 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_single_party_state
-						has_law_or_variant = law_type:law_technocracy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
+						has_law = law_type:law_technocracy
 					}
 				}
 				is_in_government = yes
@@ -3930,7 +3930,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -3939,7 +3939,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -3949,8 +3949,8 @@ ideology_vanguardist = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -3960,7 +3960,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -3969,7 +3969,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -3993,7 +3993,7 @@ ideology_vanguardist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_armed_forces
@@ -4059,7 +4059,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 				interest_group.ig_approval <= -5
 				NOT = { is_interest_group_type = ig_armed_forces }
@@ -4074,7 +4074,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 					average_sol <= 10
 				}
 			}
@@ -4086,8 +4086,8 @@ ideology_vanguardist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
 					}
 				}
 			}
@@ -4098,7 +4098,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_anarchy
+					has_law = law_type:law_anarchy
 				}
 				ig_approval >= 5
 			}
@@ -4112,7 +4112,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 				is_interest_group_type = ig_armed_forces
 				interest_group.ig_approval >= 0
@@ -4127,12 +4127,12 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_single_party_state
-						has_law_or_variant = law_type:law_technocracy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
+						has_law = law_type:law_technocracy
 					}
 				}
 				is_in_government = yes
@@ -4145,7 +4145,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 125
@@ -4154,7 +4154,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 100
@@ -4164,8 +4164,8 @@ ideology_vanguardist = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -4175,7 +4175,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -4184,7 +4184,7 @@ ideology_vanguardist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -4208,7 +4208,7 @@ ideology_vanguardist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_armed_forces
@@ -4347,10 +4347,10 @@ ideology_fascist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_autocracy
-				has_law_or_variant = law_type:law_ethnostate
-				has_law_or_variant = law_type:law_outlawed_dissent
-				has_law_or_variant = law_type:law_militarized_police
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_ethnostate
+				has_law = law_type:law_outlawed_dissent
+				has_law = law_type:law_militarized_police
 			}
 		}
 		interest_group = {
@@ -4435,7 +4435,7 @@ ideology_fascist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = -75
@@ -4456,8 +4456,8 @@ ideology_fascist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_ethnostate
-						has_law_or_variant = law_type:law_corporate_state
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_corporate_state
 					}
 				}
 				ig_approval >= 5
@@ -4492,8 +4492,8 @@ ideology_fascist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_ethnostate
-						has_law_or_variant = law_type:law_corporate_state
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_corporate_state
 					}
 					NOR = {
 						is_enacting_law = law_type:law_multicultural
@@ -4647,7 +4647,7 @@ ideology_fascist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = -75
@@ -4668,8 +4668,8 @@ ideology_fascist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_ethnostate
-						has_law_or_variant = law_type:law_corporate_state
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_corporate_state
 					}
 				}
 				interest_group.ig_approval >= 5
@@ -4704,8 +4704,8 @@ ideology_fascist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_ethnostate
-						has_law_or_variant = law_type:law_corporate_state
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_corporate_state
 					}
 					NOR = {
 						is_enacting_law = law_type:law_multicultural
@@ -4881,11 +4881,11 @@ ideology_anarchist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_anarchy
-				has_law_or_variant = law_type:law_national_militia
-				has_law_or_variant = law_type:law_protected_speech
-				has_law_or_variant = law_type:law_no_police
-				has_law_or_variant = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+				has_law = law_type:law_national_militia
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_no_police
+				has_law = law_type:law_council_republic
 			}
 		}
 		# Monarchs cannot be republicans
@@ -4938,7 +4938,7 @@ ideology_anarchist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 				ig_approval <= -5
 			}
@@ -4951,7 +4951,7 @@ ideology_anarchist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 					average_sol <= 10
 				}
 			}
@@ -4961,7 +4961,7 @@ ideology_anarchist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_anarchy
+					has_law = law_type:law_anarchy
 				}
 				is_in_government = yes
 			}
@@ -4973,7 +4973,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -4982,7 +4982,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -4992,8 +4992,8 @@ ideology_anarchist = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -5003,7 +5003,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -5012,7 +5012,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -5089,7 +5089,7 @@ ideology_anarchist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 				}
 				interest_group.ig_approval <= -5
 			}
@@ -5102,7 +5102,7 @@ ideology_anarchist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_council_republic }
 					average_sol <= 10
 				}
 			}
@@ -5112,7 +5112,7 @@ ideology_anarchist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_anarchy
+					has_law = law_type:law_anarchy
 				}
 				is_in_government = yes
 			}
@@ -5124,7 +5124,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_factory_councils
+					has_law = law_type:law_factory_councils
 				}
 			}
 			add = 75
@@ -5133,7 +5133,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_combination_acts
+					has_law = law_type:law_combination_acts
 				}
 			}
 			add = 50
@@ -5143,8 +5143,8 @@ ideology_anarchist = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_guild_system
-						has_law_or_variant = law_type:law_anti_strike_laws
+						has_law = law_type:law_guild_system
+						has_law = law_type:law_anti_strike_laws
 					}
 				}
 			}
@@ -5154,7 +5154,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_right_to_associate
+					has_law = law_type:law_right_to_associate
 				}
 			}
 			add = -25
@@ -5163,7 +5163,7 @@ ideology_anarchist = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = -50
@@ -5216,8 +5216,8 @@ ideology_ethno_nationalist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_ethnostate
-				has_law_or_variant = law_type:law_migration_controls
+				has_law = law_type:law_ethnostate
+				has_law = law_type:law_migration_controls
 			}
 		}
 		interest_group = {
@@ -5262,7 +5262,7 @@ ideology_ethno_nationalist = {
 			if = { # And if angry without ethnostate
 				limit = {
 					owner = {
-						NOT = { has_law_or_variant = law_type:law_ethnostate }
+						NOT = { has_law = law_type:law_ethnostate }
 					}
 					ig_approval <= -5
 				}
@@ -5277,7 +5277,7 @@ ideology_ethno_nationalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = -75
@@ -5287,7 +5287,7 @@ ideology_ethno_nationalist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_ethnostate
+						has_law = law_type:law_ethnostate
 					}
 				}
 				ig_approval >= 5
@@ -5373,7 +5373,7 @@ ideology_ethno_nationalist = {
 			if = { # And if angry without ethnostate
 				limit = {
 					owner = {
-						NOT = { has_law_or_variant = law_type:law_ethnostate }
+						NOT = { has_law = law_type:law_ethnostate }
 					}
 					interest_group.ig_approval <= -5
 				}
@@ -5388,7 +5388,7 @@ ideology_ethno_nationalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = -75
@@ -5398,7 +5398,7 @@ ideology_ethno_nationalist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_ethnostate
+						has_law = law_type:law_ethnostate
 					}
 				}
 				interest_group.ig_approval >= 5
@@ -5487,8 +5487,8 @@ ideology_theocrat = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_theocracy
-				has_law_or_variant = law_type:law_state_religion
+				has_law = law_type:law_theocracy
+				has_law = law_type:law_state_religion
 			}
 		}
 		interest_group = {
@@ -5509,11 +5509,11 @@ ideology_theocrat = {
 					ig_approval <= -5
 					owner = {
 						NOR = {
-							has_law_or_variant = law_type:law_theocracy
+							has_law = law_type:law_theocracy
 							has_law = law_type:law_monarchy
 						}
 						NOT = {
-							has_law_or_variant = law_type:law_state_religion
+							has_law = law_type:law_state_religion
 						}
 					}
 				}
@@ -5529,8 +5529,8 @@ ideology_theocrat = {
 				ig_approval >= 5
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_state_religion
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_state_religion
+						has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -5583,11 +5583,11 @@ ideology_theocrat = {
 					interest_group.ig_approval <= -5
 					owner = {
 						NOR = {
-							has_law_or_variant = law_type:law_theocracy
+							has_law = law_type:law_theocracy
 							has_law = law_type:law_monarchy
 						}
 						NOT = {
-							has_law_or_variant = law_type:law_state_religion
+							has_law = law_type:law_state_religion
 						}
 					}
 				}
@@ -5604,8 +5604,8 @@ ideology_theocrat = {
 				interest_group.ig_approval >= 5
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_state_religion
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_state_religion
+						has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -5711,12 +5711,12 @@ ideology_market_liberal = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_laissez_faire
-				has_law_or_variant = law_type:law_child_labor_allowed
-				has_law_or_variant = law_type:law_free_trade
-				has_law_or_variant = law_type:law_no_workers_rights
-				has_law_or_variant = law_type:law_commercialized_agriculture
-				has_law_or_variant = law_type:law_combination_acts
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_child_labor_allowed
+				has_law = law_type:law_free_trade
+				has_law = law_type:law_no_workers_rights
+				has_law = law_type:law_commercialized_agriculture
+				has_law = law_type:law_combination_acts
 			}
 		}
 		interest_group = {
@@ -5777,8 +5777,8 @@ ideology_market_liberal = {
 				is_powerful = yes
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_traditionalism
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_traditionalism
 					}
 				}
 			}
@@ -5946,8 +5946,8 @@ ideology_market_liberal = {
 				}
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_traditionalism
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_traditionalism
 					}
 				}
 			}
@@ -6089,9 +6089,9 @@ ideology_luddite = {
 	country_trigger = {
 		has_technology_researched = romanticism
 		OR = {
-			has_law_or_variant = law_type:law_command_economy
-			has_law_or_variant = law_type:law_laissez_faire
-			has_law_or_variant = law_type:law_interventionism
+			has_law = law_type:law_command_economy
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_interventionism
 		}
 	}
 
@@ -6104,8 +6104,8 @@ ideology_luddite = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_isolationism
-				has_law_or_variant = law_type:law_industry_banned
+				has_law = law_type:law_isolationism
+				has_law = law_type:law_industry_banned
 			}
 		}
 		interest_group = {
@@ -6326,11 +6326,11 @@ ideology_authoritarian = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_outlawed_dissent
-				has_law_or_variant = law_type:law_secret_police
+				has_law = law_type:law_outlawed_dissent
+				has_law = law_type:law_secret_police
 				OR = {
-					has_law_or_variant = law_type:law_oligarchy
-					has_law_or_variant = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+					has_law = law_type:law_autocracy
 				}
 			}
 		}
@@ -6346,12 +6346,12 @@ ideology_authoritarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_single_party_state
-						has_law_or_variant = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_single_party_state
+						has_law = law_type:law_oligarchy
 					}
-					has_law_or_variant = law_type:law_secret_police
-					has_law_or_variant = law_type:law_outlawed_dissent
+					has_law = law_type:law_secret_police
+					has_law = law_type:law_outlawed_dissent
 				}
 			}
 			add = -50
@@ -6389,9 +6389,9 @@ ideology_authoritarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
 					}
 				}
 				ig_approval > 5
@@ -6406,9 +6406,9 @@ ideology_authoritarian = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
 					}
 				}
 				ig_approval > 5
@@ -6471,12 +6471,12 @@ ideology_authoritarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_single_party_state
-						has_law_or_variant = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_single_party_state
+						has_law = law_type:law_oligarchy
 					}
-					has_law_or_variant = law_type:law_secret_police
-					has_law_or_variant = law_type:law_outlawed_dissent
+					has_law = law_type:law_secret_police
+					has_law = law_type:law_outlawed_dissent
 				}
 			}
 			add = -50
@@ -6516,9 +6516,9 @@ ideology_authoritarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
 					}
 				}
 				interest_group.ig_approval > 5
@@ -6533,9 +6533,9 @@ ideology_authoritarian = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
 					}
 				}
 				interest_group.ig_approval > 5
@@ -6628,8 +6628,8 @@ ideology_protectionist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_protectionism
-				has_law_or_variant = law_type:law_interventionism
+				has_law = law_type:law_protectionism
+				has_law = law_type:law_interventionism
 			}
 		}
 		interest_group = {
@@ -6656,10 +6656,10 @@ ideology_protectionist = {
 				}
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_traditionalism
-						has_law_or_variant = law_type:law_isolationism
-						has_law_or_variant = law_type:law_mercantilism
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_traditionalism
+						has_law = law_type:law_isolationism
+						has_law = law_type:law_mercantilism
 					}
 				}
 			}
@@ -6672,8 +6672,8 @@ ideology_protectionist = {
 				is_powerful = yes
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_traditionalism
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_traditionalism
 					}
 				}
 			}
@@ -6684,10 +6684,10 @@ ideology_protectionist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_protectionism
-						has_law_or_variant = law_type:law_mercantilism
+						has_law = law_type:law_protectionism
+						has_law = law_type:law_mercantilism
 					}
-					has_law_or_variant = law_type:law_interventionism
+					has_law = law_type:law_interventionism
 				}
 			}
 			add = -50
@@ -6760,10 +6760,10 @@ ideology_protectionist = {
 				}
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_traditionalism
-						has_law_or_variant = law_type:law_isolationism
-						has_law_or_variant = law_type:law_mercantilism
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_traditionalism
+						has_law = law_type:law_isolationism
+						has_law = law_type:law_mercantilism
 					}
 				}
 			}
@@ -6778,8 +6778,8 @@ ideology_protectionist = {
 				}
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_traditionalism
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_traditionalism
 					}
 				}
 			}
@@ -6790,10 +6790,10 @@ ideology_protectionist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_protectionism
-						has_law_or_variant = law_type:law_mercantilism
+						has_law = law_type:law_protectionism
+						has_law = law_type:law_mercantilism
 					}
-					has_law_or_variant = law_type:law_interventionism
+					has_law = law_type:law_interventionism
 				}
 			}
 			add = -50
@@ -6921,11 +6921,11 @@ ideology_humanitarian = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_multicultural
-				has_law_or_variant = law_type:law_guaranteed_liberties
-				has_law_or_variant = law_type:law_protected_speech
-				has_law_or_variant = law_type:law_womens_suffrage
-				has_law_or_variant = law_type:law_compulsory_primary_school
+				has_law = law_type:law_multicultural
+				has_law = law_type:law_guaranteed_liberties
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_womens_suffrage
+				has_law = law_type:law_compulsory_primary_school
 			}
 		}
 		interest_group = {
@@ -6972,7 +6972,7 @@ ideology_humanitarian = {
 				owner = {
 					has_technology_researched = socialism
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_trade_unions
@@ -7087,7 +7087,7 @@ ideology_humanitarian = {
 				owner = {
 					has_technology_researched = socialism
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_trade_unions
@@ -7196,11 +7196,11 @@ ideology_jacksonian_democrat = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_racial_segregation
-				has_law_or_variant = law_type:law_legacy_slavery
-				has_law_or_variant = law_type:law_elected_bureaucrats
-				has_law_or_variant = law_type:law_universal_suffrage
-				has_law_or_variant = law_type:law_presidential_republic
+				has_law = law_type:law_racial_segregation
+				has_law = law_type:law_legacy_slavery
+				has_law = law_type:law_elected_bureaucrats
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_presidential_republic
 			}
 		}
 		interest_group = {
@@ -7315,10 +7315,10 @@ ideology_positivist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_appointed_bureaucrats
-				has_law_or_variant = law_type:law_technocracy
-				has_law_or_variant = law_type:law_state_atheism
-				has_law_or_variant = law_type:law_presidential_republic
+				has_law = law_type:law_appointed_bureaucrats
+				has_law = law_type:law_technocracy
+				has_law = law_type:law_state_atheism
+				has_law = law_type:law_presidential_republic
 			}
 		}
 		# Monarchs cannot be republicans
@@ -7358,7 +7358,7 @@ ideology_positivist = {
 				ig_approval <= unhappy
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_technocracy
+						has_law = law_type:law_technocracy
 					}
 				}
 			}
@@ -7371,7 +7371,7 @@ ideology_positivist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_technocracy
+					has_law = law_type:law_technocracy
 				}
 			}
 			add = {
@@ -7397,10 +7397,10 @@ ideology_positivist = {
 				owner = {
 					has_law = law_type:law_monarchy
 					OR = {
-						has_law_or_variant = law_type:law_wealth_voting
-						has_law_or_variant = law_type:law_census_voting
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_landed_voting
+						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_landed_voting
 					}
 				}
 			}
@@ -7480,7 +7480,7 @@ ideology_positivist = {
 				}
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_technocracy
+						has_law = law_type:law_technocracy
 					}
 				}
 			}
@@ -7493,7 +7493,7 @@ ideology_positivist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_technocracy
+					has_law = law_type:law_technocracy
 				}
 			}
 			add = {
@@ -7519,10 +7519,10 @@ ideology_positivist = {
 				owner = {
 					has_law = law_type:law_monarchy
 					OR = {
-						has_law_or_variant = law_type:law_wealth_voting
-						has_law_or_variant = law_type:law_census_voting
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_landed_voting
+						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_landed_voting
 					}
 				}
 			}
@@ -7600,11 +7600,11 @@ ideology_land_reformer = {
 			has_role = agitator
 			owner = {
 				NOT = {
-					has_law_or_variant = law_type:law_land_based_taxation
+					has_law = law_type:law_land_based_taxation
 				}
 				OR = {
-					has_law_or_variant = law_type:law_homesteading
-					has_law_or_variant = law_type:law_collectivized_agriculture
+					has_law = law_type:law_homesteading
+					has_law = law_type:law_collectivized_agriculture
 				}
 			}
 		}
@@ -7620,9 +7620,9 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_serfdom
-						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law = law_type:law_serfdom
+						has_law = law_type:law_tenant_farmers
+						has_law = law_type:law_land_based_taxation
 					}
 				}
 			}
@@ -7635,9 +7635,9 @@ ideology_land_reformer = {
 				ig_approval <= 0
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_serfdom
-						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law = law_type:law_serfdom
+						has_law = law_type:law_tenant_farmers
+						has_law = law_type:law_land_based_taxation
 					}
 				}
 			}
@@ -7665,8 +7665,8 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_industry_banned
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_industry_banned
 					}
 				}
 			}
@@ -7688,11 +7688,11 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law = law_type:law_land_based_taxation
 					}
 					OR = {
-						has_law_or_variant = law_type:law_homesteading
-						has_law_or_variant = law_type:law_collectivized_agriculture
+						has_law = law_type:law_homesteading
+						has_law = law_type:law_collectivized_agriculture
 					}
 				}
 			}
@@ -7723,9 +7723,9 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_serfdom
-						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law = law_type:law_serfdom
+						has_law = law_type:law_tenant_farmers
+						has_law = law_type:law_land_based_taxation
 					}
 				}
 			}
@@ -7738,9 +7738,9 @@ ideology_land_reformer = {
 				interest_group.ig_approval <= 0
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_serfdom
-						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law = law_type:law_serfdom
+						has_law = law_type:law_tenant_farmers
+						has_law = law_type:law_land_based_taxation
 					}
 				}
 			}
@@ -7768,8 +7768,8 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_agrarianism
-						has_law_or_variant = law_type:law_industry_banned
+						has_law = law_type:law_agrarianism
+						has_law = law_type:law_industry_banned
 					}
 				}
 			}
@@ -7781,11 +7781,11 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law = law_type:law_land_based_taxation
 					}
 					OR = {
-						has_law_or_variant = law_type:law_homesteading
-						has_law_or_variant = law_type:law_collectivized_agriculture
+						has_law = law_type:law_homesteading
+						has_law = law_type:law_collectivized_agriculture
 					}
 				}
 			}
@@ -7904,10 +7904,10 @@ ideology_integralist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_autocracy
-				has_law_or_variant = law_type:law_cultural_exclusion
-				has_law_or_variant = law_type:law_state_religion
-				has_law_or_variant = law_type:law_militarized_police
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_state_religion
+				has_law = law_type:law_militarized_police
 			}
 		}
 		interest_group = {
@@ -7979,7 +7979,7 @@ ideology_integralist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = -75
@@ -8002,10 +8002,10 @@ ideology_integralist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_corporatized_unions
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_corporatized_unions
 						has_law = law_type:law_monarchy
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_theocracy
 					}
 				}
 				ig_approval >= 5
@@ -8044,10 +8044,10 @@ ideology_integralist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_corporatized_unions
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_corporatized_unions
 						has_law = law_type:law_monarchy
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_theocracy
 					}
 				}
 				is_in_government = yes
@@ -8178,7 +8178,7 @@ ideology_integralist = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			add = -75
@@ -8201,10 +8201,10 @@ ideology_integralist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_corporatized_unions
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_corporatized_unions
 						has_law = law_type:law_monarchy
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_theocracy
 					}
 				}
 				interest_group.ig_approval >= 5
@@ -8243,10 +8243,10 @@ ideology_integralist = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_corporatized_unions
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_corporatized_unions
 						has_law = law_type:law_monarchy
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_theocracy
 					}
 				}
 				interest_group = { is_in_government = yes }
@@ -8342,12 +8342,12 @@ ideology_liberal_leader = {
 			has_role = agitator
 			owner = {
 				OR = {
-					has_law_or_variant = law_type:law_universal_suffrage
-					has_law_or_variant = law_type:law_census_voting
-					has_law_or_variant = law_type:law_wealth_voting
-					has_law_or_variant = law_type:law_landed_voting
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_census_voting
+					has_law = law_type:law_wealth_voting
+					has_law = law_type:law_landed_voting
 				}
-				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law = law_type:law_elected_bureaucrats
 			}
 		}
 	}
@@ -8359,12 +8359,12 @@ ideology_liberal_leader = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_census_voting
-						has_law_or_variant = law_type:law_wealth_voting
-						has_law_or_variant = law_type:law_landed_voting
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_landed_voting
 					}
-					has_law_or_variant = law_type:law_elected_bureaucrats
+					has_law = law_type:law_elected_bureaucrats
 				}
 			}
 			add = -50
@@ -8374,10 +8374,10 @@ ideology_liberal_leader = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_technocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
 				}
 				OR = {
@@ -8413,7 +8413,7 @@ ideology_liberal_leader = {
 				owner = {
 					NOR = {
 						has_law = law_type:law_monarchy
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -8466,12 +8466,12 @@ ideology_liberal_leader = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_census_voting
-						has_law_or_variant = law_type:law_wealth_voting
-						has_law_or_variant = law_type:law_landed_voting
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_landed_voting
 					}
-					has_law_or_variant = law_type:law_elected_bureaucrats
+					has_law = law_type:law_elected_bureaucrats
 				}
 			}
 			add = -50
@@ -8481,10 +8481,10 @@ ideology_liberal_leader = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_technocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
 				}
 				interest_group = {
@@ -8536,7 +8536,7 @@ ideology_liberal_leader = {
 				owner = {
 					NOR = {
 						has_law = law_type:law_monarchy
-						has_law_or_variant = law_type:law_theocracy
+						has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -8638,11 +8638,11 @@ ideology_corporatist_leader = {
 			has_role = agitator
 			owner = {
 				NOT = {
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
-				has_law_or_variant = law_type:law_religious_schools
-				has_law_or_variant = law_type:law_regulatory_bodies
-				has_law_or_variant = law_type:law_wage_subsidies
+				has_law = law_type:law_religious_schools
+				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_wage_subsidies
 			}
 		}
 	}
@@ -8676,7 +8676,7 @@ ideology_corporatist_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_corporate_state
+					has_law = law_type:law_corporate_state
 				}
 			}
 			add = {
@@ -8708,8 +8708,8 @@ ideology_corporatist_leader = {
 				}
 				ig_approval >= 0
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
-					NOT = { has_law_or_variant = law_type:law_state_atheism }
+					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_state_atheism }
 				}
 			}
 			add = 25
@@ -8726,7 +8726,7 @@ ideology_corporatist_leader = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = 50
@@ -8799,7 +8799,7 @@ ideology_corporatist_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_corporate_state
+					has_law = law_type:law_corporate_state
 				}
 			}
 			add = {
@@ -8831,8 +8831,8 @@ ideology_corporatist_leader = {
 				}
 				interest_group.ig_approval >= 0
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_council_republic }
-					NOT = { has_law_or_variant = law_type:law_state_atheism }
+					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_state_atheism }
 				}
 			}
 			add = 25
@@ -8842,7 +8842,7 @@ ideology_corporatist_leader = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_law_or_variant = law_type:law_corporatized_unions
+					has_law = law_type:law_corporatized_unions
 				}
 			}
 			add = 50
@@ -8952,10 +8952,10 @@ ideology_humanitarian_royalist = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_monarchy
-				has_law_or_variant = law_type:law_multicultural
-				has_law_or_variant = law_type:law_protected_speech
-				has_law_or_variant = law_type:law_womens_suffrage
-				has_law_or_variant = law_type:law_compulsory_primary_school
+				has_law = law_type:law_multicultural
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_womens_suffrage
+				has_law = law_type:law_compulsory_primary_school
 			}
 		}
 		interest_group = {
@@ -9015,7 +9015,7 @@ ideology_humanitarian_royalist = {
 				owner = {
 					has_technology_researched = socialism
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_trade_unions
@@ -9143,7 +9143,7 @@ ideology_humanitarian_royalist = {
 				owner = {
 					has_technology_researched = socialism
 					NOT = {
-						has_law_or_variant = law_type:law_council_republic
+						has_law = law_type:law_council_republic
 					}
 				}
 				is_interest_group_type = ig_trade_unions
@@ -9285,13 +9285,13 @@ ideology_despotic_utopian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_technocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
-					has_law_or_variant = law_type:law_multicultural
-					has_law_or_variant = law_type:law_isolationism
+					has_law = law_type:law_multicultural
+					has_law = law_type:law_isolationism
 				}
 			}
 			add = {
@@ -9313,10 +9313,10 @@ ideology_despotic_utopian = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_technocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
 				}
 			}
@@ -9357,13 +9357,13 @@ ideology_despotic_utopian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_technocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
-					has_law_or_variant = law_type:law_multicultural
-					has_law_or_variant = law_type:law_isolationism
+					has_law = law_type:law_multicultural
+					has_law = law_type:law_isolationism
 				}
 			}
 			add = {
@@ -9385,10 +9385,10 @@ ideology_despotic_utopian = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_technocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
 				}
 			}
@@ -9481,11 +9481,11 @@ ideology_utilitarian_leader = {
 			has_role = agitator
 			owner = {
 				OR = {
-					has_law_or_variant = law_type:law_compulsory_primary_school
-					has_law_or_variant = law_type:law_public_schools
-					has_law_or_variant = law_type:law_womens_suffrage
-					has_law_or_variant = law_type:law_graduated_taxation
-					has_law_or_variant = law_type:law_proportional_taxation
+					has_law = law_type:law_compulsory_primary_school
+					has_law = law_type:law_public_schools
+					has_law = law_type:law_womens_suffrage
+					has_law = law_type:law_graduated_taxation
+					has_law = law_type:law_proportional_taxation
 				}
 			}
 		}
@@ -9761,17 +9761,17 @@ ideology_utopian = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_cooperative_ownership
-				has_law_or_variant = law_type:law_universal_suffrage
-				has_law_or_variant = law_type:law_worker_protections
+				has_law = law_type:law_cooperative_ownership
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_worker_protections
 				OR = {
-					has_law_or_variant = law_type:law_collectivized_agriculture
-					has_law_or_variant = law_type:law_homesteading
+					has_law = law_type:law_collectivized_agriculture
+					has_law = law_type:law_homesteading
 				}
 				OR = {
-					has_law_or_variant = law_type:law_presidential_republic
-					has_law_or_variant = law_type:law_parliamentary_republic
-					has_law_or_variant = law_type:law_council_republic
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 		}
@@ -9867,14 +9867,14 @@ ideology_modernizer_leader = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_protectionism
-				has_law_or_variant = law_type:law_compulsory_primary_school
-				has_law_or_variant = law_type:law_public_schools
-				has_law_or_variant = law_type:law_interventionism
-				has_law_or_variant = law_type:law_commercialized_agriculture
+				has_law = law_type:law_protectionism
+				has_law = law_type:law_compulsory_primary_school
+				has_law = law_type:law_public_schools
+				has_law = law_type:law_interventionism
+				has_law = law_type:law_commercialized_agriculture
 				OR = {
-					has_law_or_variant = law_type:law_proportional_taxation
-					has_law_or_variant = law_type:law_graduated_taxation
+					has_law = law_type:law_proportional_taxation
+					has_law = law_type:law_graduated_taxation
 				}
 			}
 		}
@@ -11090,9 +11090,9 @@ ideology_ilustrado_leader = { 	# Flavoured variant of Liberal and Anti-Clerical 
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law_or_variant = law_type:law_public_schools
-				has_law_or_variant = law_type:law_protected_speech
-				has_law_or_variant = law_type:law_total_separation
+				has_law = law_type:law_public_schools
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_total_separation
 			}
 		}
 		interest_group = {

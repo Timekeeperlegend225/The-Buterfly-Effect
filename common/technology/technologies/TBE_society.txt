@@ -323,6 +323,30 @@ REPLACE:nationalism = {
 	}
 }
 
+REPLACE:postal_savings = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/postal_savings.dds"
+	category = society
+
+	modifier = {
+		state_farmers_investment_pool_efficiency_mult = 0.15
+		state_shopkeepers_investment_pool_efficiency_mult = 0.15
+		state_bureaucrats_investment_pool_efficiency_mult = 0.15
+		state_engineers_investment_pool_efficiency_mult = 0.15
+		state_machinists_investment_pool_efficiency_mult = 0.15
+		building_cash_reserves_mult = 0.2
+		country_institution_national_bank_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		stock_exchange
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
 REPLACE:steel_frame_buildings = {
 	# Unlocks Covered Markets PM in Urban Centers
 	era = era_3
@@ -531,6 +555,7 @@ REPLACE:mutual_funds = {
 		country_loan_interest_rate_mult = -0.01
 		country_minting_mult = 0.05
 		state_max_trade_advantage_from_capacity_add = 0.05
+		country_institution_national_bank_max_investment_add = 1
 	}
 
 	unlocking_technologies = {

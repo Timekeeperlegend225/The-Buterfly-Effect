@@ -112,8 +112,8 @@
 					text = owner_has_modern_agriculture_tt
 					owner = {
 						OR = {
-							has_law_or_variant = law_type:law_commercialized_agriculture
-							has_law_or_variant = law_type:law_collectivized_agriculture
+							has_law = law_type:law_commercialized_agriculture
+							has_law = law_type:law_collectivized_agriculture
 						}
 					}
 				}
@@ -303,7 +303,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_worker_protections
+					has_law = law_type:law_worker_protections
 				}
 			}
 			multiply = {
@@ -314,7 +314,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_no_workers_rights
+					has_law = law_type:law_no_workers_rights
 				}
 			}
 			multiply = {
@@ -380,7 +380,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 				law_stance = {
 					law = law_type:law_womens_suffrage
@@ -399,7 +399,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_own_property
+					has_law = law_type:law_women_own_property
 				}
 
 			}
@@ -411,7 +411,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_in_the_workplace
+					has_law = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -423,7 +423,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 
 			}

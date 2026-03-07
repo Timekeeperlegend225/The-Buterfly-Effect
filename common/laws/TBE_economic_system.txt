@@ -27,7 +27,6 @@
 		building_group_bg_ranching_throughput_add = 0.1
 		building_group_bg_extraction_throughput_add = 0.05
 		building_group_bg_manufacturing_throughput_add = -0.1
-		building_group_bg_power_throughput_add = -0.1
 		building_group_bg_light_industry_allowed_collectivization_add = 0.3
 		building_self_investment_chance_add = 0.10
 		country_disable_nationalization_without_compensation_bool = yes
@@ -224,6 +223,7 @@ REPLACE_OR_CREATE:law_supervised_economy = {
 		building_group_bg_power_allowed_collectivization_add = 0.30
 		building_group_bg_private_infrastructure_allowed_collectivization_add = 0.30
 		building_group_bg_arts_allowed_collectivization_add = 0.30
+		country_institution_cost_institution_national_bank_mult = 0.20
 	}
 
 	institution = institution_national_bank

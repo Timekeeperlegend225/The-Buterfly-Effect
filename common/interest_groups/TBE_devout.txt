@@ -570,7 +570,7 @@
 			limit = {
 				NOT = {
 					owner = {
-						has_law_or_variant = law_type:law_state_atheism
+						has_law = law_type:law_state_atheism
 					}
 				}
 			}
@@ -630,7 +630,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_state_atheism
+					has_law = law_type:law_state_atheism
 				}
 			}
 			multiply = {
@@ -642,7 +642,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_state_religion
+					has_law = law_type:law_state_religion
 				}
 			}
 			multiply = {
@@ -654,7 +654,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_freedom_of_conscience
+					has_law = law_type:law_freedom_of_conscience
 				}
 			}
 			multiply = {
@@ -666,7 +666,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_religious_schools
+					has_law = law_type:law_religious_schools
 				}
 			}
 			multiply = {
@@ -682,8 +682,8 @@
 				owner = {
 					has_technology_researched = corporatism
 					NOT = {
-						has_law_or_variant = law_type:law_total_separation
-						has_law_or_variant = law_type:law_state_atheism
+						has_law = law_type:law_total_separation
+						has_law = law_type:law_state_atheism
 					}
 				}
 			}
@@ -780,7 +780,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_state_religion
+					has_law = law_type:law_state_religion
 				}
 			}
 			multiply = {
@@ -791,7 +791,7 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law_or_variant = law_type:law_state_religion }
+					NOT = { has_law = law_type:law_state_religion }
 				}
 			}
 			multiply = {
@@ -802,7 +802,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_state_atheism
+					has_law = law_type:law_state_atheism
 				}
 			}
 			multiply = {
@@ -880,7 +880,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 
 			}
@@ -896,7 +896,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_own_property
+					has_law = law_type:law_women_own_property
 				}
 
 			}
@@ -908,7 +908,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_in_the_workplace
+					has_law = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -920,7 +920,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 
 			}

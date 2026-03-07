@@ -389,7 +389,7 @@ ig_rural_folk = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_homesteading
+					has_law = law_type:law_homesteading
 				}
 			}
 			multiply = {
@@ -400,7 +400,7 @@ ig_rural_folk = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_serfdom
+					has_law = law_type:law_serfdom
 				}
 			}
 			multiply = {
@@ -467,7 +467,7 @@ ig_rural_folk = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 				law_stance = {
 					law = law_type:law_womens_suffrage
@@ -486,7 +486,7 @@ ig_rural_folk = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_own_property
+					has_law = law_type:law_women_own_property
 				}
 
 			}
@@ -498,7 +498,7 @@ ig_rural_folk = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_in_the_workplace
+					has_law = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -510,7 +510,7 @@ ig_rural_folk = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 
 			}

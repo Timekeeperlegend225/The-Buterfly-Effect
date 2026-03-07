@@ -1,4 +1,4 @@
-﻿ig_armed_forces = {
+﻿REPLACE:ig_armed_forces = {
 	color = hsv{ 0.09 0.29 0.39 }
 	texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
 	layer = "revolution_dynamic_armed_forces"
@@ -238,8 +238,8 @@
 					limit = {
 						owner = {
 							OR = {
-								has_law_or_variant = law_type:law_colonial_resettlement
-								has_law_or_variant = law_type:law_frontier_colonization
+								has_law = law_type:law_colonial_resettlement
+								has_law = law_type:law_frontier_colonization
 							}
 						}
 						state = {
@@ -255,7 +255,7 @@
 							is_pop_type = officers
 						}
 						owner = {
-							has_law_or_variant = law_type:law_professional_army
+							has_law = law_type:law_professional_army
 						}
 					}
 					divide = 2
@@ -273,7 +273,7 @@
 				if = { # Institutional loyalty
 					limit = {
 						owner = {
-							has_law_or_variant = law_type:law_professional_army
+							has_law = law_type:law_professional_army
 						}
 					}
 					add = 50
@@ -339,7 +339,7 @@
 				if = {
 					limit = {
 						owner = {
-							has_law_or_variant = law_type:law_peasant_levies
+							has_law = law_type:law_peasant_levies
 						}
 					}
 					add = 50
@@ -481,9 +481,9 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_single_party_state
 					}
 				}
 			}
@@ -496,8 +496,8 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_census_voting
 					}
 				}
 			}
@@ -510,8 +510,8 @@
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_professional_army
-						has_law_or_variant = law_type:law_mass_conscription
+						has_law = law_type:law_professional_army
+						has_law = law_type:law_mass_conscription
 					}
 				}
 			}
@@ -578,7 +578,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 				law_stance = {
 					law = law_type:law_womens_suffrage
@@ -597,7 +597,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_own_property
+					has_law = law_type:law_women_own_property
 				}
 
 			}
@@ -609,7 +609,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_in_the_workplace
+					has_law = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -621,7 +621,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 
 			}
@@ -888,8 +888,8 @@ ig_armed_forces_split = {
 					limit = {
 						owner = {
 							OR = {
-								has_law_or_variant = law_type:law_colonial_resettlement
-								has_law_or_variant = law_type:law_frontier_colonization
+								has_law = law_type:law_colonial_resettlement
+								has_law = law_type:law_frontier_colonization
 							}
 						}
 						state = {
@@ -905,7 +905,7 @@ ig_armed_forces_split = {
 							is_pop_type = officers
 						}
 						owner = {
-							has_law_or_variant = law_type:law_professional_army
+							has_law = law_type:law_professional_army
 						}
 					}
 					divide = 2
@@ -923,7 +923,7 @@ ig_armed_forces_split = {
 				if = { # Institutional loyalty
 					limit = {
 						owner = {
-							has_law_or_variant = law_type:law_professional_army
+							has_law = law_type:law_professional_army
 						}
 					}
 					add = 50
@@ -989,7 +989,7 @@ ig_armed_forces_split = {
 				if = {
 					limit = {
 						owner = {
-							has_law_or_variant = law_type:law_peasant_levies
+							has_law = law_type:law_peasant_levies
 						}
 					}
 					add = 50
@@ -1131,9 +1131,9 @@ ig_armed_forces_split = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_oligarchy
-						has_law_or_variant = law_type:law_autocracy
-						has_law_or_variant = law_type:law_single_party_state
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_single_party_state
 					}
 				}
 			}
@@ -1146,8 +1146,8 @@ ig_armed_forces_split = {
 			limit = {
 				owner = {
 					OR = {
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_census_voting
 					}
 				}
 			}
@@ -1160,8 +1160,8 @@ ig_armed_forces_split = {
 			limit = {
 				owner = {
 					NOR = {
-						has_law_or_variant = law_type:law_professional_army
-						has_law_or_variant = law_type:law_mass_conscription
+						has_law = law_type:law_professional_army
+						has_law = law_type:law_mass_conscription
 					}
 				}
 			}
@@ -1228,7 +1228,7 @@ ig_armed_forces_split = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 				law_stance = {
 					law = law_type:law_womens_suffrage
@@ -1247,7 +1247,7 @@ ig_armed_forces_split = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_own_property
+					has_law = law_type:law_women_own_property
 				}
 
 			}
@@ -1259,7 +1259,7 @@ ig_armed_forces_split = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_women_in_the_workplace
+					has_law = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -1271,7 +1271,7 @@ ig_armed_forces_split = {
 		if = {
 			limit = {
 				owner = {
-					has_law_or_variant = law_type:law_womens_suffrage
+					has_law = law_type:law_womens_suffrage
 				}
 
 			}
