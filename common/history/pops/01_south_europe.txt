@@ -110,39 +110,17 @@
 			}
 		}
 	}
-	s:STATE_SAVOY = {
+	s:STATE_EMILIA = {
 		region_state:SAR = {
 			create_pop = {
-				culture = french
-				size = 92032
-			}
-			create_pop = {
-				culture = francoprovencal
-				size = 195568
-			}
-			create_pop = {
 				culture = north_italian
-				size = 181200
-			}
-		}
-	}
-	s:STATE_EMILIA = {
-		region_state:PAR = {
-			create_pop = {
-				culture = north_italian
-				size = 472004
+				size = 1256004
 			}
 		}
 		region_state:LUC = {
 			create_pop = {
 				culture = north_italian
 				size = 108408
-			}
-		}
-		region_state:MOD = {
-			create_pop = {
-				culture = north_italian
-				size = 648400
 			}
 		}
 	}
@@ -271,7 +249,7 @@
 		}
 	}
 	s:STATE_ARAGON = {
-		region_state:SPA = {
+		region_state:ARN = {
 			create_pop = {
 				culture = spanish
 				size = 389486
@@ -292,7 +270,7 @@
 		}
 	}
 	s:STATE_CATALONIA = {
-		region_state:SPA = {
+		region_state:ARN = {
 			create_pop = {
 				culture = catalan
 				size = 926100
@@ -308,7 +286,7 @@
 		}
 	}
 	s:STATE_BALEARIC_ISLANDS = {
-		region_state:SPA = {
+		region_state:ARN = {
 			create_pop = {
 				culture = catalan
 				size = 211167
@@ -348,7 +326,7 @@
 		}
 	}
 	s:STATE_VALENCIA = {
-		region_state:SPA = {
+		region_state:ARN = {
 			create_pop = {
 				culture = catalan
 				size = 764685

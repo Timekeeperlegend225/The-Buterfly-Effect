@@ -58,14 +58,6 @@
 				add_exports = 60
 			}
 		}
-		region_state:POR={
-			sg:tea = {
-				add_exports = 40
-			}
-			sg:porcelain = {
-				add_exports = 10
-			}
-		}
 	}
 	s:STATE_YEMEN={
 		region_state:LAH={

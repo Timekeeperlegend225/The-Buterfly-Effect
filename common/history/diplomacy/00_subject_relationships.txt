@@ -12,6 +12,10 @@
 			country = c:PHI
 			type = colony
 		}
+		create_diplomatic_pact = {
+			country = c:ARN
+			type = crown_land
+		}
 	}
 	c:NET ?= {
 		create_diplomatic_pact = {

@@ -263,7 +263,7 @@
 				size = 39996
 			}
 		}
-		region_state:GBR = {
+		region_state:HAI = {
 			create_pop = {
 				culture = british
 				size = 34704
@@ -276,8 +276,6 @@
 				culture = dutch
 				size = 396
 			}
-		}
-		region_state:NET = {
 			# Population of ~23700 recorded in 1849
 			create_pop = {
 				culture = afro_brazilian # Papiamento-speakers
@@ -297,7 +295,7 @@
 				size = 1202
 			}
 		}
-		region_state:VNZ = {
+		region_state:CLM = {
 			# Very rough backwards calculation of Nueva Esparta's population in 1921
 			create_pop = {
 				culture = north_andean

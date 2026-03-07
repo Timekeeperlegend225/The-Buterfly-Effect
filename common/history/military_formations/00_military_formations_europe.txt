@@ -365,7 +365,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_FLANDERS
-				count = 15
+				count = 5
 			}
 
 			combat_unit = {
@@ -389,13 +389,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_FRANCHE_COMTE
-				count = 10
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_ILE_DE_FRANCE
-				count = 15
+				count = 10
 			}
 
 			combat_unit = {

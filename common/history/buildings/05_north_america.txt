@@ -1680,10 +1680,11 @@
 			create_building={
 				building="building_motor_industry"
 				add_ownership={
-					company={
-						type=company_william_cramp
+					building={
+						type="building_financial_district"
 						country="c:FED"
 						levels=1
+						region="STATE_PENNSYLVANIA"
 					}
 				}
 				reserves=1
@@ -1741,6 +1742,12 @@
 						type=company_william_cramp
 						country="c:FED"
 						levels=1
+					}
+					building={
+						type="building_financial_district"
+						country="c:FED"
+						levels=1
+						region="STATE_NEW_JERSEY"
 					}
 				}
 				reserves=1
@@ -1919,10 +1926,11 @@
 			create_building={
 				building="building_shipyard"
 				add_ownership={
-					company={
-						type=company_william_cramp
+					building={
+						type="building_financial_district"
 						country="c:FED"
-						levels=2
+						levels=1
+						region="STATE_MASSACHUSETTS"
 					}
 				}
 				reserves=1
@@ -2197,10 +2205,11 @@
 			create_building={
 				building="building_shipyard"
 				add_ownership={
-					company={
-						type=company_william_cramp
+					building={
+						type="building_financial_district"
 						country="c:FED"
 						levels=1
+						region="STATE_MAINE"
 					}
 				}
 				reserves=1

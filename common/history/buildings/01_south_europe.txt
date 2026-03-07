@@ -1136,7 +1136,7 @@
 			}
 		}
 	}
-	s:STATE_SAVOY={
+	s:STATE_EMILIA={
 		region_state:SAR={
 			create_building={
 				building="building_wheat_farm"
@@ -1144,61 +1144,7 @@
 					building={
 						type="building_manor_house"
 						country="c:SAR"
-						levels=2
-						region="STATE_SAVOY"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary"  "pm_tools" }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SAR"
-						levels=2
-						region="STATE_SAVOY"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:SAR"
-						levels=4
-						region="STATE_SAVOY"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:SAR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_religious_bureaucrats" "pm_hereditary_bureaucrats" "pm_horizontal_drawer_cabinets" }
-			}
-		}
-	}
-	s:STATE_EMILIA={
-		region_state:PAR={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PAR"
-						levels=1
+						levels=5
 						region="STATE_EMILIA"
 					}
 				}
@@ -1209,9 +1155,15 @@
 				building="building_vineyard"
 				add_ownership={
 					building={
-						type="building_manor_house"
-						country="c:PAR"
+						type="building_vineyard"
+						country="c:SAR"
 						levels=1
+						region="STATE_EMILIA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:SAR"
+						levels=2
 						region="STATE_EMILIA"
 					}
 				}
@@ -1223,13 +1175,30 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:PAR"
+						country="c:SAR"
 						levels=3
+						region="STATE_EMILIA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:SAR"
+						levels=1
 						region="STATE_EMILIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_university"
+				add_ownership={
+					country={
+						country="c:SAR"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
 			}
 		}
 		region_state:LUC={
@@ -1282,65 +1251,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
-			}
-		}
-		region_state:MOD={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MOD"
-						levels=4
-						region="STATE_EMILIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_vineyard"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MOD"
-						levels=1
-						region="STATE_EMILIA"
-					}
-					building={
-						type="building_vineyard"
-						country="c:MOD"
-						levels=1
-						region="STATE_EMILIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_vineyard" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MOD"
-						levels=1
-						region="STATE_EMILIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-
-			create_building={
-				building="building_university"
-				add_ownership={
-					country={
-						country="c:TUS"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
 			}
 		}
 	}
@@ -2694,12 +2604,12 @@
 		}
 	}
 	s:STATE_ARAGON={
-		region_state:SPA={
+		region_state:ARN={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 					}
 				}
@@ -2711,7 +2621,7 @@
 				add_ownership={
 					building={
 						type="building_wheat_farm"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_ARAGON"
 					}
@@ -2724,7 +2634,7 @@
 				add_ownership={
 					building={
 						type="building_vineyard"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_ARAGON"
 					}
@@ -2737,13 +2647,13 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_ARAGON"
 					}
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_ARAGON"
 					}
@@ -2756,7 +2666,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_ARAGON"
 					}
@@ -2846,12 +2756,12 @@
 		}
 	}
 	s:STATE_CATALONIA={
-		region_state:SPA={
+		region_state:ARN={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=3
 					}
 				}
@@ -2864,7 +2774,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_CATALONIA"
 					}
@@ -2876,13 +2786,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_CATALONIA"
 					}
 					building={
 						type="building_vineyard"
-						country="c:SPA"
+						country="c:ARN"
 						levels=3
 						region="STATE_CATALONIA"
 					}
@@ -2894,7 +2804,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 					}
 				}
@@ -2906,7 +2816,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
@@ -2919,7 +2829,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
@@ -2932,7 +2842,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_CATALONIA"
 					}
@@ -2945,7 +2855,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
@@ -2958,7 +2868,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_CATALONIA"
 					}
@@ -2971,13 +2881,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
 					building={
 						type="building_livestock_ranch"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
@@ -2990,13 +2900,13 @@
 				add_ownership={
 					building={
 						type="building_textile_mill"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_CATALONIA"
 					}
@@ -3008,7 +2918,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 					}
 				}
@@ -3020,13 +2930,13 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_CATALONIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_CATALONIA"
 					}
@@ -3037,13 +2947,13 @@
 		}
 	}
 	s:STATE_BALEARIC_ISLANDS={
-		region_state:SPA={
+		region_state:ARN={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_BALEARIC_ISLANDS"
 					}
@@ -3056,7 +2966,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_BALEARIC_ISLANDS"
 					}
@@ -3068,7 +2978,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 					}
 				}
@@ -3442,12 +3352,12 @@
 		}
 	}
 	s:STATE_VALENCIA={
-		region_state:SPA={
+		region_state:ARN={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 					}
 				}
@@ -3460,7 +3370,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_VALENCIA"
 					}
@@ -3472,13 +3382,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_VALENCIA"
 					}
 					building={
 						type="building_vineyard"
-						country="c:SPA"
+						country="c:ARN"
 						levels=3
 						region="STATE_VALENCIA"
 					}
@@ -3491,7 +3401,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_VALENCIA"
 					}
@@ -3504,12 +3414,12 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=3
 						region="STATE_VALENCIA"
 					}
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 					}
 				}
@@ -3521,7 +3431,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=3
 						region="STATE_VALENCIA"
 					}
@@ -3534,7 +3444,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_VALENCIA"
 					}
@@ -3547,7 +3457,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=3
 						region="STATE_VALENCIA"
 					}
@@ -3560,7 +3470,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_VALENCIA"
 					}
@@ -3573,7 +3483,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 						region="STATE_VALENCIA"
 					}
@@ -3586,7 +3496,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:ARN"
 						levels=2
 						region="STATE_VALENCIA"
 					}
@@ -3598,7 +3508,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:ARN"
 						levels=1
 					}
 				}

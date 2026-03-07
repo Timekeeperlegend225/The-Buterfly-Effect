@@ -3,19 +3,19 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = akan
-				size = 88000
+				size = 58000
 			}
 		}
 		region_state:BLE = {
 			create_pop = {
 				culture = akan
-				size = 40000
+				size = 60000
 			}
 		}
 		region_state:KNG = {
 			create_pop = {
 				culture = akan
-				size = 52004
+				size = 57004
 			}
 			create_pop = {
 				culture = senufo
@@ -34,7 +34,7 @@
 		region_state:AYI = {
 			create_pop = {
 				culture = akan
-				size = 79200
+				size = 86200
 			}
 			create_pop = {
 				pop_type = slaves

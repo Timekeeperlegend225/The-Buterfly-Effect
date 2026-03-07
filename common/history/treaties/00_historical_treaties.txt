@@ -121,43 +121,6 @@
 		}
 	}
 
-	# US Military Assistance to Texas (unofficial, but substantial)
-	create_treaty = {
-		name = treaty_name_us_military_mission_to_texas
-		first_country = c:USA
-		second_country = c:TEX
-
-		is_draft = no
-		entered_into_force_on = 1835.10.2 # Start of Texas Revolt
-		binding_period = { years = 5 } # about 5 years
-
-		articles_to_create = {
-			{
-				article = military_assistance
-				source_country = c:USA
-				target_country = c:TEX
-			}
-			{ # Small arms aid
-				article = goods_transfer
-				source_country = c:USA
-				target_country = c:TEX
-				inputs = {
-					{ goods = g:small_arms }
-					{ quantity = 10 }
-				}
-			}
-			{ # Naval aid
-				article = goods_transfer
-				source_country = c:USA
-				target_country = c:TEX
-				inputs = {
-					{ goods = g:manowars }
-					{ quantity = 1 }
-				}
-			}
-		}
-	}
-
 	# British Guarantee of Maldivan Independence / Not official treaty
 	create_treaty = {
 		first_country = c:GBR
@@ -371,27 +334,6 @@
 			}
 		}
 	}
-	create_treaty = {
-		first_country = c:PRU
-		second_country = c:BAV
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 } # 10 year binding period after start of game
-
-		articles_to_create = {
-			{
-				article = military_access
-				source_country = c:PRU
-				target_country = c:BAV
-			}
-			{
-				article = military_access
-				source_country = c:BAV
-				target_country = c:PRU
-			}
-		}
-	}
 
 	# Dutch-Japanese Trade relationship / Dejima, Nagasaki / Not official treaty
 	create_treaty = {
@@ -511,227 +453,7 @@
 			}
 		}
 	}
-
-	# Treaty of Adrianople - Wallachia
-	create_treaty = {
-		name = treaty_name_treaty_of_adrianople
-		first_country = c:RUS
-		second_country = c:WAL
-
-		is_draft = no
-		entered_into_force_on = 1829.9.14
-		binding_period = { years = 30 } # The Organic Regulation ended in 1856
-
-		articles_to_create = {
-			{ # Organic Regulation
-				article = law_commitment
-				source_country = c:WAL
-				target_country = c:RUS
-				inputs = {
-					{ law_type = law_type:law_organic_regulation }
-				}
-			}
-			{ # Russian occupation
-				article = military_access
-				source_country = c:WAL
-				target_country = c:RUS
-			}
-			{ # Russian occupation
-				article = host_power_bloc_embassy
-				source_country = c:WAL
-				target_country = c:RUS
-			}
-			{ # To increase liberty desire
-				article = support_independence
-				source_country = c:RUS
-				target_country = c:WAL
-			}
-		}
-	}
-
-	# Treaty of Adrianople - Moldavia
-	create_treaty = {
-		name = treaty_name_treaty_of_adrianople
-		first_country = c:RUS
-		second_country = c:MOL
-
-		is_draft = no
-		entered_into_force_on = 1829.9.14
-		binding_period = { years = 30 } # The Organic Regulation ended in 1856
-
-		articles_to_create = {
-			{ # Organic Regulation
-				article = law_commitment
-				source_country = c:MOL
-				target_country = c:RUS
-				inputs = {
-					{ law_type = law_type:law_organic_regulation }
-				}
-			}
-			{ # Russian occupation
-				article = military_access
-				source_country = c:MOL
-				target_country = c:RUS
-			}
-			{ # Russian occupation
-				article = host_power_bloc_embassy
-				source_country = c:MOL
-				target_country = c:RUS
-			}
-			{ # To increase liberty desire
-				article = support_independence
-				source_country = c:RUS
-				target_country = c:MOL
-			}
-		}
-	}
-
-	#######################################################
-	# 			Anti-Cheese Treaties of 1836			  #
-	# not precisely historical, but good for game balance #
-	#######################################################
-
-	### South African treaties for initial trading and such
-
-	create_treaty = {
-		first_country = c:GBR
-		second_country = c:ORA
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:ORA
-			}
-			{ # Guarantee of Independence
-				article = guarantee_independence
-				source_country = c:GBR
-				target_country = c:ORA
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:GBR
-		second_country = c:TRN
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:TRN
-			}
-			{ # Guarantee of Independence
-				article = guarantee_independence
-				source_country = c:GBR
-				target_country = c:TRN
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:ORA
-		second_country = c:TRN
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:ORA
-				target_country = c:TRN
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:PHL
-		second_country = c:ORA
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:PHL
-				target_country = c:ORA
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:WBL
-		second_country = c:TRN
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:WBL
-				target_country = c:TRN
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:GBR
-		second_country = c:PHL
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:PHL
-			}
-			{ # Guarantee of Independence
-				article = guarantee_independence
-				source_country = c:GBR
-				target_country = c:PHL
-			}
-		}
-	}
-
-	create_treaty = {
-		first_country = c:GBR
-		second_country = c:WBL
-
-		is_draft = no
-		entered_into_force_on = 1836.1.1
-		binding_period = { years = 10 }
-
-		articles_to_create = {
-			{
-				article = transit_rights
-				source_country = c:GBR
-				target_country = c:WBL
-			}
-			{ # Guarantee of Independence
-				article = guarantee_independence
-				source_country = c:GBR
-				target_country = c:WBL
-			}
-		}
-	}
-
+	
 	# Yemen coffee trade
 	create_treaty = {
 		first_country = c:LAH
@@ -750,6 +472,73 @@
 					{ goods = g:coffee }
 					{ quantity = 20 }
 				}
+			}
+		}
+	}
+	
+	# Trade Between the French bloc and the Americas
+	create_treaty = {
+		first_country = c:FRA
+		second_country = c:FED
+
+		is_draft = no
+		entered_into_force_on = 1762.4.3 
+		binding_period = { years = 200 } 
+
+		articles_to_create = {
+			{
+				article = trade_privilege
+				source_country = c:FED
+				target_country = c:FRA
+			}
+			{ 
+				article = trade_privilege
+				source_country = c:FRA
+				target_country = c:FED
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:FRA
+		second_country = c:GUY
+
+		is_draft = no
+		entered_into_force_on = 1762.4.3 
+		binding_period = { years = 200 } 
+
+		articles_to_create = {
+			{
+				article = trade_privilege
+				source_country = c:GUY
+				target_country = c:FRA
+			}
+			{ 
+				article = trade_privilege
+				source_country = c:FRA
+				target_country = c:GUY
+			}
+		}
+	}
+	
+	# And between the Americas
+	create_treaty = {
+		first_country = c:FED
+		second_country = c:GUY
+
+		is_draft = no
+		entered_into_force_on = 1762.4.3 
+		binding_period = { years = 200 } 
+
+		articles_to_create = {
+			{
+				article = trade_privilege
+				source_country = c:FED
+				target_country = c:FRA
+			}
+			{ 
+				article = trade_privilege
+				source_country = c:FED
+				target_country = c:GUY
 			}
 		}
 	}
