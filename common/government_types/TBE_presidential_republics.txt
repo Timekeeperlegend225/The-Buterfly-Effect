@@ -9,7 +9,7 @@
 	female_heir = "RULER_TITLE_SECRETARY"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = no
 		has_law_or_variant = law_type:law_isolationism
 		has_variable = francocracia_paraguay_var
@@ -32,7 +32,7 @@ REPLACE:gov_francocracia_presidential = {
 	female_ruler = "RULER_TITLE_PERPETUAL_DICTATOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = no
 		has_law_or_variant = law_type:law_isolationism
 		has_variable = patino_paraguay_var
@@ -196,7 +196,7 @@ REPLACE:gov_danubian_federation_presidential_republic = {
 
 	possible = {
 		c:KUK ?= this
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = yes
 	}
 
@@ -216,7 +216,7 @@ REPLACE:gov_danubian_federation_technocratic_presidential_republic = {
 
 	possible = {
 		c:KUK ?= this
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_technocracy
 	}
 
@@ -236,7 +236,7 @@ REPLACE:gov_danubian_federation_presidential_republic_dictatorship = {
 
 	possible = {
 		c:KUK ?= this
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		NOT = {
 			has_law_or_variant = law_type:law_technocracy
 		}
@@ -261,7 +261,7 @@ REPLACE:gov_brazil_oligarchic_republic_presidential = {
 
 	possible = {
 		country_has_primary_culture = cu:brazilian
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_aristocratic
 		OR = {
 			has_law_or_variant = law_type:law_tenant_farmers
@@ -282,7 +282,7 @@ REPLACE:gov_french_2nd_republic_presidential = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_primary_culture = cu:french
 		has_variable = fra_republic_counter
 		var:fra_republic_counter ?= 2
@@ -303,7 +303,7 @@ REPLACE:gov_french_2nd_republic_presidential_dictator = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_primary_culture = cu:french
 		country_has_voting_franchise = no
 		has_variable = fra_republic_counter
@@ -326,7 +326,7 @@ REPLACE:gov_french_3rd_republic_presidential = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_primary_culture = cu:french
 		has_variable = fra_republic_counter
 		var:fra_republic_counter ?= 3
@@ -347,7 +347,7 @@ REPLACE:gov_french_3rd_republic_presidential_dictator = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_primary_culture = cu:french
 		country_has_voting_franchise = no
 		has_variable = fra_republic_counter
@@ -370,7 +370,7 @@ REPLACE:gov_french_4th_republic_presidential = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_primary_culture = cu:french
 		has_variable = fra_republic_counter
 		var:fra_republic_counter ?= 4
@@ -391,7 +391,7 @@ REPLACE:gov_french_4th_republic_presidential_dictator = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_primary_culture = cu:french
 		country_has_voting_franchise = no
 		has_variable = fra_republic_counter
@@ -413,7 +413,7 @@ REPLACE:gov_technate_presidential = {
 	female_ruler = "RULER_TITLE_CHIEF_EXECUTIVE"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_technocracy
 		NAND = {
 			is_involved_in_journal_entry = je_peru_bolivia
@@ -436,7 +436,7 @@ REPLACE:gov_banana_republic = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = no
 		NAND = {
 			is_involved_in_journal_entry = je_peru_bolivia
@@ -470,7 +470,7 @@ REPLACE:gov_bhutanese_dual_system_temporal = {
 	possible = {
 		exists = c:BHU
 		c:BHU = ROOT
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_state_religion
 		country_has_voting_franchise = no
 	}
@@ -496,7 +496,7 @@ REPLACE:gov_indian_territory_life_term = {
 		exists = c:USA
 		is_subject_of = c:USA
 
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = no
 	}
 
@@ -521,7 +521,7 @@ REPLACE:gov_indian_territory_elected_term = {
 		exists = c:USA
 		is_subject_of = c:USA
 
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = yes
 	}
 
@@ -550,7 +550,7 @@ REPLACE:gov_free_city = {
 		any_scope_state = {
 			count <= 1
 		}
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = yes
 	}
 
@@ -569,7 +569,7 @@ REPLACE:gov_warlord_state = {
 	female_ruler = "RULER_TITLE_GENERAL"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_autocracy
 		has_law_or_variant = law_type:law_peasant_levies
 
@@ -597,7 +597,7 @@ REPLACE:gov_fascist_state = {
 
 	possible = {
 		OR = {
-			has_law_or_variant = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_presidential
 			has_law_or_variant = law_type:law_parliamentary_republic
 		}
 		OR = {
@@ -623,7 +623,7 @@ REPLACE:gov_military_dictatorship = {
 	female_ruler = "RULER_TITLE_GENERAL"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_autocracy
 		OR = {
 			has_law_or_variant = law_type:law_mass_conscription
@@ -661,7 +661,7 @@ REPLACE:gov_presidential_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_autocracy
 		OR = {
 			has_law_or_variant = law_type:law_peasant_levies
@@ -691,7 +691,7 @@ REPLACE:gov_junta = {
 	female_ruler = "RULER_TITLE_GENERAL"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = no
 		OR = {
 			has_law_or_variant = law_type:law_mass_conscription
@@ -721,7 +721,7 @@ REPLACE:gov_presidential_oligarchy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = no
 		NOT = {
 			coa_fascist_trigger = yes
@@ -748,14 +748,14 @@ REPLACE:gov_presidential_democracy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		country_has_voting_franchise = yes
 		NOR = {
 			has_law_or_variant = law_type:law_single_party_state
 			has_law_or_variant = law_type:law_technocracy
 			AND = {
 				country_has_primary_culture = cu:brazilian
-				has_law_or_variant = law_type:law_presidential_republic
+				has_law_or_variant = law_type:law_presidential
 				has_law_or_variant = law_type:law_aristocratic
 				OR = {
 					has_law_or_variant = law_type:law_tenant_farmers
@@ -784,7 +784,7 @@ REPLACE:gov_presidential_single_party_state = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential
 		has_law_or_variant = law_type:law_single_party_state
 		NAND = {
 			is_involved_in_journal_entry = je_peru_bolivia

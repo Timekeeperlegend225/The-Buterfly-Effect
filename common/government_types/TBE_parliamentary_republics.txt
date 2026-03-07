@@ -6,7 +6,7 @@
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_primary_culture = cu:french
 		has_variable = fra_republic_counter
 		var:fra_republic_counter ?= 2
@@ -27,7 +27,7 @@ REPLACE:gov_french_2nd_republic_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_primary_culture = cu:french
 		country_has_voting_franchise = no
 		has_variable = fra_republic_counter
@@ -50,7 +50,7 @@ REPLACE:gov_french_3rd_republic_parliamentary = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_primary_culture = cu:french
 		has_variable = fra_republic_counter
 		var:fra_republic_counter ?= 3
@@ -71,7 +71,7 @@ REPLACE:gov_french_3rd_republic_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_primary_culture = cu:french
 		country_has_voting_franchise = no
 		has_variable = fra_republic_counter
@@ -94,7 +94,7 @@ REPLACE:gov_french_4th_republic_parliamentary = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_primary_culture = cu:french
 		has_variable = fra_republic_counter
 		var:fra_republic_counter ?= 4
@@ -115,7 +115,7 @@ REPLACE:gov_french_4th_republic_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_primary_culture = cu:french
 		country_has_voting_franchise = no
 		has_variable = fra_republic_counter
@@ -138,7 +138,7 @@ REPLACE:gov_danubian_federation_parliamentary_republic = {
 
 	possible = {
 		c:KUK ?= this
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_voting_franchise = yes
 	}
 
@@ -158,7 +158,7 @@ REPLACE:gov_danubian_federation_technocratic_parliamentary_republic = {
 
 	possible = {
 		c:KUK ?= this
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		has_law_or_variant = law_type:law_technocracy
 	}
 
@@ -178,7 +178,7 @@ REPLACE:gov_danubian_federation_parliamentary_republic_dictatorship = {
 
 	possible = {
 		c:KUK ?= this
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		NOT = {
 			has_law_or_variant = law_type:law_technocracy
 		}
@@ -201,7 +201,7 @@ REPLACE:gov_technate_parliamentary = {
 	female_ruler = "RULER_TITLE_CHIEF_ENGINEER"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		has_law_or_variant = law_type:law_technocracy
 	}
 
@@ -224,7 +224,7 @@ REPLACE:gov_circassian_federation = {
 
 	possible = {
 		is_country_type = unrecognized
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_voting_franchise = no
 		exists = c:CIR
 		c:CIR = ROOT
@@ -246,7 +246,7 @@ REPLACE:gov_american_parliamentary = {
 	female_ruler = "RULER_TITLE_SPEAKER"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		OR = {
 			country_has_primary_culture = cu:yankee
 			country_has_primary_culture = cu:dixie
@@ -270,7 +270,7 @@ REPLACE:gov_american_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_SENATOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		OR = {
 			country_has_primary_culture = cu:yankee
 			country_has_primary_culture = cu:dixie
@@ -296,7 +296,7 @@ REPLACE:gov_anglo_parliamentary = {
 	female_ruler = "RULER_TITLE_PRIME_MINISTER"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_voting_franchise = yes
 		country_tier = kingdom
 		is_subject = no
@@ -321,7 +321,7 @@ REPLACE:gov_anglo_parliamentary_provincial = {
 	female_ruler = "RULER_PREMIER"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_voting_franchise = yes
 		OR = {
 			country_tier = grand_principality
@@ -365,7 +365,7 @@ REPLACE:gov_parliamentary_dictatorship = {
 	female_ruler = "RULER_TITLE_LADY_PROTECTOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		has_law_or_variant = law_type:law_autocracy
 	}
 
@@ -384,7 +384,7 @@ REPLACE:gov_parliamentary_oligarchy = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_voting_franchise = no
 	}
 
@@ -404,7 +404,7 @@ REPLACE:gov_parliamentary_single_party_state = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		has_law_or_variant = law_type:law_single_party_state
 	}
 
@@ -424,7 +424,7 @@ REPLACE:gov_parliamentary_democracy = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 
 	possible = {
-		has_law_or_variant = law_type:law_parliamentary_republic
+		has_law_or_variant = law_type:law_head_of_legislature
 		country_has_voting_franchise = yes
 		NOT = {
 			has_law_or_variant = law_type:law_single_party_state

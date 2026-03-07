@@ -5,7 +5,7 @@
 	female_ruler = "" # Empty on purpose
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		exists = c:TIB
 		c:TIB = ROOT
 	}
@@ -27,7 +27,7 @@ REPLACE:gov_heavenly_kingdom_theocracy = {
 	female_heir = "" # Empty on purpose
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_state_religion = rel:protestant
 		exists = c:TPG
 		c:TPG = ROOT
@@ -48,7 +48,7 @@ REPLACE:gov_papacy = {
 	female_ruler = "RULER_POPE"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		OR = {
 			c:PAP ?= ROOT
 			AND = {
@@ -75,7 +75,7 @@ REPLACE:gov_bhutanese_dual_system_dharma = {
 	possible = {
 		exists = c:BHU
 		c:BHU = ROOT
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 	}
 
 	on_government_type_change = {
@@ -96,7 +96,7 @@ REPLACE:gov_prince_bishopric = {					# Oddball political system present in Monte
 	female_heir = "" # Empty on purpose
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		exists = c:MON
 		c:MON = ROOT
 		religion = rel:orthodox
@@ -119,7 +119,7 @@ REPLACE:gov_zaidi_imamate = {
 	female_heir = "RULER_TITLE_HEIR_APPARENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_state_religion = rel:shiite
 		OR = {
 			AND = {
@@ -151,7 +151,7 @@ REPLACE:gov_contechne = {
 	female_heir = "RULER_TITLE_MAGOS"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		has_law_or_variant = law_type:law_technocracy
 	}
 
@@ -169,7 +169,7 @@ REPLACE:gov_catholic_theocracy = {
 	female_ruler = "RULER_CARDINAL"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_state_religion = rel:catholic
 	}
 
@@ -187,7 +187,7 @@ REPLACE:gov_american_theocracy_democratic = {
 	female_ruler = "RULER_PRESIDENT"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_voting_franchise = yes
 		OR = {
 			country_has_primary_culture = cu:yankee
@@ -210,7 +210,7 @@ REPLACE:gov_american_theocracy_dictatorial = {
 	female_ruler = "RULER_BISHOP"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_voting_franchise = no
 		OR = {
 			country_has_primary_culture = cu:yankee
@@ -233,7 +233,7 @@ REPLACE:gov_protestant_theocracy = {
 	female_ruler = "RULER_PRIMATE"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_state_religion = rel:protestant
 	}
 
@@ -251,7 +251,7 @@ REPLACE:gov_oriental_orthodox_theocracy = {
 	female_ruler = "RULER_PATRIARCH"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		OR = {
 			country_has_state_religion = rel:orthodox
 			country_has_state_religion = rel:oriental_orthodox
@@ -272,7 +272,7 @@ REPLACE:gov_sunni_theocracy = {
 	female_ruler = "RULER_IMAM"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		OR = {
 			country_has_state_religion = rel:sunni
 			country_has_state_religion = rel:ibadi
@@ -293,7 +293,7 @@ REPLACE:gov_shiite_theocracy = {
 	female_ruler = "RULER_AYATOLLAH"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_state_religion = rel:shiite
 	}
 
@@ -311,7 +311,7 @@ REPLACE:gov_jewish_theocracy = {
 	female_ruler = "RULER_CHIEF_RABBI"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_state_religion = rel:jewish
 	}
 
@@ -330,7 +330,7 @@ REPLACE:gov_theocratic_oligarchy = {
 	female_ruler = "RULER_HIGH_PRIESTESS"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		has_law_or_variant = law_type:law_oligarchy
 	}
 
@@ -349,7 +349,7 @@ REPLACE:gov_theocracy = {
 	female_ruler = "RULER_HIGH_PRIESTESS"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_voting_franchise = no
 	}
 
@@ -368,7 +368,7 @@ REPLACE:gov_theocratic_democracy = {
 	female_ruler = "RULER_HIGH_PRIESTESS"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_voting_franchise = yes
 	}
 
@@ -387,7 +387,7 @@ REPLACE:gov_theocratic_single_party_state = {
 	female_ruler = "RULER_HIGH_PRIESTESS"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		country_has_voting_franchise = yes
 		NOT = {
 			has_law_or_variant = law_type:law_single_party_state
@@ -409,7 +409,7 @@ REPLACE:gov_theocratic_dictatorship = {
 	female_ruler = "RULER_HIGH_PRIESTESS"
 
 	possible = {
-		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_institutional_rule
 		has_law_or_variant = law_type:law_autocracy
 	}
 

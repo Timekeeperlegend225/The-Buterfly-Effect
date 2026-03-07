@@ -126,7 +126,6 @@ REPLACE_OR_CREATE:FED = {
 }
 
 
-
 REPLACE:NNV = { # Nunavut
 	color = { 205 214 216 }
 
@@ -137,4 +136,16 @@ REPLACE:NNV = { # Nunavut
 	cultures = { inuit }
 
 	capital = STATE_NUNAVUT
+}
+
+REPLACE:VEN = {
+	color = { 20 170 180 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+	is_named_from_capital = yes
 }
