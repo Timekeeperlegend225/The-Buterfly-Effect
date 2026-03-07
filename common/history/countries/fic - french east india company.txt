@@ -10,11 +10,15 @@
 		add_technology_researched = railways
 		add_technology_researched = corporate_charters
 
-		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_institutional_rule
+		activate_law = law_type:law_counciliary 
+		activate_law = law_type:law_company_council 
+		activate_law = law_type:law_institutional_industrialists 
 		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_company_banks
+		activate_law = law_type:law_rural_economy
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_subjecthood # English & Anglo-Indian supremacy; no Indians served in the upper echelons of government
-		activate_law = law_type:law_extraction_economy
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_migration_controls
@@ -35,8 +39,6 @@
 		ig:ig_armed_forces ?= {
 			add_ruling_interest_group = yes
 		}
-
-		add_modifier = modifier_india_company_rule
 
 
 	}	

@@ -1,7 +1,5 @@
 ﻿COUNTRIES = {
-	c:SPA ?= {
-		set_next_election_date = 1836.2.26
-
+	c:ARN ?= {
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
 
