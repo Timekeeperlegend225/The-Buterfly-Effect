@@ -310,7 +310,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_AUVERGNE_LIMOUSIN
-				count = 25
+				count = 20
 			}
 
 			combat_unit = {
@@ -322,7 +322,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_GUYENNE
-				count = 15
+				count = 10
 			}
 
 			combat_unit = {
@@ -353,7 +353,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_ALSACE_LORRAINE
-				count = 15
+				count = 10
 			}
 
 			combat_unit = {
@@ -377,7 +377,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_WALLONIA
-				count = 10
+				count = 5
 			}
 
 			combat_unit = {
@@ -431,19 +431,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_LORRAINE
-				count = 8
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_NORMANDY
 				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHAMPAGNE
-				count = 5
 			}
 
 			combat_unit = {
