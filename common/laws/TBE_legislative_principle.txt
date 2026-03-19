@@ -6,9 +6,6 @@
 	progressiveness = -100
 
 	modifier = {
-		country_authority_add = 300
-		country_legitimacy_ideological_incoherence_mult = 0.5
-		country_officers_pol_str_mult = 0.5
 	}
 
 	disallowing_laws = {
@@ -100,7 +97,6 @@ REPLACE:law_oligarchy = {
 	progressiveness = -50
 
 	modifier = {
-		country_authority_add = 200	
 	}
 
 	can_impose = {
@@ -218,8 +214,6 @@ REPLACE_OR_CREATE:law_counciliary = {
 	}
 
 	modifier = {
-		country_authority_add = 200
-		country_legitimacy_ideological_incoherence_mult = -0.1
 	}
 
 	on_activate = {

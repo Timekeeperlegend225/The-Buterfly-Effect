@@ -7,7 +7,6 @@
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -425,7 +424,6 @@ ideology_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -477,7 +475,6 @@ ideology_montenegrin_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -751,7 +748,6 @@ ideology_republican = {
 		law_presidential = strongly_approve
 		law_head_of_legislature = approve
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -924,7 +920,6 @@ ideology_socialist = {
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = approve
 	}
 
 	lawgroup_institutional_group = {
@@ -969,7 +964,6 @@ ideology_reactionary = {
 		law_presidential = neutral
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = approve
 	}
 	
 	lawgroup_legislative_principle = {

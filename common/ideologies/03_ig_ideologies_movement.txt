@@ -72,7 +72,6 @@ ideology_absolutist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = disapprove
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -146,7 +145,6 @@ ideology_royalist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = disapprove
-		law_leader_of_the_nation = disapprove
 	}
 }
 
@@ -213,7 +211,6 @@ ideology_socialist_movement = {
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = approve
 	}
 
 	lawgroup_institutional_group = {
@@ -296,7 +293,6 @@ ideology_communist_movement = {
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = approve
 	}
 
 	lawgroup_distribution_of_power = {
@@ -390,7 +386,6 @@ ideology_anarchist_movement = {
 		law_presidential = neutral
 		law_head_of_legislature = strongly_approve
 		law_national_model = neutral
-		law_leader_of_the_nation = disapprove
 	}
 	
 	lawgroup_legislative_principle = {
@@ -483,7 +478,6 @@ ideology_vanguardist_movement = {
 		law_presidential = neutral
 		law_head_of_legislature = disapprove
 		law_national_model = strongly_approve
-		law_leader_of_the_nation = strongly_approve
 	}
 
 	lawgroup_distribution_of_power = {
@@ -571,7 +565,6 @@ ideology_fascist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = strongly_approve
 	}
 	
 	lawgroup_legislative_principle = {
@@ -674,7 +667,6 @@ ideology_corporatist_movement = {
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = approve
 	}
 
 	lawgroup_institutional_group = {
@@ -793,7 +785,6 @@ ideology_radical_movement = {
 		law_presidential = approve
 		law_head_of_legislature = strongly_approve
 		law_national_model = neutral
-		law_leader_of_the_nation = disapprove
 	}
 	
 	lawgroup_legislative_principle = {
@@ -917,7 +908,6 @@ ideology_positivist_movement = {
 		law_presidential = strongly_approve
 		law_head_of_legislature = approve
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1013,7 +1003,6 @@ ideology_reactionary_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = approve
 	}
 
 	lawgroup_citizenship = {
@@ -1295,7 +1284,6 @@ ideology_liberal_republican_movement = {
 		law_presidential = strongly_approve
 		law_head_of_legislature = approve
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1475,7 +1463,6 @@ ideology_orleanist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1540,7 +1527,6 @@ ideology_bonapartist_movement = {
 		law_presidential = neutral
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = approve
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1616,7 +1602,6 @@ ideology_legitimist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = disapprove
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1769,7 +1754,6 @@ ideology_integralist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1841,7 +1825,6 @@ ideology_carlist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = disapprove
-		law_leader_of_the_nation = disapprove
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1919,7 +1902,6 @@ ideology_carlist_movement_2 = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = approve
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1995,7 +1977,6 @@ ideology_miguelist_movement = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = disapprove
-		law_leader_of_the_nation = disapprove
 	}
 	
 	lawgroup_legislative_principle = {
@@ -2073,7 +2054,6 @@ ideology_miguelist_movement_2 = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = approve
 	}
 	
 	lawgroup_legislative_principle = {

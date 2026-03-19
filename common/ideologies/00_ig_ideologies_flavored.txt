@@ -7,7 +7,6 @@
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -72,7 +71,6 @@ ideology_scholar_paternalistic = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -137,7 +135,6 @@ ideology_junker_paternalistic = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -202,7 +199,6 @@ ideology_papal_paternalistic = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -267,7 +263,6 @@ ideology_papal_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -328,7 +323,6 @@ ideology_confucian = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -389,7 +383,6 @@ ideology_bakufu = {
 		law_presidential = disapprove
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -437,7 +430,6 @@ ideology_shinto_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -487,7 +479,6 @@ ideology_caudillismo = {
 		law_presidential = disapprove
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -622,7 +613,6 @@ ideology_buddhist_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -674,7 +664,6 @@ ideology_hindu_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -739,7 +728,6 @@ ideology_hindu_moralist_british_india = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -804,7 +792,6 @@ ideology_sikh_moralist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -939,7 +926,6 @@ ideology_heavenly_kingdom_theocratic = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1066,7 +1052,6 @@ ideology_constitutionalist = {
 		law_presidential = approve
 		law_head_of_legislature = approve
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1260,7 +1245,6 @@ ideology_enclavist = {
 		law_presidential = strongly_disapprove
 		law_head_of_legislature = neutral
 		law_national_model = disapprove
-		law_leader_of_the_nation = disapprove
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1380,7 +1364,6 @@ ideology_technocratic = {
 		law_presidential = approve
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1451,7 +1434,6 @@ ideology_magnatial = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1523,7 +1505,6 @@ ideology_moderantist = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1602,7 +1583,6 @@ ideology_carlist_ig = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1655,7 +1635,6 @@ ideology_carlist_ig_2 = {
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -1743,7 +1722,6 @@ ideology_ibadi_imamate = { # Imamic
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -1984,7 +1962,6 @@ ideology_liberal_praetorian = {
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -2022,7 +1999,6 @@ ideology_conservative_praetorian = {
 		law_presidential = neutral
 		law_head_of_legislature = neutral
 		law_national_model = approve
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {

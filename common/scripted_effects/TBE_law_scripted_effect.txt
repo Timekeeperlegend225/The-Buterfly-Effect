@@ -435,3 +435,20 @@ TBE_insitutional_parliament_initial_amendment = {
 		}
 	}
 }
+
+TBE_ruler_ig_become_institutional = {
+	if = {
+		limit = {
+			ruler = {
+				
+			}
+		}
+		scope:institutional_rule_scope = { 
+			add_amendment = {
+				type = TBE_amendement_landowners_rule
+				sponsor = ROOT.ig:ig_landowners
+				cooldown = 0
+			}
+		}
+	}*
+}

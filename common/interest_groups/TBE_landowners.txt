@@ -1,4 +1,4 @@
-﻿ig_landowners = {
+﻿REPLACE:ig_landowners = {
 	color = hsv{ 0.63 0.40 0.69 }
 	texture = "gfx/interface/icons/ig_icons/landowners.dds"
 	layer = "revolution_dynamic_landowners"
@@ -107,6 +107,12 @@
 			}
 		}
 
+		if = {
+			limit = {
+				is_country_type = unrecognized
+			}
+			TBE_landwoner_feodal_setup = yes
+		}
 		# Squattocracy
 		if = {
 			limit = {

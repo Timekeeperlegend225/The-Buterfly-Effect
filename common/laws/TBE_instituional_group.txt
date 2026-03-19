@@ -71,7 +71,7 @@
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -216,7 +216,7 @@ REPLACE_OR_CREATE:law_institutional_devout = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -361,7 +361,7 @@ REPLACE_OR_CREATE:law_institutional_armed_forces = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -506,7 +506,7 @@ REPLACE_OR_CREATE:law_institutional_petty_bourgeoisie = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -651,7 +651,7 @@ REPLACE_OR_CREATE:law_institutional_intelligentsia = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -796,7 +796,7 @@ REPLACE_OR_CREATE:law_institutional_industrialists = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -941,7 +941,7 @@ REPLACE_OR_CREATE:law_institutional_trade_unions = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}
@@ -1086,7 +1086,7 @@ REPLACE_OR_CREATE:law_institutional_rural_folk = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_loyalism
+					has_law = law_type:law_supervised_autocracy
 					has_law = law_type:law_ideological_elite
 				}
 			}

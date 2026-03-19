@@ -8,7 +8,6 @@
 		law_presidential = disapprove
 		law_head_of_legislature = disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -285,7 +284,6 @@ ideology_legitimist = {
 		law_presidential = disapprove
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = disapprove
-		law_leader_of_the_nation = neutral
 	}
 	
 	lawgroup_legislative_principle = {
@@ -581,7 +579,6 @@ ideology_bonapartist = {
 		law_presidential = neutral
 		law_head_of_legislature = strongly_disapprove
 		law_national_model = neutral
-		law_leader_of_the_nation = approve
 	}
 	
 	lawgroup_legislative_principle = {
