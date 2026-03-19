@@ -5,7 +5,7 @@
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_institutional_supremacy
 		activate_law = law_type:law_institutional_devout 
-		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_rural_serfdom
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_appointed_bureaucrats
@@ -15,5 +15,22 @@
 		activate_law = law_type:law_censorship	
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_isolationism
+		
+		add_modifier = { 
+			name = TBE_lack_of_control_national 
+			multiplier = 10
+		}
+		
+		every_scope_state = {
+			add_modifier = { 
+				name = TBE_unknow_population 
+			}
+			add_modifier = { 
+				name = TBE_abysmal_infrastructure 
+			}
+			add_modifier = { 
+				name = TBE_backwar_agriculture 
+			}
+		}
 	}
 }
