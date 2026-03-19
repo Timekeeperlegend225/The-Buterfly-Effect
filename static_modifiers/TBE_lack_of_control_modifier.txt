@@ -1,0 +1,40 @@
+﻿TBE_lack_of_control_national = {
+	icon = gfx/interface/icons/alert_icons/low_legitimacy.dds
+	country_institution_colonial_affairs_max_investment_add = -1
+	country_institution_health_system_max_investment_add = -1
+	country_institution_home_affairs_max_investment_add = -1
+	country_institution_police_max_investment_add = -1
+	country_institution_schools_max_investment_add = -1
+	country_institution_social_security_max_investment_add = -1
+	country_institution_workplace_safety_max_investment_add = -1
+	country_institution_national_bank_max_investment_add = -1
+	country_institution_state_propaganda_max_investment_add = -1
+	country_prestige_mult = -0.05
+}
+
+TBE_unknow_population = {
+	icon = gfx/interface/icons/notification_icons/default.dds
+	building_minimum_incorporated_subsistence_employment_add = 0.3
+	state_bureaucracy_population_base_cost_factor_mult = -0.3
+	state_peasants_education_access_add = -0.50
+	state_laborers_education_access_add = -0.50
+	state_tax_capacity_mult = -0.40
+}
+
+TBE_abysmal_infrastructure = {
+	icon = gfx/interface/icons/alert_icons/organization_alert.dds
+	building_minimum_incorporated_subsistence_employment_add = 0.1
+	state_minimum_incorporated_subsistence_arable_land_add = 0.1
+	state_infrastructure_from_population_max_add = -30
+	state_market_access_price_impact = -0.3
+	state_construction_mult = -0.3
+	state_building_construction_sector_max_level_add = -10
+}
+
+TBE_backwar_agriculture = {
+	icon = gfx/interface/icons/lens_toolbar_icons/unused/plantation_lens_option.dds
+	building_minimum_incorporated_subsistence_employment_add = 0.3
+	state_minimum_incorporated_subsistence_arable_land_add = 0.5
+	state_market_access_price_impact = -0.15
+	state_peasants_consumption_multiplier_add = 0.3
+}

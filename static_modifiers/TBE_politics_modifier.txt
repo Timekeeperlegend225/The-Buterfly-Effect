@@ -1,0 +1,14 @@
+﻿TBE_head_of_state_popularity_legitimacy = {
+	icon = gfx/interface/icons/generic_icons/legitimacy.dds
+	country_legitimacy_headofstate_add = 1
+}
+
+TBE_institutional_ig_in_gov_legitimacy = {
+	icon = gfx/interface/icons/generic_icons/legitimacy.dds
+	country_legitimacy_base_add = 1
+}
+
+TBE_ruler_popularity_modifier = {
+	icon = gfx/interface/icons/generic_icons/popularity.dds
+	character_popularity_add = 1
+}
