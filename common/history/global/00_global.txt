@@ -14,32 +14,6 @@ GLOBAL = {
 		set_variable = king_in_parliament_possible
 	}
 
-	every_country = {
-		limit = {
-			is_historical_spanish_american_colony = yes
-			NOT = {
-				any_overlord_or_above = {
-					c:SPA ?= this
-				}
-			}
-		}
-		add_treasury = { # Heavy debt from wars of independence
-			value = yearly_gross_income
-			multiply = -0.5 # 1.5
-		}
-		if = {
-			limit = {
-				has_dlc_feature = ip4_content
-			}
-			add_modifier = { # Spain does not formally recognize her former colonies in America at game-start
-				name = modifier_not_recognized_by_spain
-			}
-			add_journal_entry = {
-				type = je_spanish_american_independence
-			}
-		}
-	}
-
 	c:HAI ?= {
 		add_treasury = {
 			value = gold_reserves_limit
@@ -80,112 +54,6 @@ GLOBAL = {
 			random_scope_state = {
 				add_radicals_in_state = {
 					value = 0.10
-				}
-			}
-		}
-	}
-
-	c:SPA ?= {
-		capital = {
-			add_radicals_in_state = {
-				value = 0.15
-			}
-		}
-		every_scope_state = {
-			limit = {
-				state_region = {
-					OR = {
-						is_homeland = cu:basque
-						is_homeland = cu:catalan
-						s:STATE_ARAGON ?= this
-					}
-				}
-			}
-			add_radicals_in_state = {
-				value = 0.25
-			}
-		}
-		every_scope_state = {
-			limit = {
-				NOR = {
-					state_region = {
-						OR = {
-							is_homeland = cu:basque
-							is_homeland = cu:catalan
-							s:STATE_ARAGON ?= this
-						}
-					}
-					is_capital = yes
-				}
-			}
-			add_radicals_in_state = {
-				value = 0.07
-			}
-		}
-		add_modifier = {
-			name = national_guard_preoccupied
-		}
-	}
-	
-	# Debt - to compensate for our relatively low credit limits, all debts are ~3x lighter than they were historically. Capped out at a -2.5x modifier.
-	c:SPA ?= { # Spain was broke, with a "B" emoji. Historically 22:1 ratio of debt to revenue.
-		add_treasury = {
-			value = yearly_gross_income
-			multiply = -1 # 2.0 - should be -7.3, but this is literally unplayable.
-		}
-	}
-
-	c:POR ?= { # Portugal defaulted over and over again on foreign loans around game start. Historically 3:1 ratio of debt to revenue.
-		add_treasury = {
-			value = yearly_gross_income
-			multiply = -1.5
-		}
-	}	
-
-	c:SPC ?= {
-		add_modifier = {
-			name = captured_royal_arsenals
-			days = normal_modifier_time
-			is_decaying = yes
-			multiplier = 15
-		}
-		add_treasury = {
-			value = gold_reserves_limit
-		}
-		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_ARAGON
-					state_region = s:STATE_CATALONIA
-					state_region = s:STATE_BASQUE_COUNTRY
-				}
-			}
-			add_modifier = {
-				name = spc_raided_grain_storages
-				days = normal_modifier_time
-			}
-			if = {
-				limit = {
-					state_region = s:STATE_ARAGON
-				}
-				add_modifier = {
-					name = ad_hoc_manufacturing
-					days = normal_modifier_time
-					multiplier = 3
-				}
-			}
-			else_if = {
-				limit = {
-					state_region = s:STATE_BASQUE_COUNTRY
-				}
-				add_modifier = {
-					name = ad_hoc_manufacturing_negative
-					days = normal_modifier_time
-					multiplier = 3
-				}
-				add_modifier = {
-					name = pyrenean_smuggling
-					days = normal_modifier_time
 				}
 			}
 		}
@@ -549,38 +417,6 @@ GLOBAL = {
 		value = 0
 	}
 
-	s:STATE_DISTRICT_OF_COLUMBIA = {
-		set_variable = {
-            name = usa_state_flag_block
-            value = yes
-        }
-
-        set_variable = {
-            name = district_of_columbia
-            value = yes
-        }
-	}
-
-	s:STATE_WEST_VIRGINIA = {
-        set_variable = {
-            name = usa_state_flag_block
-            value = yes
-        }
-	}
-
-	c:UCA ?= {
-		add_radicals = {
-			value = 0.25
-		}
-	}
-
-	c:PNI ?= {
-		trigger_event = {
-			id = garibaldi_events.1
-			days = 6
-		}
-	}
-
 	c:RUS ?= {
 		every_scope_state = {
             limit = {
@@ -620,136 +456,11 @@ GLOBAL = {
 		}
 	}
 
-	c:ARG ?= {
-		every_scope_state = {
-			limit = {
-				NOR = {
-					state_region = s:STATE_BUENOS_AIRES
-					state_region = s:STATE_SANTA_FE
-				}
-			}
-			add_radicals_in_state = {
-				value = 0.33
-				strata = upper
-			}
-			add_radicals_in_state = {
-				value = 0.25
-				strata = middle
-			}
-			add_radicals_in_state = {
-				value = 0.15
-				strata = lower
-			}
-		}
-	}
-
-	c:CHI ?= {
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_SICHUAN
-			}
-			add_radicals_in_state = {
-                value = 0.1
-                culture = cu:han
-            }
-		}
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_YUNNAN
-			}
-			add_radicals_in_state = {
-                value = 0.025
-                culture = cu:han
-            }
-		}
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_CHONGQING
-			}
-			add_radicals_in_state = {
-                value = 0.05
-                culture = cu:han
-            }
-		}
-		add_radicals = {
-			value = 0.025
-			culture = cu:han
-		}
-
-		set_variable = {
-			name = china_warlord_explosion
-			value = 5
-		}
-	}
-
 	s:STATE_LAOS.region_state:DAI = {
 		add_modifier = {
 			name = recently_conquered_state
 			is_decaying = yes
 			months = 60
-		}
-	}
-
-	c:AUS ?= {
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_AUSTRIA
-			}
-			add_radicals_in_state = {
-                value = large_radicals
-				strata = middle
-            }
-			add_radicals_in_state = {
-                value = small_radicals
-				strata = lower
-            }
-		}
-		every_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:czech
-				}
-			}
-			add_radicals_in_state = {
-                value = large_radicals
-                culture = cu:czech
-            }
-		}
-		every_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:polish
-				}
-			}
-			add_radicals_in_state = {
-                value = large_radicals
-                culture = cu:polish
-            }
-		}
-		every_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:north_italian
-				}
-			}
-			add_radicals_in_state = {
-                value = 0.15
-                culture = cu:north_italian
-            }
-		}
-	}
-
-	c:TRS ?= {
-		every_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:hungarian
-				}
-			}
-			add_radicals_in_state = {
-                value = very_large_radicals
-                culture = cu:hungarian
-            }
 		}
 	}
 
@@ -788,40 +499,36 @@ GLOBAL = {
             }
 		}
 	}
-
-	c:TUR ?= {
-		every_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:bosniak
-				}
+	
+	every_state = {
+		limit = {
+			OR = {
+				is_in_geographic_region = geographic_region_india
+				is_in_geographic_region = geographic_region_china
 			}
-			add_radicals_in_state = {
-                value = very_large_radicals
-                culture = cu:bosniak
-            }
 		}
-		every_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:serb
-				}
-			}
-			add_radicals_in_state = {
-                value = large_radicals
-                culture = cu:serb
-            }
+		add_modifier = { 
+			name = TBE_unknow_population 
 		}
-		every_scope_state = {
+		add_modifier = { 
+			name = TBE_abysmal_infrastructure 
+		}
+		if = {
 			limit = {
-				state_region = {
-					is_homeland = cu:bulgarian
+				owner = {
+					any_primary_culture = {
+						has_discrimination_trait_group = heritage_group_european
+					}
 				}
 			}
-			add_radicals_in_state = {
-                value = medium_radicals
-                culture = cu:bulgarian
-            }
+			add_modifier = { 
+				name = TBE_exploitative_agriculture 
+			}
+		}
+		else = {
+			add_modifier = { 
+				name = TBE_backwar_agriculture 
+			}
 		}
 	}
 }

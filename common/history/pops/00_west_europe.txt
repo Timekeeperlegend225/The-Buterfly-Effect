@@ -834,7 +834,7 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 160000
+				size = 1550000
 			}
 			create_pop = {
 				culture = french
@@ -843,7 +843,7 @@
 			}
 			create_pop = {
 				culture = francoprovencal
-				size = 70000
+				size = 20000
 			}
 			create_pop = {
 				culture = francoprovencal
