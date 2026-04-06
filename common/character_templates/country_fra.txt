@@ -1,49 +1,48 @@
 ﻿### France character template file ###
 
-## game start interest group leaders ##
+# Legitimists
 
-FRA_louis_philippe = {
-	first_name = Louis-Philippe
-	last_name = d_Orleans
+FRA_louis_antoine_de_bourbon = {
+	# Louis Antoine, Duke of Angoulême
+	first_name = "Louis XVIII"
+	last_name = "de_Bourbon"
 	historical = yes
-	culture = primary_culture
-	birth_date = 1773.10.6
-	dna = dna_king_louis_philippe_01
-	interest_group = ig_industrialists
-	ideology = ideology_orleanist
+	ruler = yes
+	dna = dna_louis_xviii_de_bourbon
+	birth_date = 1798.12.2
+	culture = cu:french
+	interest_group = ig_landowners
+	ideology = ideology_legitimist
 	traits = {
-		basic_political_operator
-		tactful
+		ambitious 
+		bigoted
+		imperious
 	}
 	on_created = {
-		set_variable = {
-			name = is_married
-		}
-		set_variable = house_orleans
-	}
-	trait_generation = {
-		# nothing!
+		set_variable = legitimist_leader
+		set_variable = house_bourbon
 	}
 }
 
-FRA_ferdinand_philippe = {
-	first_name = "Ferdinand_Philippe"
-	last_name = d_Orleans
+FRA_henri_de_bourbon = {
+	# Henri, Count of Chambord
+	first_name = "Henri"
+	last_name = "de_Bourbon"
 	historical = yes
-	culture = primary_culture
 	heir = yes
-	birth_date = 1810.9.3
-	interest_group = ig_armed_forces
-	ideology = ideology_orleanist
+	dna = dna_henri_count_of_chambord
+	birth_date = 1820.9.29
+	culture = cu:french
+	interest_group = ig_landowners
+	ideology = ideology_legitimist
 	traits = {
-		popular_commander
-		wrathful
-		expensive_tastes
+		arrogant
+		basic_political_operator
 	}
 	on_created = {
-		set_variable = house_orleans
+		set_variable = legitimist_leader
+		set_variable = house_bourbon
 	}
-	trait_generation = { }
 }
 
 FRA_victor_de_broglie = {
@@ -355,51 +354,6 @@ FRA_henri_de_orleans = {
 		set_variable = house_orleans
 	}
 }
-
-# Legitimists
-
-FRA_louis_antoine_de_bourbon = {
-	# Louis Antoine, Duke of Angoulême
-	first_name = "Louis"
-	last_name = "de_Bourbon"
-	historical = yes
-	ruler = yes
-	dna = dna_louis_antoine_duke_of_angouleme
-	birth_date = 1775.8.6
-	culture = cu:french
-	interest_group = ig_landowners
-	ideology = ideology_legitimist
-	traits = {
-		basic_offensive_planner # see the battle of Trocadero
-		bigoted
-	}
-	on_created = {
-		set_variable = legitimist_leader
-		set_variable = house_bourbon
-	}
-}
-
-FRA_henri_de_bourbon = {
-	# Henri, Count of Chambord
-	first_name = "Henri"
-	last_name = "de_Bourbon"
-	historical = yes
-	heir = yes
-	dna = dna_henri_count_of_chambord
-	birth_date = 1820.9.29
-	culture = cu:french
-	interest_group = ig_landowners
-	ideology = ideology_legitimist
-	traits = {
-		arrogant
-		basic_political_operator
-	}
-	on_created = {
-		set_variable = legitimist_leader
-		set_variable = house_bourbon
-	}
-}
-
 FRA_jean_de_bourbon = {
 	# Infante Juan, Count of Montizón - Carlist
 	first_name = "Jean"
