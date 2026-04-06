@@ -4,6 +4,7 @@
 		
 		add_technology_researched = joint_stock_companies
 		add_technology_researched = rifling
+		add_technology_researched = nationalism
 
 		set_tax_level = high
 		
@@ -46,7 +47,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_home_affairs
-			level = 2
+			level = 3
 		}
 
 		set_institution_investment_level = {
@@ -61,7 +62,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_state_propaganda
-			level = 3
+			level = 4
 		}
 
 		add_company = company_type:company_french_east_india_company

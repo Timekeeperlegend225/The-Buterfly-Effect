@@ -24,17 +24,5 @@
 			name = TBE_lack_of_control_national 
 			multiplier = 10
 		}
-		
-		every_scope_state = {
-			add_modifier = { 
-				name = TBE_unknow_population 
-			}
-			add_modifier = { 
-				name = TBE_abysmal_infrastructure 
-			}
-			add_modifier = { 
-				name = TBE_backwar_agriculture 
-			}
-		}
 	}
 }
