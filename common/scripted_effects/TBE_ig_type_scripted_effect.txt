@@ -3,7 +3,7 @@
 		remove_ideology = ideology_paternalistic
 		remove_ideology = ideology_hierarchic
 		remove_ideology = ideology_patriarchal
-		add_ideology = ideology_organization_feodal
+		add_ideology = ideology_organization_feodal_345
 		add_ideology = ideology_traditional_idendity_mild
 		add_ideology = ideology_security_localist
 		add_ideology = ideology_economy_feodal

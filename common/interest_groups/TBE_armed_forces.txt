@@ -221,11 +221,36 @@
 			is_pop_type = officers
 			is_pop_type = aristocrats
 			pop_acceptance >= acceptance_status_4
+			AND = {
+				OR = {
+					is_pop_type = bureaucrats
+					pop_employment_building_group = bg_government
+				}
+				owner = {
+					has_law = law_type:law_institutional_armed_forces
+				}
+			}
 		}
 	}
 
 	pop_weight = {
 		value = 0
+		
+		add = {
+			desc = "INSTITUTIONAL_ARMED_FORCES"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = bureaucrats
+						pop_employment_building_group = bg_government
+					}
+					owner = {
+						has_law = law_type:law_institutional_armed_forces
+					}
+				}
+				value = 100
+			}
+		}
 
 		add = {
 			desc = "POP_NOT_DISCRIMINATED"

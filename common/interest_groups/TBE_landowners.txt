@@ -416,11 +416,36 @@
 			is_pop_type = clergymen
 			is_pop_type = officers
 			is_pop_type = farmers
+			AND = {
+				OR = {
+					is_pop_type = bureaucrats
+					pop_employment_building_group = bg_government
+				}
+				owner = {
+					has_law = law_type:law_institutional_landowners
+				}
+			}
 		}
 	}
 
 	pop_weight = {
 		value = 0
+
+		add = {
+			desc = "INSTITUTIONAL_LANDOWNERS"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = bureaucrats
+						pop_employment_building_group = bg_government
+					}
+					owner = {
+						has_law = law_type:law_institutional_landowners
+					}
+				}
+				value = 100
+			}
+		}
 
 		add = {
 			desc = "POP_ARISTOCRATS"

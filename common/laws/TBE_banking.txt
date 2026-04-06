@@ -52,6 +52,18 @@
 			add = 750
 		}
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 }
 
 REPLACE_OR_CREATE:law_open_banking = {
@@ -95,6 +107,18 @@ REPLACE_OR_CREATE:law_open_banking = {
 			add = 750
 		}
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 }
 
 REPLACE_OR_CREATE:law_national_bank_monopoly = {
@@ -115,7 +139,6 @@ REPLACE_OR_CREATE:law_national_bank_monopoly = {
 	modifier = {
 		country_private_construction_allocation_mult = 0.25
 		building_nationalization_investment_return_add = 0.50
-		country_government_dividends_efficiency_add = 0.05
 	
 		state_capitalists_investment_pool_contribution_add = -0.05
 		
@@ -168,6 +191,18 @@ REPLACE_OR_CREATE:law_national_bank_monopoly = {
 			add = 750
 		}
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 }
 
 REPLACE_OR_CREATE:law_private_stock_exchange = {
@@ -193,8 +228,8 @@ REPLACE_OR_CREATE:law_private_stock_exchange = {
 		country_force_privatization_bool = yes
 		country_forbid_monopoly_bool = yes
 	
-		state_capitalists_investment_pool_efficiency_mult = 0.25
-		state_shopkeepers_investment_pool_efficiency_mult = 0.10
+		state_capitalists_investment_pool_efficiency_mult = 0.10
+		state_shopkeepers_investment_pool_efficiency_mult = 0.05
 		country_free_charters_add = 1
 		country_institution_national_bank_max_investment_add = -2
 	}
@@ -208,6 +243,18 @@ REPLACE_OR_CREATE:law_private_stock_exchange = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
 		}
 	}
 }
@@ -258,6 +305,18 @@ REPLACE_OR_CREATE:law_agrarian_funds = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
 		}
 	}
 }
@@ -330,6 +389,18 @@ REPLACE_OR_CREATE:law_cooperative_investment = {
 			add = 750
 		}
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 }
 
 REPLACE_OR_CREATE:law_company_banks = {
@@ -384,6 +455,18 @@ REPLACE_OR_CREATE:law_company_banks = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+				}
+			}
+			can_impose_law_default = yes
 		}
 	}
 }

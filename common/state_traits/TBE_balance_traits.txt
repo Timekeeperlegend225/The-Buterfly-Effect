@@ -1,0 +1,9 @@
+﻿REPLACE:state_trait_bengal_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		state_peasants_consumption_multiplier_add = -0.10
+		state_minimum_incorporated_subsistence_arable_land_add = 0.20
+		building_minimum_incorporated_subsistence_employment_add = 0.10
+	}
+}

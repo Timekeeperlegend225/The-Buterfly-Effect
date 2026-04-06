@@ -114,7 +114,6 @@ effect_starting_politics_traditional = {
 		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_consumption_based_taxation
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_no_workers_rights
 	}
@@ -122,17 +121,28 @@ effect_starting_politics_traditional = {
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_no_workers_rights
+	}
+	if = {
+		limit = {
+			country_is_islamic = yes
+		}
+		activate_law = law_type:law_rural_serfdom
+	}
+	else = {
+		activate_law = law_type:law_serfdom
 	}
 }
 
 effect_starting_politics_princely_state = {
 	if = {
 		limit = {
-			country_is_islamic = yes
+			OR = {
+				is_in_geographic_region = geographic_region_india
+				is_in_geographic_region = geographic_region_china
+			}
 		}
 		activate_law = law_type:law_people_of_the_book
 	}
@@ -146,8 +156,9 @@ effect_starting_politics_princely_state = {
 	activate_law = law_type:law_institutional_landowners
 	activate_law = law_type:law_land_based_taxation
 	activate_law = law_type:law_subjecthood
-	activate_law = law_type:law_rural_economy
 	activate_law = law_type:law_aristocrat_moneylending
+	activate_law = law_type:law_rural_economy
+	activate_law = law_type:law_rural_serfdom
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_migration_controls
 	activate_law = law_type:law_mercantilism

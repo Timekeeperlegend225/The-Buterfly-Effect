@@ -19,6 +19,13 @@
 			}
 			country_has_primary_culture = cu:romanian
 		}
+		NOT = {
+			OR = {
+				is_in_geographic_region = geographic_region_india
+				is_in_geographic_region = geographic_region_china
+				THIS = c:NEP
+			}
+		}
 	}
 
 	disallowing_laws = {
@@ -213,7 +220,6 @@ REPLACE:law_tenant_farmers = {
 
 	is_visible = {
 		NOR = {
-			has_law = law_type:law_latifundias
 			has_law = law_type:law_expanded_latifundias
 		}
 	}
@@ -681,21 +687,7 @@ REPLACE:law_latifundias = {
 	progressiveness = -25
 
 	is_visible = {
-		any_primary_culture = {
-			OR = {
-				has_discrimination_trait = language_hispanophone
-				has_discrimination_trait = language_lusophone
-				has_discrimination_trait = language_italian
-			}
-		}
-		hidden_trigger = {
-			NOT = {
-				has_variable = upgraded_latifundias_law_var
-			}
-		}
-		NOT = {
-			has_law = law_type:law_tenant_farmers
-		}
+		always = no
 	}
 
 	can_enact = {
@@ -843,10 +835,10 @@ REPLACE_OR_CREATE:law_rural_serfdom = {
 	progressiveness = -50
 
 	is_visible = {
-		any_primary_culture = {
-			OR = {
-				has_discrimination_trait = tradition_sinosphere
-			}
+		OR = {
+			is_in_geographic_region = geographic_region_india
+			is_in_geographic_region = geographic_region_china
+			THIS = c:NEP
 		}
 	}
 
@@ -914,7 +906,7 @@ REPLACE_OR_CREATE:law_rural_serfdom = {
 		interest_group_ig_landowners_pol_str_mult = 0.25
 		state_peasants_internal_migration_disallowed_bool = yes
 		state_peasants_mass_migration_disallowed_bool = yes
-		state_minimum_incorporated_subsistence_arable_land_add = 0.20
+		state_minimum_incorporated_subsistence_arable_land_add = 0.10
 		building_minimum_incorporated_subsistence_employment_add = 0.10
 		state_aristocrats_investment_pool_efficiency_mult = 0.1
 		state_clergymen_investment_pool_efficiency_mult = 0.1

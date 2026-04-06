@@ -228,11 +228,42 @@
 					is_pop_type = clerks
 				}
 			}
+			AND = {
+				is_pop_type = bureaucrats
+				owner = {
+				has_law = law_type:law_institutional_industrialists
+				}
+			}
+			AND = {
+				OR = {
+					is_pop_type = bureaucrats
+					pop_employment_building_group = bg_government
+				}
+				owner = {
+					has_law = law_type:law_institutional_industrialists
+				}
+			}
 		}
 	}
 
 	pop_weight = {
 		value = 0
+		
+		add = {
+			desc = "INSTITUTIONAL_INDUSTRIALISTS"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = bureaucrats
+						pop_employment_building_group = bg_government
+					}
+					owner = {
+						has_law = law_type:law_institutional_industrialists
+					}
+				}
+				value = 100
+			}
+		}
 
 		add = {
 			desc = "POP_CAPITALISTS"

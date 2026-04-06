@@ -233,15 +233,28 @@
 	on_character_ig_membership = {}
 
 	pop_potential = {
-		literacy_rate > 0.25
 		OR = {
-			is_pop_type = academics
-			is_pop_type = aristocrats
-			is_pop_type = bureaucrats
-			is_pop_type = capitalists
-			is_pop_type = clergymen
-			is_pop_type = clerks
-			is_pop_type = engineers
+			AND = {
+				literacy_rate > 0.25
+				OR = {
+					is_pop_type = academics
+					is_pop_type = aristocrats
+					is_pop_type = bureaucrats
+					is_pop_type = capitalists
+					is_pop_type = clergymen
+					is_pop_type = clerks
+					is_pop_type = engineers
+				}
+			}
+			AND = {
+				OR = {
+					is_pop_type = bureaucrats
+					pop_employment_building_group = bg_government
+				}
+				owner = {
+					has_law = law_type:law_institutional_intelligentsia
+				}
+			}
 		}
 	}
 
@@ -264,7 +277,58 @@
 				limit = {
 					is_pop_type = bureaucrats
 				}
-				value = 150
+				value = 75
+			}
+		}
+
+		add = {
+			desc = "INSTITUTIONAL_INTELLIGENTSIA"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = bureaucrats
+						pop_employment_building_group = bg_government
+					}
+					owner = {
+						has_law = law_type:law_institutional_intelligentsia
+					}
+				}
+				value = 100
+			}
+		}
+
+		add = {
+			desc = "ADMINISTRATION_ROLE"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = aristocrats
+						is_pop_type = clergymen
+						is_pop_type = capitalists
+					}
+					OR = {
+						pop_employment_building_group = bg_service
+						pop_employment_building_group = bg_arts
+						pop_employment_building_group = bg_private_infrastructure
+						pop_employment_building_group = bg_financial_districts
+					}
+				}
+				value = 80
+			}
+		}
+
+		add = {
+			desc = "ADMINISTRATION_ROLE"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = aristocrats
+						is_pop_type = clergymen
+						is_pop_type = capitalists
+					}
+					pop_employment_building_group = bg_government
+				}
+				value = 50
 			}
 		}
 
@@ -323,27 +387,6 @@
 			}
 		}
 
-		add = {
-			desc = "ADMINISTRATION_ROLE"
-			if = {
-				limit = {
-					OR = {
-						is_pop_type = aristocrats
-						is_pop_type = clergymen
-						is_pop_type = capitalists
-					}
-					OR = {
-						pop_employment_building_group = bg_service
-						pop_employment_building_group = bg_arts
-						pop_employment_building_group = bg_government
-						pop_employment_building_group = bg_private_infrastructure
-						pop_employment_building_group = bg_financial_districts
-					}
-				}
-				value = 100
-			}
-		}
-
 		if = {
 			limit = {
 				owner = {
@@ -373,28 +416,14 @@
 			}
 		}
 
-		add = {
-			desc = "POP_MILITARY_BUREAUCRACY"
-			if = {
-				limit = {
-					is_pop_type = bureaucrats
-					owner = {
-						c:ALK ?= this
-						has_government_type = gov_chartered_company
-					}
-				}
-				multiply = 0.25
-			}
-		}
-
 		if = {
 			limit = {
-				literacy_rate >= 0.50
+				literacy_rate >= 0.40
 			}
 			add = {
 				desc = "POP_LITERACY"
 				value = literacy_rate
-				multiply = 20
+				multiply = 50
 			}
 		}
 

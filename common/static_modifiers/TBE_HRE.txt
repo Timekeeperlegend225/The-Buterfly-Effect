@@ -1,0 +1,4 @@
+﻿TBE_emperor = {
+	icon = gfx/interface/icons/central_identity_pillars_icons/sovereign_empire.dds
+	country_prestige_add = 100
+}

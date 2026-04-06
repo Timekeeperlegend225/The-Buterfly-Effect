@@ -101,38 +101,67 @@
 	on_character_ig_membership = {}
 
 	pop_potential = {
-		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
-			is_pop_type = officers
-		}
 		OR = {
 			AND = {
-				custom_tooltip = {
-					text = owner_has_modern_agriculture_tt
-					owner = {
-						OR = {
-							has_law = law_type:law_commercialized_agriculture
-							has_law = law_type:law_collectivized_agriculture
+				NOR = {
+					is_pop_type = aristocrats
+					is_pop_type = capitalists
+					is_pop_type = officers
+				}
+				OR = {
+					AND = {
+						custom_tooltip = {
+							text = owner_has_modern_agriculture_tt
+							owner = {
+								OR = {
+									has_law = law_type:law_commercialized_agriculture
+									has_law = law_type:law_collectivized_agriculture
+								}
+							}
+						}
+						strata = lower
+						NOR = {
+							pop_employment_building_group = bg_subsistence_agriculture
+							pop_employment_building_group = bg_subsistence_ranching
 						}
 					}
-				}
-				strata = lower
-				NOR = {
-					pop_employment_building_group = bg_subsistence_agriculture
-					pop_employment_building_group = bg_subsistence_ranching
+					NOR = {
+						pop_employment_building_group = bg_agriculture
+						pop_employment_building_group = bg_ranching
+						pop_employment_building_group = bg_plantations
+					}
 				}
 			}
-			NOR = {
-				pop_employment_building_group = bg_agriculture
-				pop_employment_building_group = bg_ranching
-				pop_employment_building_group = bg_plantations
+			AND = {
+				OR = {
+					is_pop_type = bureaucrats
+					pop_employment_building_group = bg_government
+				}
+				owner = {
+					has_law = law_type:law_institutional_trade_unions
+				}
 			}
 		}
 	}
 
 	pop_weight = {
 		value = 0
+		
+		add = {
+			desc = "INSTITUTIONAL_TRADE_UNIONS"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = bureaucrats
+						pop_employment_building_group = bg_government
+					}
+					owner = {
+						has_law = law_type:law_institutional_trade_unions
+					}
+				}
+				value = 100
+			}
+		}
 
 		add = {
 			desc = "URBAN_POP"

@@ -23,7 +23,7 @@
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional
+				has_law_or_variant = law_type:law_supervised
 			}
 			activate_law = law_type:law_loyalism
 		}
@@ -47,7 +47,7 @@
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_partisan
+				has_law_or_variant = law_type:law_controlled
 			}
 			activate_law = law_type:law_personality_rule
 		}
@@ -123,7 +123,7 @@ REPLACE:law_oligarchy = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional
+				has_law_or_variant = law_type:law_supervised
 			}
 			activate_law = law_type:law_institutional_rule
 		}
@@ -147,7 +147,7 @@ REPLACE:law_oligarchy = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_partisan
+				has_law_or_variant = law_type:law_controlled
 			}
 			activate_law = law_type:law_ideological_elite
 		}
@@ -234,7 +234,7 @@ REPLACE_OR_CREATE:law_counciliary = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional
+				has_law_or_variant = law_type:law_supervised
 			}
 			activate_law = law_type:law_institutional_council
 		}
@@ -248,7 +248,7 @@ REPLACE_OR_CREATE:law_counciliary = {
 			limit = {
 				has_law_or_variant = law_type:law_meritocratic
 			}
-			activate_law = law_type:law_supervised_participation
+			activate_law = law_type:law_institutional_participation
 		}
 		else_if = {
 			limit = {
@@ -258,7 +258,7 @@ REPLACE_OR_CREATE:law_counciliary = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_partisan
+				has_law_or_variant = law_type:law_controlled
 			}
 			activate_law = law_type:law_party_council
 		}
@@ -325,7 +325,7 @@ REPLACE_OR_CREATE:law_parliamentary = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_institutional
+				has_law_or_variant = law_type:law_supervised
 			}
 			activate_law = law_type:law_managed_democracy
 		}
@@ -349,7 +349,7 @@ REPLACE_OR_CREATE:law_parliamentary = {
 		}
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_partisan
+				has_law_or_variant = law_type:law_controlled
 			}
 			activate_law = law_type:law_party_assembly
 		}

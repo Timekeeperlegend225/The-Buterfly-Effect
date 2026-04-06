@@ -595,6 +595,15 @@
 				owner ?= c:ZAN
 				has_pop_religion = sunni
 			}
+			AND = {
+				OR = {
+					is_pop_type = bureaucrats
+					pop_employment_building_group = bg_government
+				}
+				owner = {
+					has_law = law_type:law_institutional_devout
+				}
+			}
 		}
 		NOT = {
 			has_pop_religion = atheist
@@ -605,6 +614,22 @@
 		add = {
 			desc = "POP_BASE_ATTRACTION"
 			value = 25
+		}
+		
+		add = {
+			desc = "INSTITUTIONAL_DEVOUT"
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = bureaucrats
+						pop_employment_building_group = bg_government
+					}
+					owner = {
+						has_law = law_type:law_institutional_devout
+					}
+				}
+				value = 100
+			}
 		}
 
 		add = {
