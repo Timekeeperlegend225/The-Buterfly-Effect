@@ -1,0 +1,149 @@
+﻿principle_HRE_economic_decentralization_1 = {
+	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+	allows_foreign_investment_in_lower_rank = yes
+
+	possible = {
+		power_bloc = {
+			NOT = { has_principle_group = principle_group:principle_group_HRE_economic_centralization }
+		}
+	}
+	
+	member_modifier = {
+		country_convoy_contribution_to_market_owner_add = 0.2
+		state_infrastructure_mult = 0.1
+	}
+
+	power_bloc_modifier = {
+		power_bloc_customs_union_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
+	}
+
+	ai_weight = {
+		value = 200 
+	}
+}
+
+principle_HRE_economic_decentralization_2 = {
+	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	member_modifier = {
+		country_convoy_contribution_to_market_owner_add = 0.3
+		state_infrastructure_mult = 0.1
+	}
+
+	power_bloc_modifier = {
+		power_bloc_customs_union_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
+		building_minimum_wage_mult = 0.05
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+		country_can_impose_same_lawgroup_economic_system_in_power_bloc_bool = yes
+	}
+
+	ai_weight = {
+		value = 1000
+	}
+}
+
+principle_HRE_economic_decentralization_3 = {
+	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	member_modifier = {
+		country_convoy_contribution_to_market_owner_add = 0.4
+		state_infrastructure_mult = 0.1
+		building_minimum_wage_mult = 0.05
+		building_throughput_add = 0.05
+	}
+
+	power_bloc_modifier = {
+		power_bloc_customs_union_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
+	}
+
+	ai_weight = {
+		value = 1000
+	}
+}
+
+principle_HRE_economic_centralization_1 = {
+	icon = "gfx/interface/icons/principles_icons/foreign_investment.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+	allows_foreign_investment_in_lower_rank = yes
+
+	possible = {
+		power_bloc = {
+			NOT = { has_principle_group = principle_group:principle_group_HRE_economic_decentralization }
+		}
+	}
+
+	member_modifier = {
+		country_convoy_contribution_to_market_owner_add = 0.2
+		state_market_access_price_impact = 0.1
+	}
+
+	power_bloc_modifier = {
+		power_bloc_customs_union_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
+	}
+
+	ai_weight = {
+		value = 200 
+	}
+}
+
+principle_HRE_economic_centralization_2 = {
+	icon = "gfx/interface/icons/principles_icons/foreign_investment.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	member_modifier = {
+		country_convoy_contribution_to_market_owner_add = 0.3
+		state_market_access_price_impact = 0.1
+	}
+
+	power_bloc_modifier = {
+		power_bloc_customs_union_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+		country_can_impose_same_lawgroup_economic_system_in_power_bloc_bool = yes
+	}
+
+	ai_weight = {
+		value = 1000
+	}
+}
+
+principle_HRE_economic_centralization_3 = {
+	icon = "gfx/interface/icons/principles_icons/foreign_investment.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	member_modifier = {
+		country_convoy_contribution_to_market_owner_add = 0.4
+		state_market_access_price_impact = 0.1
+	}
+
+	power_bloc_modifier = {
+		power_bloc_customs_union_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_banking_in_power_bloc_bool = yes
+		country_can_impose_same_lawgroup_economic_system_in_power_bloc_bool = yes
+		state_aristocrats_investment_pool_efficiency_mult = 0.05
+		state_capitalists_investment_pool_efficiency_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 1000
+	}
+}

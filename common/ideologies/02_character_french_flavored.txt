@@ -19,11 +19,11 @@
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = approve
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = strongly_approve
 		law_meritocratic = neutral
 		law_egalitarian = disapprove
-		law_partisan = neutral
+		law_controlled = neutral
 	}
 
 	lawgroup_banking = {
@@ -295,11 +295,11 @@ ideology_legitimist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = approve
-		law_institutional = strongly_approve
+		law_supervised = strongly_approve
 		law_plutocratic = neutral
 		law_meritocratic = disapprove
 		law_egalitarian = strongly_disapprove
-		law_partisan = neutral
+		law_controlled = neutral
 	}
 
 	lawgroup_institutional_group = {
@@ -590,11 +590,11 @@ ideology_bonapartist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = disapprove
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = neutral
 		law_meritocratic = neutral
 		law_egalitarian = strongly_approve
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_army_model = {

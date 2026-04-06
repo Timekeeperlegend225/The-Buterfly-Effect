@@ -1,0 +1,21 @@
+﻿principle_group_HRE_economic_decentralization = {
+	primary_for_identity = identity_HRE
+	unlocking_identity = identity_HRE
+
+	levels = {
+		principle_HRE_economic_decentralization_1
+		principle_HRE_economic_decentralization_2
+		principle_HRE_economic_decentralization_3
+	}
+}
+
+REPLACE:principle_group_market_unification = {
+	blocking_identity = identity_trade_league
+	blocking_identity = identity_HRE
+
+	levels = {
+		principle_market_unification_1
+		principle_market_unification_2
+		principle_market_unification_3
+	}
+}

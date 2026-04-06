@@ -1116,11 +1116,11 @@ ideology_radical = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = disapprove
+		law_supervised = disapprove
 		law_plutocratic = neutral
 		law_meritocratic = approve
 		law_egalitarian = strongly_approve
-		law_partisan = disapprove
+		law_controlled = disapprove
 	}
 
 	lawgroup_institutional_group = {
@@ -2991,11 +2991,11 @@ ideology_social_democrat = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = disapprove
 		law_meritocratic = neutral
 		law_egalitarian = strongly_approve
-		law_partisan = neutral
+		law_controlled = neutral
 	}
 
 	lawgroup_labor_rights = {
@@ -3285,11 +3285,11 @@ ideology_communist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = disapprove
 		law_meritocratic = neutral
 		law_egalitarian = strongly_approve
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_institutional_group = {
@@ -3696,11 +3696,11 @@ ideology_vanguardist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = strongly_approve
+		law_supervised = strongly_approve
 		law_plutocratic = strongly_disapprove
 		law_meritocratic = neutral
 		law_egalitarian = neutral
-		law_partisan = strongly_disapprove
+		law_controlled = strongly_disapprove
 	}
 
 	lawgroup_institutional_group = {
@@ -4247,11 +4247,11 @@ ideology_fascist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = disapprove
 		law_meritocratic = neutral
 		law_egalitarian = strongly_disapprove
-		law_partisan = strongly_approve
+		law_controlled = strongly_approve
 	}
 
 	lawgroup_institutional_group = {
@@ -4790,11 +4790,11 @@ ideology_anarchist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = strongly_disapprove
+		law_supervised = strongly_disapprove
 		law_plutocratic = disapprove
 		law_meritocratic = disapprove
 		law_egalitarian = strongly_approve
-		law_partisan = strongly_disapprove
+		law_controlled = strongly_disapprove
 	}
 
 
@@ -5445,11 +5445,11 @@ ideology_theocrat = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = neutral
-		law_institutional = strongly_approve
+		law_supervised = strongly_approve
 		law_plutocratic = neutral
 		law_meritocratic = neutral
 		law_egalitarian = neutral
-		law_partisan = neutral
+		law_controlled = neutral
 	}
 
 	lawgroup_institutional_group = {
@@ -6275,11 +6275,11 @@ ideology_authoritarian = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = neutral
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = neutral
 		law_meritocratic = neutral
 		law_egalitarian = neutral
-		law_partisan = strongly_approve
+		law_controlled = strongly_approve
 	}
 
 	lawgroup_internal_security = {
@@ -7137,11 +7137,11 @@ ideology_jacksonian_democrat = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = neutral
 		law_meritocratic = approve
 		law_egalitarian = strongly_approve
-		law_partisan = disapprove
+		law_controlled = disapprove
 	}
 
 	lawgroup_bureaucracy = {
@@ -7259,11 +7259,11 @@ ideology_positivist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = neutral
 		law_meritocratic = strongly_approve
 		law_egalitarian = strongly_disapprove
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_institutional_group = {
@@ -7822,11 +7822,11 @@ ideology_integralist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_approve
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = neutral
 		law_meritocratic = strongly_disapprove
 		law_egalitarian = strongly_disapprove
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_institutional_group = {
@@ -8877,11 +8877,11 @@ ideology_humanitarian_royalist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = neutral
 		law_meritocratic = strongly_approve
 		law_egalitarian = approve
-		law_partisan = disapprove
+		law_controlled = disapprove
 	}
 
 	lawgroup_citizenship = {
@@ -9170,11 +9170,11 @@ ideology_despotic_utopian = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = neutral
 		law_meritocratic = strongly_approve
 		law_egalitarian = disapprove
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_internal_security = {
@@ -9669,11 +9669,11 @@ ideology_utopian = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_disapprove
-		law_institutional = disapprove
+		law_supervised = disapprove
 		law_plutocratic = disapprove
 		law_meritocratic = approve
 		law_egalitarian = strongly_approve
-		law_partisan = disapprove
+		law_controlled = disapprove
 	}
 
 	lawgroup_institutional_group = {
@@ -9970,11 +9970,11 @@ ideology_carlist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_approve
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = disapprove
 		law_meritocratic = disapprove
 		law_egalitarian = strongly_disapprove
-		law_partisan = disapprove
+		law_controlled = disapprove
 	}
 
 	lawgroup_banking = {
@@ -10238,11 +10238,11 @@ ideology_carlist_2 = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_approve
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = disapprove
 		law_meritocratic = disapprove
 		law_egalitarian = strongly_disapprove
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_banking = {
@@ -10506,11 +10506,11 @@ ideology_miguelist = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_approve
-		law_institutional = neutral
+		law_supervised = neutral
 		law_plutocratic = disapprove
 		law_meritocratic = disapprove
 		law_egalitarian = strongly_disapprove
-		law_partisan = disapprove
+		law_controlled = disapprove
 	}
 
 	lawgroup_banking = {
@@ -10770,11 +10770,11 @@ ideology_miguelist_2 = {
 
 	lawgroup_distribution_of_power = {
 		law_aristocratic = strongly_approve
-		law_institutional = approve
+		law_supervised = approve
 		law_plutocratic = disapprove
 		law_meritocratic = disapprove
 		law_egalitarian = strongly_disapprove
-		law_partisan = approve
+		law_controlled = approve
 	}
 
 	lawgroup_banking = {
