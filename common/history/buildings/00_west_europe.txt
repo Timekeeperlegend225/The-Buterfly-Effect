@@ -5979,7 +5979,7 @@
 				add_ownership={
 					country={
 						country="c:SAX"
-						levels=18
+						levels=20
 					}
 				}
 				reserves=1
@@ -6014,11 +6014,11 @@
 				add_ownership={
 					country={
 						country="c:SAX"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" }
+				activate_production_methods={ "pm_iron_frame_buildings" }
 			}
 			create_building={
 				building="building_university"
@@ -6063,7 +6063,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=5
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -6153,7 +6153,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=6
+						levels=9
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -6167,7 +6167,7 @@
 					building={
 						type="building_vineyard"
 						country="c:SAX"
-						levels=3
+						levels=5
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -6181,12 +6181,36 @@
 					building={
 						type="building_paper_mill"
 						country="c:SAX"
-						levels=5
+						levels=7
 						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_artillery_foundry"
+				add_ownership={
+					country={
+						country="c:SAX"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={"pm_cannons" "pm_automation_disabled"}
+			}
+			create_building={
+				building="building_textile_mill"
+				add_ownership={
+					building={
+						type="building_textile_mill"
+						country="c:SAX"
+						levels=3
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={"pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"}
 			}
 		}
 	}
@@ -6285,6 +6309,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_tooling_workshop"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_MORAVIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={"pm_pig_iron" "pm_automation_disabled"}
 			}
 		}
 	}
@@ -8385,6 +8422,19 @@
 				activate_production_methods={ "pm_leaded_glass"  "pm_manual_glassblowing" "pm_ceramics" }
 			}
 			create_building={
+				building="building_paper_mill"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=5
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
 				building="building_coal_mine"
 				add_ownership={
 					building={
@@ -8457,12 +8507,36 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=2
+						levels=4
 						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_furniture_manufactory"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={"pm_lathe" "pm_precision_tools" "pm_automation_disabled"}
+			}
+			create_building={
+				building="building_vineyard"
+				add_ownership={
+					country={
+						country="c:SAX"
+						levels=16
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_vineyard" "pm_road_carts"  }				
 			}
 		}
 		region_state:MEI={
