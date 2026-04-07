@@ -6010,12 +6010,12 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=2
+						levels=3
 						region="STATE_SAXONY"
 					}
 					country={
 						country="c:SAX"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -6081,13 +6081,13 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=5
+						levels=6
 						region="STATE_BOHEMIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=4
 						region="STATE_SAXONY"
 					}
 				}
@@ -6476,7 +6476,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=1
+						levels=2
 						region="STATE_SAXONY"
 					}
 				}
@@ -8759,7 +8759,7 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=4
 						region="STATE_SAXONY"
 					}
 					country={
