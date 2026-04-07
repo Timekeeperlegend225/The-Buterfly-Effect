@@ -1702,38 +1702,86 @@
 			name = Kniglich_Schsische_Armee
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_SAXONY
-				count = 4
+				count = 10
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry # Jägers
-				state_region = s:STATE_SAXONY
-				count = 2
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BOHEMIA
+				count = 12
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_SAXONY
-				count = 1
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MORAVIA
+				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_SAXONY
-				count = 2
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_LOWER_SILESIA
+				count = 8
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SAXONY
-				count = 1
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_UPPER_SILESIA
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_SAXONY
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BOHEMIA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MORAVIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_LOWER_SILESIA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_SAXONY
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_BOHEMIA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MORAVIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_LOWER_SILESIA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_UPPER_SILESIA
 				count = 1
 			}
 		}

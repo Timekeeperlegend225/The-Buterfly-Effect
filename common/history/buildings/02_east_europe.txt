@@ -53,6 +53,17 @@
 	s:STATE_LOWER_SILESIA={
 		region_state:SAX={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAX"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -69,10 +80,22 @@
 				building="building_textile_mill"
 				add_ownership={
 					building={
+						type="building_textile_mill"
+						country="c:SAX"
+						levels=1
+						region="STATE_LOWER_SILESIA"
+					}
+					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=6
+						levels=2
 						region="STATE_LOWER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=3
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -97,6 +120,12 @@
 						country="c:SAX"
 						levels=1
 						region="STATE_LOWER_SILESIA"
+					}	
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -123,6 +152,12 @@
 						country="c:SAX"
 						levels=1
 						region="STATE_LOWER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -152,7 +187,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools" "pm_apple_orchards" }
 				
 			}
 			create_building={
@@ -164,9 +199,15 @@
 						levels=1
 						region="STATE_LOWER_SILESIA"
 					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
+					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_paper_mill"
@@ -174,29 +215,78 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=2
 						region="STATE_LOWER_SILESIA"
+					
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=3
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_steel_mill"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
 			}
 		}
 	}
 	s:STATE_UPPER_SILESIA={
 		region_state:SAX={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAX"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
 				building="building_textile_mill"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=1
 						region="STATE_UPPER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms"  }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -215,8 +305,14 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=6
+						levels=2
 						region="STATE_UPPER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=4
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -228,25 +324,18 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=1
 						region="STATE_UPPER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_iron_mine"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:SAX"
-						levels=3
-						region="STATE_UPPER_SILESIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -254,14 +343,14 @@
 					building={
 						type="building_manor_house"
 						country="c:SAX"
-						levels=1
+						levels=2
 						region="STATE_UPPER_SILESIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
-			create_building={ # Kunern sugar beet factory
+			create_building={ 
 				building="building_rye_farm"
 				add_ownership={
 					building={
@@ -272,18 +361,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_sugar_beets" "pm_tools"  }
-			}
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:SAX"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_apple_orchards" "pm_tools"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -293,6 +371,12 @@
 						country="c:SAX"
 						levels=1
 						region="STATE_UPPER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -309,7 +393,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_apple_orchards" }
 				
 			}
 			create_building={
@@ -318,12 +402,44 @@
 					building={
 						type="building_financial_district"
 						country="c:SAX"
-						levels=3
+						levels=1
 						region="STATE_UPPER_SILESIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=2
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
+			create_building={
+				building="building_steel_mill"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SAX"
+						levels=1
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -338,7 +454,7 @@ s:STATE_GREATER_POLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_textile_mill"
@@ -390,7 +506,7 @@ s:STATE_GREATER_POLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_crude_tools" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -651,7 +767,7 @@ s:STATE_GREATER_POLAND={
 				add_ownership={
 					country={
 						country="c:PLC"
-						levels=9
+						levels=10
 					}
 				}
 				reserves=1
