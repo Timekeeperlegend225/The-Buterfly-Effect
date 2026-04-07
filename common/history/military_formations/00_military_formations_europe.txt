@@ -1786,6 +1786,186 @@
 			}
 		}
 	}
+c:PLC ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_poland
+			name = Armia_Koronna
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GREATER_POLAND
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_GREATER_POLAND
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_GREATER_POLAND
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LESSER_POLAND
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_LESSER_POLAND
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MAZOVIA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MAZOVIA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_POSEN
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_POSEN
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_GALICIA
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_WEST_GALICIA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_WEST_GALICIA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EAST_GALICIA
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_EAST_GALICIA
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_PRUSSIA
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_WEST_PRUSSIA
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_EAST_PRUSSIA
+				count = 1
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_baltic_states
+			name = Armia_Litewska
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VILNIUS
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_VILNIUS
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KAUNAS
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KAUNAS
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_COURLAND
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_COURLAND
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_RIGA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_RIGA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TARTU
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_TARTU
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BREST
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_BREST
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MINSK
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MINSK
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MOGILEV
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MOGILEV
+				count = 1
+			}
+		}
+	}
 
 	c:BAV ?= {
 		create_military_formation = {
